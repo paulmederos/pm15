@@ -391,7 +391,7 @@ th {
   animation-fill-mode: both; }
 
 .animated-mid {
-  animation-delay: .5s; }
+  animation-delay: 1s; }
 
 .animated.infinite {
   animation-iteration-count: infinite; }

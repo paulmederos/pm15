@@ -19,9 +19,9 @@ body {
   height: 100%;
   max-height: 100%;
   font-family: $primary_font_stack;
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   line-height: 1.4em;
-  color: $color_warm_slate;
+  color: $primary_font_color;
   @include font-smoothing();
 }
 
@@ -35,15 +35,15 @@ h4, h5, h6 {
   -ms-font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;
   -o-font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;
   font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;
-  color: $color_warm_slate;
+  color: $primary_font_color;
   line-height: 1.15em;
   margin: 0 0 0.3em 0;
-  font-family: $primary_font_stack;
+  font-family: $header_font_stack;
 }
 
 h1, h2 {
-  font-size: 3rem;
-  margin-bottom:1.8em;
+  font-size: 2.8rem;
+  margin-bottom:1em;
   color: #333;
 }
 
@@ -66,13 +66,14 @@ h6 {
 }
 
 a {
-  color: $color_hearth;
+  color: $primary_font_color;
   transition: color ease 0.3s;
-  text-decoration: none;
+  text-decoration: underline;
+  font-weight: 600;
 }
 
 a:hover {
-  color: $color_hearth;
+  color: $color_enchant;
   text-decoration: underline;
 }
 
@@ -245,18 +246,18 @@ table tbody > tr:nth-child(odd) > th {
 
 table.plain tbody > tr:nth-child(odd) > td,
 table.plain tbody > tr:nth-child(odd) > th {
- background: transparent;
+  background: transparent;
 }
 
 iframe, .fluid-width-video-wrapper {
-display: block;
-margin: 1.6em 0;
+  display: block;
+  margin: 1.6em 0;
 }
 
 /* When a video is inside the fitvids wrapper, drop the
 margin on the iframe, cause it breaks stuff. */
 .fluid-width-video-wrapper iframe {
-margin: 0;
+  margin: 0;
 }
 
 img {
@@ -322,46 +323,6 @@ img {
   }
 }
 
-.button {
-  display: block;
-  border:1px solid rgba(0,0,0,.2);
-  z-index:1;
-  transition: all $material-curve 0.22s;
-  text-align: center;
-}
-
-.button-material {
-  width: 54px;
-  height: 54px;
-  border-radius:50%;
-  box-shadow: 0 2px 5px rgba(0,0,0,.24);
-
-  &:hover {
-    box-shadow: 0 3px 6px rgba(0,0,0,.5);
-    transition: all $material-curve 0.22s;
-  }
-}
-
-.button-action {
-  background-color: $color_hearth;
-}
-
-.button-secondary {
-  background-color: $color_hearth;
-  padding:.5em 1.25em;
-  border-radius:4px;
-  color:white;
-  font-weight: 300;
-  margin:1em 0;
-  border:1px solid rgba(0,0,0,.1);
-  box-shadow: 0 1px 2px rgba(0,0,0,.18);
-
-  &:hover {
-    box-shadow: 0 2px 3px rgba(0,0,0,.42);
-    transition: all $material-curve 0.22s;
-  }
-}
-
 
 
 /* ==========================================================================
@@ -369,80 +330,133 @@ img {
 ========================================================================== */
 
 /*  =======================
-    Home
+    Portfolio index
 =========================== */
 
-section {
-  margin: 0 auto 4em;
-  padding-bottom:4em;
-  border-bottom:2px solid #EFEFEF;
+
+.title {
+  padding-top: 12rem;
+  margin-bottom: 12rem;
+}
+
+.brief-resume {
+  list-style: none;
+  margin-top: 12rem;
+  margin-bottom: 18rem;
+  padding: 0;
+
+  li { margin-bottom: 1.2rem; }
+
+  li:nth-child(1) { color: transparentize($primary_font_color, .2) }
+  li:nth-child(2) { color: transparentize($primary_font_color, .35) }
+  li:nth-child(3) { color: transparentize($primary_font_color, .45) }
+  li:nth-child(4) { color: transparentize($primary_font_color, .6) }
+
+  li a { color: inherit; }
+  li a:hover { color: $color_enchant; }
+}
+
+.time-space-continuum {
+  width: 16rem;
+  display: inline-block;
+}
+
+.adventures {
+  background-color: #FFFBF2;
+  padding: 12rem 0;
+  overflow: hidden;
+
+  h2, p {
+    max-width: 455px;
+  }
+}
+
+.stack-container {
+  overflow:scroll;
   width:100%;
-  max-width: 600px;
 }
 
-.intro .hearth-doodle {
-  width:100%;
-  max-width:580px;
-  height:404px;
-  margin:0 auto 5rem;
-  background-repeat: no-repeat;
-  background-position: right 0;
-  background-image: url('http://paulmederos.s3.amazonaws.com/designers-hearth/illustration-hearth.png');
-  background-size:580px 404px;
-
-  @include retina {
-    background-image: url('http://paulmederos.s3.amazonaws.com/designers-hearth/illustration-hearth@2x.png');
-  }
-
-  @include mq-personal {
-    background-position: center center;
-    background-size:290px 202px;
-    height:202px;
-    margin-bottom:2rem;
-  }
+.stack-of-adventures {
+  position: relative;
+  list-style: none;
+  margin-top: 6.4rem;
+  padding: 0;
+  margin-left: 6.4rem;
+  width: 2000px;
+  overflow: scroll;
 }
 
-.intro h1 {
-  color: $color_hearth;
-  margin:0 0 4em;
-  font-size:3.2rem;
-  font-weight: 500;
-  margin-bottom: 2em;
+.adventure-preview {
+  background-color: white;
+  border-radius: 8px;
+  max-width: 360px;
+  margin-right: 2.8rem;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.05);
+  display: inline-block;
+  overflow: hidden;
+  @include transition;
 
-  @include mq-personal { text-align: center;}
-}
-
-.subheader {
-  font-size: 2.4rem;
-  font-weight: 300;
-}
-
-.footer {
-  padding:10rem 0;
-  background-color: $color_hearth;
-  cursor: pointer;
-
-  .button {
-    width:92%;
-    max-width: 18em;
-    border-radius:6px;
-    border-color:white;
-    padding:.75em 1.5em;
-    color:white;
-    margin:1.5em auto;
-
-    @include mq-personal { padding: .75em; }
-  }
-
-  .overlay {
-    background-image: linear-gradient(0deg, rgba(250,217,97,0.80) 0%, rgba(247,107,27,0.40) 100%);
+  &:hover {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1),
+                0px 0px 4px rgba(0, 0, 0, 0.1);
+    @include transition;
   }
 }
 
-.footer-meetup {
-  background-color: rgb(224, 57, 62);
+.adventure-image {
+  height: 18rem;
+  background-color: gray;
+  margin: 0;
 }
 
-.footer-facebook {
-  background-color: rgb(59, 89, 152);
+.adventure-content {
+  padding: 3rem;
+
+  a {
+    color: $color_enchant;
+    font-weight: 500;
+  }
+}
+
+.contact {
+  background-color: #95C82E;
+  padding: 18rem 0;
+  position: relative;
+}
+
+.a-floating-card-maybe-what-do-you-think-this-is-omg {
+  background-color: white;
+  padding: 4.8rem;
+  width: 100%;
+  max-width: 470px;
+  margin: 0 auto;
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.1),
+              0px 1px 3px rgba(0, 0, 0, 0.15);
+  @include transition;
+
+  &:hover {
+    box-shadow: 0px 10px 18px rgba(0, 0, 0, 0.15),
+                0px 3px 12px rgba(0, 0, 0, 0.1);
+    @include transition;
+  }
+}
+
+.me-on-the-web {
+  margin-top: 4.8rem;
+
+  li {
+    margin-bottom: .5em;
+  }
+}
+
+.footer-footer-footer {
+  text-align:center;
+  font-size: 1.2rem;
+  position: absolute;
+  bottom: 1em;
+  width: 100%;
+  color: #5B7A1C;
+
+  a { color: #5B7A1C; }
+  a:hover { color: transparentize($primary_font_color, .2); }
 }

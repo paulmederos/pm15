@@ -2,12 +2,16 @@
  0. Core - CSS Variables, Mixins, and Utilities
  ========================================================================== */
 
-$color_slate: #5A5866;
+@import "fonts";
+
+$color_slate: #2D2333;
 $color_warm_slate: #595050;
 $color_hearth: #FF9456;
+$color_enchant: #E91F64;
 
-$primary_font_color: #49484D;
-$primary_font_stack: "museo-sans-rounded", "Helvetica Neue", "helvetica", sans-serif;
+$primary_font_color: $color_slate;
+$primary_font_stack: "Inter UI", "San Francisco", "Roboto", "Droid Sans", sans-serif;
+$header_font_stack: "Bookmania", "Georgia", serif;
 
 $material-curve: cubic-bezier(.62,.28,.23,.99);
 

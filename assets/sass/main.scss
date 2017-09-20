@@ -45,6 +45,7 @@ h1, h2 {
   font-size: 2.8rem;
   margin-bottom:1em;
   color: #333;
+  line-height: 1;
 }
 
 h3 {
@@ -324,13 +325,6 @@ img {
   z-index: 1;
 }
 
-.content {
-  h1, h2, h3, p {
-    max-width:600px; /* 600px */
-  }
-}
-
-
 
 /* ==========================================================================
     3. App Components - Styles specific to this app
@@ -344,6 +338,20 @@ img {
 .title {
   padding-top: 12rem;
   margin-bottom: 12rem;
+
+  h2 { position: relative; }
+
+  h2::before{
+    content: '';
+    display: block;
+    position: absolute;
+    left: -1em;
+    top: -1rem;
+    width: 4px;
+    height: 12rem;
+    background-color: $color_enchant;
+    border-radius: 2px;
+  }
 }
 
 .brief-resume {

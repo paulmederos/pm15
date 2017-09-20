@@ -1391,7 +1391,8 @@ h4, h5, h6 {
 h1, h2 {
   font-size: 2.8rem;
   margin-bottom: 1em;
-  color: #333; }
+  color: #333;
+  line-height: 1; }
 
 h3 {
   font-size: 2.1rem;
@@ -1637,10 +1638,6 @@ img {
   position: relative;
   z-index: 1; }
 
-.content h1, .content h2, .content h3, .content p {
-  max-width: 600px;
-  /* 600px */ }
-
 /* ==========================================================================
     3. App Components - Styles specific to this app
 ========================================================================== */
@@ -1650,6 +1647,18 @@ img {
 .title {
   padding-top: 12rem;
   margin-bottom: 12rem; }
+  .title h2 {
+    position: relative; }
+  .title h2::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: -1em;
+    top: -1rem;
+    width: 4px;
+    height: 12rem;
+    background-color: #E91F64;
+    border-radius: 2px; }
 
 .brief-resume {
   list-style: none;

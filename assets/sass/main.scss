@@ -39,7 +39,6 @@ h4, h5, h6 {
   line-height: 1.15em;
   margin: 0 0 0.3em 0;
   font-family: $header_font_stack;
-  font-variant-ligatures: none; 
 }
 
 h1, h2 {
@@ -50,8 +49,9 @@ h1, h2 {
 
 h3 {
   font-size:2.1rem;
-  font-weight:500;
+  font-weight: 700;
   margin-bottom:1em;
+  font-feature-settings: normal;
 }
 
 h4 {
@@ -59,7 +59,12 @@ h4 {
 }
 
 h5 {
-  font-size: 1.2rem;
+  color: rgba(0,0,0,.3);
+  font-size: 1.4rem;
+  font-family: $primary_font_stack;
+  text-transform: uppercase;
+  font-weight: 900;
+  margin-bottom: 1rem;
 }
 
 h6 {
@@ -373,25 +378,32 @@ img {
 }
 
 .stack-container {
-  overflow:scroll;
+  overflow: scroll;
   width:100%;
+
+  // Hide scrollbar
+  -ms-overflow-style: none;  // IE 10+
+  &::-webkit-scrollbar {
+    display: none;  // Safari and Chrome
+  }
 }
 
 .stack-of-adventures {
+  display: flex;
+  flex-direction: row;
   position: relative;
   list-style: none;
   margin-top: 6.4rem;
   padding: 0;
   margin-left: 6.4rem;
-  width: 2000px;
-  overflow: scroll;
+  width: 2400px;
 }
 
 .adventure-preview {
   background-color: white;
   border-radius: 8px;
   max-width: 360px;
-  margin-right: 2.8rem;
+  margin-right: 3.6rem;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.05);
   display: inline-block;
   overflow: hidden;
@@ -405,13 +417,48 @@ img {
 }
 
 .adventure-image {
-  height: 18rem;
+  height: 20.5rem;
   background-color: gray;
   margin: 0;
+  background-size: cover;
+
+  &.territory {
+    background-color: #FAF6ED;
+    background-image: url('../images/territory-preview.png');
+  }
+
+  &.ux-book {
+    background-color: #FF8964;
+    background-image: url('../images/ux-book-preview.png');
+  }
+
+  &.designers-hearth {
+    background-color: #ED1C40;
+    background-image: url('../images/meetup-preview.png');
+  }
+
+  &.seishin {
+    background-color: #F6C70B;
+    background-image: url('../images/seishin-preview.png');
+  }
+
+  &.kale {
+    background-color: #24B47D;
+    background-image: url('../images/kale-preview.png');
+  }
+
+  &.apk {
+    background-color: #2F80ED;
+    background-image: url('../images/apk-preview.png');
+  }
 }
 
 .adventure-content {
   padding: 3rem;
+
+  h3 {
+    font-size: 2.4rem;
+  }
 
   a {
     color: $color_enchant;

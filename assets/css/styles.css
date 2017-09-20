@@ -16,6 +16,11 @@
   src: font-url("./assets/webfonts/Inter-UI-Medium.otf") format("opentype");
   font-weight: 600;
   font-style: normal; }
+@font-face {
+  font-family: 'Inter UI';
+  src: font-url("./assets/webfonts/Inter-UI-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal; }
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
@@ -415,8 +420,7 @@ h4, h5, h6 {
   color: #2D2333;
   line-height: 1.15em;
   margin: 0 0 0.3em 0;
-  font-family: "Bookmania", "Georgia", serif;
-  font-variant-ligatures: none; }
+  font-family: "Bookmania", "Georgia", serif; }
 
 h1, h2 {
   font-size: 2.8rem;
@@ -425,14 +429,20 @@ h1, h2 {
 
 h3 {
   font-size: 2.1rem;
-  font-weight: 500;
-  margin-bottom: 1em; }
+  font-weight: 700;
+  margin-bottom: 1em;
+  font-feature-settings: normal; }
 
 h4 {
   font-size: 1.4rem; }
 
 h5 {
-  font-size: 1.2rem; }
+  color: rgba(0, 0, 0, 0.3);
+  font-size: 1.4rem;
+  font-family: "Inter UI", "San Francisco", "Roboto", "Droid Sans", sans-serif;
+  text-transform: uppercase;
+  font-weight: 900;
+  margin-bottom: 1rem; }
 
 h6 {
   font-size: 1.2rem; }
@@ -707,22 +717,26 @@ img {
 
 .stack-container {
   overflow: scroll;
-  width: 100%; }
+  width: 100%;
+  -ms-overflow-style: none; }
+  .stack-container::-webkit-scrollbar {
+    display: none; }
 
 .stack-of-adventures {
+  display: flex;
+  flex-direction: row;
   position: relative;
   list-style: none;
   margin-top: 6.4rem;
   padding: 0;
   margin-left: 6.4rem;
-  width: 2000px;
-  overflow: scroll; }
+  width: 2400px; }
 
 .adventure-preview {
   background-color: white;
   border-radius: 8px;
   max-width: 360px;
-  margin-right: 2.8rem;
+  margin-right: 3.6rem;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.05);
   display: inline-block;
   overflow: hidden;
@@ -732,12 +746,33 @@ img {
     transition: all 0.32s cubic-bezier(0.62, 0.28, 0.23, 0.99); }
 
 .adventure-image {
-  height: 18rem;
+  height: 20.5rem;
   background-color: gray;
-  margin: 0; }
+  margin: 0;
+  background-size: cover; }
+  .adventure-image.territory {
+    background-color: #FAF6ED;
+    background-image: url("../images/territory-preview.png"); }
+  .adventure-image.ux-book {
+    background-color: #FF8964;
+    background-image: url("../images/ux-book-preview.png"); }
+  .adventure-image.designers-hearth {
+    background-color: #ED1C40;
+    background-image: url("../images/meetup-preview.png"); }
+  .adventure-image.seishin {
+    background-color: #F6C70B;
+    background-image: url("../images/seishin-preview.png"); }
+  .adventure-image.kale {
+    background-color: #24B47D;
+    background-image: url("../images/kale-preview.png"); }
+  .adventure-image.apk {
+    background-color: #2F80ED;
+    background-image: url("../images/apk-preview.png"); }
 
 .adventure-content {
   padding: 3rem; }
+  .adventure-content h3 {
+    font-size: 2.4rem; }
   .adventure-content a {
     color: #E91F64;
     font-weight: 500; }

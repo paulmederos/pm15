@@ -415,7 +415,8 @@ h4, h5, h6 {
   color: #2D2333;
   line-height: 1.15em;
   margin: 0 0 0.3em 0;
-  font-family: "Bookmania", "Georgia", serif; }
+  font-family: "Bookmania", "Georgia", serif;
+  font-variant-ligatures: none; }
 
 h1, h2 {
   font-size: 2.8rem;

@@ -39,6 +39,7 @@ h4, h5, h6 {
   line-height: 1.15em;
   margin: 0 0 0.3em 0;
   font-family: $header_font_stack;
+  font-variant-ligatures: none; 
 }
 
 h1, h2 {

@@ -368,7 +368,7 @@ img {
     margin-bottom: 1.2rem;
 
     @include mq-personal {
-      margin-bottom: 2.5em; 
+      margin-bottom: 2.5em;
     }
   }
 
@@ -556,4 +556,43 @@ img {
 
   a { color: #5B7A1C; }
   a:hover { color: transparentize($primary_font_color, .2); }
+}
+
+
+// Single page stuff
+
+
+
+.overlay {
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background-color: rgba(0,0,0,.75);
+  @include transition;
+}
+
+.opened {
+  .full-screen-adventure {
+    display: block;
+    position: fixed;
+    top: 2em;
+    left: 4%;
+    width: 100%;
+    height: 600px;
+    max-width: 92%;
+    margin: 0 auto;
+    z-index: 5;
+  }
+
+  .overlay {
+    visibility: visible;
+    opacity: 1;
+    z-index: 4;
+    @include transition;
+  }
 }

@@ -1836,6 +1836,8 @@ img {
   background-color: rgba(0, 0, 0, 0.75);
   transition: all 0.32s cubic-bezier(0.62, 0.28, 0.23, 0.99); }
 
+.opened .adventures {
+  z-index: 5; }
 .opened .full-screen-adventure {
   display: block;
   position: fixed;
@@ -1845,7 +1847,7 @@ img {
   height: 600px;
   max-width: 92%;
   margin: 0 auto;
-  z-index: 5; }
+  z-index: 6; }
 .opened .overlay {
   visibility: visible;
   opacity: 1;

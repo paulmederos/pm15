@@ -577,6 +577,10 @@ img {
 }
 
 .opened {
+  .adventures {
+    z-index: 5;
+  }
+
   .full-screen-adventure {
     display: block;
     position: fixed;
@@ -586,7 +590,7 @@ img {
     height: 600px;
     max-width: 92%;
     margin: 0 auto;
-    z-index: 5;
+    z-index: 6;
   }
 
   .overlay {

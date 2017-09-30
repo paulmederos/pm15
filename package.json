@@ -1,0 +1,18 @@
+{
+  "name": "pm15",
+  "version": "1.0.0",
+  "description": "Personal design protfolio.",
+  "main": "index.js",
+  "repository": "https://github.com/paulmederos/pm15.git",
+  "author": "Paul Mederos <pvm@enchant.co>",
+  "license": "MIT",
+  "dependencies": {
+    "webpack": "^3.6.0"
+  },
+  "scripts": {
+    "clean": "rm assets/javascripts/app.bundle.js",
+    "build": "yarn clean && webpack --display-error-details",
+    "watch": "yarn clean && webpack --watch",
+    "start": "yarn watch"
+  }
+}

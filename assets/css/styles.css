@@ -1833,10 +1833,10 @@ img {
   border: none;
   border-radius: 50%;
   background-color: #E91F64;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
   transition: all 0.32s cubic-bezier(0.62, 0.28, 0.23, 0.99); }
   .fab:hover {
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25), 0 1px 3px rgba(0, 0, 0, 0.15);
     background-color: #ec3b77;
     transition: all 0.32s cubic-bezier(0.62, 0.28, 0.23, 0.99); }
 
@@ -1889,14 +1889,35 @@ img {
       margin-bottom: 0;
       position: relative;
       top: 1em;
-      left: 64px; }
+      left: 6em; }
   .opened .project-nav .fab {
-    position: absolute;
+    position: fixed;
     top: 25px;
-    left: 0; }
+    left: 2em; }
+  .opened .project-page-header {
+    position: relative;
+    top: -108px;
+    width: 100%;
+    height: 360px;
+    margin-bottom: 10em; }
+    @media (max-width: 30em) {
+      .opened .project-page-header {
+        margin-bottom: 0;
+        height: inherit; } }
+    .opened .project-page-header.territory {
+      background-color: #FAF6ED;
+      margin-bottom: 10em; }
+      @media (max-width: 30em) {
+        .opened .project-page-header.territory {
+          margin-bottom: 0; } }
+    .opened .project-page-header img {
+      position: relative;
+      top: 108px; }
   .opened .project-content {
     padding-top: 108px;
     min-height: 1000px; }
+    .opened .project-content h3 {
+      margin-top: 3em; }
   .opened .project-footer {
     margin-top: 54px;
     border-top: 2px solid #F0F0F0;
@@ -1909,5 +1930,52 @@ img {
       font-weight: bold; }
       .opened .project-footer button:hover {
         text-decoration: underline; }
+
+.carousel-title {
+  margin-top: 4em;
+  font-family: "Inter UI", "San Francisco", "Roboto", "Droid Sans", sans-serif;
+  font-weight: 900;
+  font-size: 15px;
+  color: #AAAAAA;
+  text-transform: uppercase;
+  padding-left: 4%; }
+
+.carousel-wrap {
+  width: 100%;
+  overflow-x: scroll;
+  padding-left: 4%; }
+
+.carousel-container {
+  width: 1380px;
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  .carousel-container li {
+    display: inline-block; }
+
+.source-shot {
+  position: relative;
+  display: block;
+  top: 0;
+  margin: 0 1.5em 0 0;
+  background-color: #E5E5E5;
+  border: none;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  cursor: pointer;
+  transition: all 0.32s cubic-bezier(0.62, 0.28, 0.23, 0.99); }
+  .source-shot:hover {
+    top: -1px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15), 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: all 0.32s cubic-bezier(0.62, 0.28, 0.23, 0.99); }
+
+.wip-shots .source-shot {
+  width: 400px;
+  height: 300px; }
+
+.product-shots .source-shot {
+  width: 267px;
+  height: 267px; }
 
 /*# sourceMappingURL=styles.css.map */

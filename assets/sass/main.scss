@@ -569,11 +569,12 @@ img {
   border: none;
   border-radius: 50%;
   background-color: #E91F64;
-  box-shadow: 0 1px 3px rgba(0,0,0,.2);
+  box-shadow: 0 2px 4px rgba(0,0,0,.25);
   @include transition;
 
   &:hover {
-    box-shadow: 0 3px 6px rgba(0,0,0,.25);
+    box-shadow: 0 4px 8px rgba(0,0,0,.25),
+                0 1px 3px rgba(0,0,0,.15);
     background-color: lighten(#E91F64, 6%);
 
     @include transition;
@@ -640,21 +641,52 @@ img {
       margin-bottom: 0;
       position: relative;
       top: 1em;
-      left: 64px;
+      left: 6em;
     }
   }
 
   .project-nav .fab {
-    position: absolute;
+    position: fixed;
     top: 25px;
-    left: 0;
+    left: 2em;
+  }
+
+  .project-page-header {
+    position: relative;
+    top: -108px;
+    width:100%;
+    height:360px;
+    margin-bottom: 10em;
+
+    @include mq-personal {
+      margin-bottom: 0;
+      height: inherit;
+    }
+
+    &.territory {
+      background-color: #FAF6ED;
+      margin-bottom: 10em;
+
+      @include mq-personal {
+        margin-bottom: 0;
+      }
+    }
 
 
+
+    img {
+      position: relative;
+      top: 108px;
+    }
   }
 
   .project-content {
     padding-top: 108px;
     min-height: 1000px;
+
+    h3 {
+      margin-top: 3em;
+    }
   }
 
   .project-footer {
@@ -672,4 +704,60 @@ img {
       &:hover { text-decoration: underline; }
     }
   }
+}
+
+.carousel-title {
+  margin-top: 4em;
+  font-family: $primary_font_stack;
+  font-weight: 900;
+  font-size: 15px;
+  color: #AAAAAA;
+  text-transform: uppercase;
+  padding-left: 4%;
+}
+
+.carousel-wrap {
+  width: 100%;
+  overflow-x: scroll;
+  padding-left: 4%;
+}
+
+.carousel-container {
+  width: 1380px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li { display: inline-block; }
+}
+
+.source-shot {
+  position: relative;
+  display: block;
+  top: 0;
+  margin: 0 1.5em 0 0;
+  background-color: #E5E5E5;
+  border:none;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  cursor: pointer;
+  @include transition;
+
+  &:hover {
+    top: -1px;
+    box-shadow: 0 4px 12px rgba(0,0,0,.15),
+                0 1px 3px rgba(0,0,0,.1);
+    @include transition;
+  }
+}
+
+.wip-shots .source-shot {
+  width:400px;
+  height: 300px;
+}
+
+.product-shots .source-shot {
+  width: 267px;
+  height: 267px;
 }

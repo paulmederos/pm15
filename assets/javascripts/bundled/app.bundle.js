@@ -21596,21 +21596,17 @@ class CaseStudyPage extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Compon
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'nav',
           { className: 'project-nav' },
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('button', { className: 'fab fab-back', onClick: this.props.onClosePressed }),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            'div',
-            { className: 'wrap' },
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('button', { className: 'fab fab-back', onClick: this.props.onClosePressed }),
+            'p',
+            { className: 'project-meta' },
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              'p',
-              { className: 'project-meta' },
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                'b',
-                null,
-                companyName
-              ),
-              ' - ',
-              projectTitle
-            )
+              'b',
+              null,
+              companyName
+            ),
+            ' - ',
+            projectTitle
           )
         ),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -21667,6 +21663,15 @@ class TerritoryLaunch extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Comp
         onClosePressed: this.props.onClosePressed
       },
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        'header',
+        { className: 'project-page-header territory' },
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'div',
+          { className: 'wrap', style: { marginBottom: "2em" } },
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: 'assets/images/header-territory-brand.png' })
+        )
+      ),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         'div',
         { className: 'wrap mid-wrap' },
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -21678,19 +21683,106 @@ class TerritoryLaunch extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Comp
           'p',
           null,
           'I\u2019m currently helping fuel people who eat with purpose over at Territory Foods, where I lead product design. My team\u2019s most recent project involved a simultaneous product launch and rebrand that helps us serve our customers so much better than ever before.'
-        ),
+        )
+      ),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        'h3',
+        { 'class': 'carousel-title' },
+        'Process / source shots'
+      ),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        'div',
+        { className: 'carousel-wrap' },
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          'h4',
+          'ul',
+          { className: 'carousel-container wip-shots' },
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'li',
+            null,
+            this.renderShotWithName("territory-wip-01")
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'li',
+            null,
+            this.renderShotWithName("territory-wip-02")
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'li',
+            null,
+            this.renderShotWithName("territory-wip-03")
+          )
+        )
+      ),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        'h3',
+        { 'class': 'carousel-title' },
+        'Product shots'
+      ),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        'div',
+        { className: 'carousel-wrap' },
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'ul',
+          { className: 'carousel-container product-shots' },
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'li',
+            null,
+            this.renderShotWithName("territory-product-01")
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'li',
+            null,
+            this.renderShotWithName("territory-product-02")
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'li',
+            null,
+            this.renderShotWithName("territory-product-03")
+          )
+        )
+      ),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        'div',
+        { className: 'wrap mid-wrap', style: { marginTop: "4em" } },
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'h3',
           null,
-          'Images'
+          'Goals'
         ),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'p',
           null,
-          'More content'
+          'I\u2019m currently helping fuel people who eat with purpose over at Territory Foods, where I lead product design. My team\u2019s most recent project involved a simultaneous product launch and rebrand that helps us serve our customers so much better than ever before.'
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'h3',
+          null,
+          'Team'
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'p',
+          null,
+          'I\u2019m currently helping fuel people who eat with purpose over at Territory Foods, where I lead product design. My team\u2019s most recent project involved a simultaneous product launch and rebrand that helps us serve our customers so much better than ever before.'
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'h3',
+          null,
+          'Results'
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'p',
+          null,
+          'I\u2019m currently helping fuel people who eat with purpose over at Territory Foods, where I lead product design. My team\u2019s most recent project involved a simultaneous product launch and rebrand that helps us serve our customers so much better than ever before.'
         )
       )
     );
+  }
+
+  renderShotWithName(fileName) {
+    return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('figure', {
+      className: 'source-shot',
+      style: { backgroundImage: `url(assets/images/shots/${fileName}.png)` }
+    });
   }
 
 }

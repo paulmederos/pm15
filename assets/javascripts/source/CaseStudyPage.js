@@ -18,10 +18,8 @@ export default class CaseStudyPage extends React.Component {
       <div className="project-container">
         <main className="project-page">
           <nav className="project-nav">
-            <div className="wrap">
-              <button className="fab fab-back" onClick={this.props.onClosePressed} />
-              <p className="project-meta"><b>{companyName}</b> - {projectTitle}</p>
-            </div>
+            <button className="fab fab-back" onClick={this.props.onClosePressed} />
+            <p className="project-meta"><b>{companyName}</b> - {projectTitle}</p>
           </nav>
 
           <section className="project-content">

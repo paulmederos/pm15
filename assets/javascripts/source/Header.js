@@ -1,9 +1,10 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 export default class Header extends React.Component {
   render() {
     return (
-      <header className="wrap title animated fadeIn">
+      <header className={`wrap title ${this.props.shouldAnimate && "animated fadeIn"}`}>
         <h2>Paul Mederos</h2>
         <p>
           Makes meaningful products &amp; services<br />
@@ -30,5 +31,8 @@ export default class Header extends React.Component {
       </header>
     )
   }
+}
 
+Header.propTypes = {
+  shouldAnimate: PropTypes.bool
 }

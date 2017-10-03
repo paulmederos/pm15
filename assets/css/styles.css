@@ -390,6 +390,9 @@ th {
   animation-duration: 1s;
   animation-fill-mode: both; }
 
+.animated-short {
+  animation-delay: .4s; }
+
 .animated-mid {
   animation-delay: 1s; }
 
@@ -1840,96 +1843,106 @@ img {
     background-color: #ec3b77;
     transition: all 0.32s cubic-bezier(0.62, 0.28, 0.23, 0.99); }
 
-.overlay {
-  visibility: hidden;
-  opacity: 0;
+.button-link {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: #E91F64;
+  text-decoration: underline;
+  transition: all 0.32s cubic-bezier(0.62, 0.28, 0.23, 0.99); }
+  .button-link:hover {
+    color: #2D2333;
+    transition: all 0.32s cubic-bezier(0.62, 0.28, 0.23, 0.99); }
+
+.icon {
+  position: relative;
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-position: center center;
+  background-repeat: no-repeat; }
+  .icon.icon-back {
+    left: 7px;
+    background-size: 15px 24px;
+    background-image: url("../images/icon-back.png"); }
+
+.project-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  width: 100%;
+  height: 100%; }
+
+.project-page {
+  display: block;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 0;
-  background-color: rgba(0, 0, 0, 0.75);
-  transition: all 0.32s cubic-bezier(0.62, 0.28, 0.23, 0.99); }
+  overflow-y: scroll;
+  z-index: 6;
+  background-color: white; }
 
-.opened {
-  overflow: hidden; }
-  .opened .project-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 5;
-    width: 100%;
-    height: 100%; }
-  .opened .project-page {
-    display: block;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow-y: scroll;
-    z-index: 6;
-    background-color: white; }
-  .opened .overlay {
-    visibility: visible;
-    opacity: 1;
-    z-index: 4;
-    transition: all 0.32s cubic-bezier(0.62, 0.28, 0.23, 0.99); }
-  .opened .project-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 54px;
-    background-color: rgba(255, 255, 255, 0.92);
-    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15);
-    z-index: 7; }
-    .opened .project-nav .project-meta {
-      margin-bottom: 0;
-      position: relative;
-      top: 1em;
-      left: 6em; }
-  .opened .project-nav .fab {
-    position: fixed;
-    top: 25px;
-    left: 2em; }
-  .opened .project-page-header {
+.project-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 54px;
+  background-color: rgba(255, 255, 255, 0.92);
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15);
+  z-index: 7; }
+  .project-nav .project-meta {
+    margin-bottom: 0;
     position: relative;
-    top: -108px;
-    width: 100%;
-    height: 360px;
+    top: 1em;
+    left: 6em; }
+
+.project-nav .fab {
+  position: fixed;
+  top: 25px;
+  left: 2em; }
+
+.project-page-header {
+  position: relative;
+  top: -108px;
+  width: 100%;
+  height: 360px;
+  margin-bottom: 10em; }
+  @media (max-width: 30em) {
+    .project-page-header {
+      margin-bottom: 0;
+      height: inherit; } }
+  .project-page-header.territory {
+    background-color: #FAF6ED;
     margin-bottom: 10em; }
     @media (max-width: 30em) {
-      .opened .project-page-header {
-        margin-bottom: 0;
-        height: inherit; } }
-    .opened .project-page-header.territory {
-      background-color: #FAF6ED;
-      margin-bottom: 10em; }
-      @media (max-width: 30em) {
-        .opened .project-page-header.territory {
-          margin-bottom: 0; } }
-    .opened .project-page-header img {
-      position: relative;
-      top: 108px; }
-  .opened .project-content {
-    padding-top: 108px;
-    min-height: 1000px; }
-    .opened .project-content h3 {
-      margin-top: 3em; }
-  .opened .project-footer {
-    margin-top: 54px;
-    border-top: 2px solid #F0F0F0;
-    padding-top: 54px;
-    padding-bottom: 54px; }
-    .opened .project-footer button {
-      background-color: transparent;
-      border: none;
-      outline: none;
-      font-weight: bold; }
-      .opened .project-footer button:hover {
-        text-decoration: underline; }
+      .project-page-header.territory {
+        margin-bottom: 0; } }
+  .project-page-header img {
+    position: relative;
+    top: 108px; }
+
+.project-content {
+  padding-top: 108px;
+  min-height: 1000px; }
+  .project-content h3 {
+    margin-top: 3em; }
+
+.project-footer {
+  margin-top: 54px;
+  border-top: 2px solid #F0F0F0;
+  padding-top: 54px;
+  padding-bottom: 54px; }
+  .project-footer button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-weight: bold; }
+    .project-footer button:hover {
+      text-decoration: underline; }
 
 .carousel-title {
   margin-top: 4em;

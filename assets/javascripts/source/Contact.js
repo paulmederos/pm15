@@ -3,7 +3,7 @@ import React from 'react'
 export default class Contact extends React.Component {
   render() {
     return (
-      <section className="contact animated animated-mid fadeInUp">
+      <section className={`contact ${this.props.shouldAnimate && "animated animated-mid fadeInUp"}`}>
         <div className="wrap">
           <div className="a-floating-card-maybe-what-do-you-think-this-is-omg">
             <h2>Let's build together ✨</h2>

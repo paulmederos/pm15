@@ -6,7 +6,7 @@ import CaseStudyCard from './CaseStudyCard'
 export default class Portfolio extends React.Component {
   render() {
     return (
-      <section className="adventures animated animated-mid fadeInUp">
+      <section className={`adventures ${this.props.shouldAnimate && "animated animated-mid fadeInUp"}`}>
         <div className="wrap">
           <h2>Work Portfolio</h2>
           <p>

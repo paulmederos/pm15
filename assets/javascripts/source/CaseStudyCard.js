@@ -11,7 +11,7 @@ export default class CaseStudyCard extends React.Component {
           <h3>{this.props.projectTitle}</h3>
           <p>{this.props.description}</p>
 
-          <a href="#" onClick={this.props.onCardPressed}>Learn about the work &rarr;</a>
+          <button className="button-link" onClick={this.props.onCardPressed}>Learn about the work &rarr;</button>
         </section>
       </li>
     )

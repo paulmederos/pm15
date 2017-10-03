@@ -3,14 +3,6 @@ import PropTypes from 'prop-types'
 
 export default class CaseStudyPage extends React.Component {
 
-  componentWillMount(){
-    document.body.className = "opened"
-  }
-
-  componentWillUnmount(){
-    document.body.className = ""
-  }
-
   render() {
     const { companyName, projectTitle } = this.props
 
@@ -18,11 +10,13 @@ export default class CaseStudyPage extends React.Component {
       <div className="project-container">
         <main className="project-page">
           <nav className="project-nav">
-            <button className="fab fab-back" onClick={this.props.onClosePressed} />
+            <button className="fab fab-back" onClick={this.props.onClosePressed}>
+              <i className="icon icon-back" />
+            </button>
             <p className="project-meta"><b>{companyName}</b> - {projectTitle}</p>
           </nav>
 
-          <section className="project-content">
+          <section className="project-content animated animated-short fadeIn">
             { this.props.children }
           </section>
 

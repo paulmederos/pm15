@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import CaseStudyPage from '../CaseStudyPage'
+import Shot from '../Shot'
 
 export default class TerritoryLaunch extends React.Component {
   render() {
@@ -25,21 +26,25 @@ export default class TerritoryLaunch extends React.Component {
             us serve our customers so much better than ever before.</p>
         </div>
 
-        <h3 class="carousel-title">Process / source shots</h3>
+        <h3 className="carousel-title">Process / source shots</h3>
         <div className="carousel-wrap">
-          <ul className="carousel-container wip-shots">
-            <li>{ this.renderShotWithName("territory-wip-01") }</li>
-            <li>{ this.renderShotWithName("territory-wip-02") }</li>
-            <li>{ this.renderShotWithName("territory-wip-03") }</li>
+          <ul className="carousel-container wip-shots" style={{ width: "1780px "}}>
+            <li><Shot fileName={"territory-wip-01"} /></li>
+            <li><Shot fileName={"territory-wip-02"} /></li>
+            <li><Shot fileName={"territory-wip-03"} /></li>
+            <li><Shot fileName={"territory-wip-04"} /></li>
           </ul>
         </div>
 
-        <h3 class="carousel-title">Product shots</h3>
+        <h3 className="carousel-title">Product shots</h3>
         <div className="carousel-wrap">
-          <ul className="carousel-container product-shots">
-            <li>{ this.renderShotWithName("territory-product-01") }</li>
-            <li>{ this.renderShotWithName("territory-product-02") }</li>
-            <li>{ this.renderShotWithName("territory-product-03") }</li>
+          <ul className="carousel-container product-shots" style={{ width: "1780px "}}>
+            <li><Shot fileName={"territory-product-01"} /> </li>
+            <li><Shot fileName={"territory-product-02"} /></li>
+            <li><Shot fileName={"territory-product-03"} /></li>
+            <li><Shot fileName={"territory-product-04"} /></li>
+            <li><Shot fileName={"territory-product-05"} /></li>
+            <li><Shot fileName={"territory-product-06"} /></li>
           </ul>
         </div>
 
@@ -64,15 +69,6 @@ export default class TerritoryLaunch extends React.Component {
         </div>
 
       </CaseStudyPage>
-    )
-  }
-
-  renderShotWithName(fileName){
-    return (
-      <figure
-        className="source-shot"
-        style={{ backgroundImage: `url(assets/images/shots/${fileName}.png)` }}
-      />
     )
   }
 

@@ -18,16 +18,24 @@ export default class App extends React.Component {
   }
 
   componentWillMount(){
-    this.setState({ visibleProject: 'territory-brand' })
+    this.setState({
+      animateHome: true,
+      visibleProject: 'territory-brand'
+    })
   }
 
   render() {
+    return this.state.visibleProject ?
+              this.renderProject(this.state.visibleProject) :
+              this.renderHome()
+  }
+
+  renderHome(){
     return (
       <div>
-        { this.state.visibleProject && this.renderProject(this.state.visibleProject) }
-        <Header />
-        <Portfolio onCardPressed={this.handleCardPressed}/>
-        <Contact />
+        <Header shouldAnimate={this.state.shouldAnimateHome} />
+        <Portfolio shouldAnimate={this.state.shouldAnimateHome} onCardPressed={this.handleCardPressed}/>
+        <Contact shouldAnimate={this.state.shouldAnimateHome} />
       </div>
     )
   }
@@ -51,7 +59,10 @@ export default class App extends React.Component {
   }
 
   handleWorkPageClosed(){
-    this.setState({ visibleProject: null })
+    this.setState({
+      shouldAnimateHome: false,
+      visibleProject: null
+    })
   }
 
 }

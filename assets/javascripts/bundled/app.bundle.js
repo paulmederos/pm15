@@ -21209,17 +21209,23 @@ class App extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
   }
 
   componentWillMount() {
-    this.setState({ visibleProject: 'territory-brand' });
+    this.setState({
+      animateHome: true,
+      visibleProject: 'territory-brand'
+    });
   }
 
   render() {
+    return this.state.visibleProject ? this.renderProject(this.state.visibleProject) : this.renderHome();
+  }
+
+  renderHome() {
     return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       'div',
       null,
-      this.state.visibleProject && this.renderProject(this.state.visibleProject),
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__Header__["a" /* default */], null),
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__Portfolio__["a" /* default */], { onCardPressed: this.handleCardPressed }),
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__Contact__["a" /* default */], null)
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__Header__["a" /* default */], { shouldAnimate: this.state.shouldAnimateHome }),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__Portfolio__["a" /* default */], { shouldAnimate: this.state.shouldAnimateHome, onCardPressed: this.handleCardPressed }),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__Contact__["a" /* default */], { shouldAnimate: this.state.shouldAnimateHome })
     );
   }
 
@@ -21242,7 +21248,10 @@ class App extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
   }
 
   handleWorkPageClosed() {
-    this.setState({ visibleProject: null });
+    this.setState({
+      shouldAnimateHome: false,
+      visibleProject: null
+    });
   }
 
 }
@@ -21256,115 +21265,121 @@ class App extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
+
 
 
 class Header extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
   render() {
     return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-      "header",
-      { className: "wrap title animated fadeIn" },
+      'header',
+      { className: `wrap title ${this.props.shouldAnimate && "animated fadeIn"}` },
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-        "h2",
+        'h2',
         null,
-        "Paul Mederos"
+        'Paul Mederos'
       ),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-        "p",
+        'p',
         null,
-        "Makes meaningful products & services",
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("br", null),
-        "centered around human experiences."
+        'Makes meaningful products & services',
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
+        'centered around human experiences.'
       ),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-        "ol",
-        { className: "brief-resume" },
+        'ol',
+        { className: 'brief-resume' },
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          "li",
+          'li',
           null,
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            "span",
-            { className: "time-space-continuum" },
-            "Present"
+            'span',
+            { className: 'time-space-continuum' },
+            'Present'
           ),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            "span",
-            { className: "the-gig" },
-            "Leading design at ",
+            'span',
+            { className: 'the-gig' },
+            'Leading design at ',
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              "a",
-              { href: "https://www.territoryfoods.com", target: "_blank" },
-              "Territory Foods"
+              'a',
+              { href: 'https://www.territoryfoods.com', target: '_blank' },
+              'Territory Foods'
             ),
-            "."
+            '.'
           )
         ),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          "li",
+          'li',
           null,
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            "span",
-            { className: "time-space-continuum" },
-            "2014 - 2017"
+            'span',
+            { className: 'time-space-continuum' },
+            '2014 - 2017'
           ),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            "span",
-            { className: "the-gig" },
-            "Led product design and development for ",
+            'span',
+            { className: 'the-gig' },
+            'Led product design and development for ',
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              "a",
-              { href: "https://technical.ly/dc/2017/05/09/power-supply-now-territory-foods/" },
-              "Power Supply"
+              'a',
+              { href: 'https://technical.ly/dc/2017/05/09/power-supply-now-territory-foods/' },
+              'Power Supply'
             ),
-            "."
+            '.'
           )
         ),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          "li",
+          'li',
           null,
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            "span",
-            { className: "time-space-continuum" },
-            "2013 ~ 2014"
+            'span',
+            { className: 'time-space-continuum' },
+            '2013 ~ 2014'
           ),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            "span",
-            { className: "the-gig" },
-            "Led user experience crew at ",
+            'span',
+            { className: 'the-gig' },
+            'Led user experience crew at ',
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              "a",
-              { href: "http://www.americanparkour.com", target: "_blank" },
-              "American Parkour"
+              'a',
+              { href: 'http://www.americanparkour.com', target: '_blank' },
+              'American Parkour'
             ),
-            "."
+            '.'
           )
         ),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          "li",
+          'li',
           null,
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            "span",
-            { className: "time-space-continuum" },
-            "2006 ~ 2014"
+            'span',
+            { className: 'time-space-continuum' },
+            '2006 ~ 2014'
           ),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            "span",
-            { className: "the-gig" },
-            "Ran ",
+            'span',
+            { className: 'the-gig' },
+            'Ran ',
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              "a",
-              { href: "http://enchant.co", taget: "_blank" },
-              "Enchant Design"
+              'a',
+              { href: 'http://enchant.co', taget: '_blank' },
+              'Enchant Design'
             ),
-            " \u2014 a product + design studio."
+            ' \u2014 a product + design studio.'
           )
         )
       )
     );
   }
-
 }
 /* harmony export (immutable) */ __webpack_exports__["a"] = Header;
 
+
+Header.propTypes = {
+  shouldAnimate: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.bool
+};
 
 /***/ }),
 /* 34 */
@@ -21385,7 +21400,7 @@ class Portfolio extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component 
   render() {
     return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       'section',
-      { className: 'adventures animated animated-mid fadeInUp' },
+      { className: `adventures ${this.props.shouldAnimate && "animated animated-mid fadeInUp"}` },
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         'div',
         { className: 'wrap' },
@@ -21450,7 +21465,7 @@ class Contact extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
   render() {
     return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       "section",
-      { className: "contact animated animated-mid fadeInUp" },
+      { className: `contact ${this.props.shouldAnimate && "animated animated-mid fadeInUp"}` },
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         "div",
         { className: "wrap" },
@@ -21542,8 +21557,8 @@ class CaseStudyCard extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Compon
           this.props.description
         ),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          'a',
-          { href: '#', onClick: this.props.onCardPressed },
+          'button',
+          { className: 'button-link', onClick: this.props.onCardPressed },
           'Learn about the work \u2192'
         )
       )
@@ -21576,14 +21591,6 @@ CaseStudyCard.propTypes = {
 
 class CaseStudyPage extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
 
-  componentWillMount() {
-    document.body.className = "opened";
-  }
-
-  componentWillUnmount() {
-    document.body.className = "";
-  }
-
   render() {
     const { companyName, projectTitle } = this.props;
 
@@ -21596,7 +21603,11 @@ class CaseStudyPage extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Compon
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'nav',
           { className: 'project-nav' },
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('button', { className: 'fab fab-back', onClick: this.props.onClosePressed }),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'button',
+            { className: 'fab fab-back', onClick: this.props.onClosePressed },
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'icon icon-back' })
+          ),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'p',
             { className: 'project-meta' },
@@ -21611,7 +21622,7 @@ class CaseStudyPage extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Compon
         ),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'section',
-          { className: 'project-content' },
+          { className: 'project-content animated animated-short fadeIn' },
           this.props.children
         ),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -21648,6 +21659,8 @@ CaseStudyPage.propTypes = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(29);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__CaseStudyPage__ = __webpack_require__(37);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Shot__ = __webpack_require__(39);
+
 
 
 
@@ -21687,7 +21700,7 @@ class TerritoryLaunch extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Comp
       ),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         'h3',
-        { 'class': 'carousel-title' },
+        { className: 'carousel-title' },
         'Process / source shots'
       ),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -21695,27 +21708,32 @@ class TerritoryLaunch extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Comp
         { className: 'carousel-wrap' },
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'ul',
-          { className: 'carousel-container wip-shots' },
+          { className: 'carousel-container wip-shots', style: { width: "1780px " } },
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'li',
             null,
-            this.renderShotWithName("territory-wip-01")
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__Shot__["a" /* default */], { fileName: "territory-wip-01" })
           ),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'li',
             null,
-            this.renderShotWithName("territory-wip-02")
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__Shot__["a" /* default */], { fileName: "territory-wip-02" })
           ),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'li',
             null,
-            this.renderShotWithName("territory-wip-03")
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__Shot__["a" /* default */], { fileName: "territory-wip-03" })
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'li',
+            null,
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__Shot__["a" /* default */], { fileName: "territory-wip-04" })
           )
         )
       ),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         'h3',
-        { 'class': 'carousel-title' },
+        { className: 'carousel-title' },
         'Product shots'
       ),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -21723,21 +21741,37 @@ class TerritoryLaunch extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Comp
         { className: 'carousel-wrap' },
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'ul',
-          { className: 'carousel-container product-shots' },
+          { className: 'carousel-container product-shots', style: { width: "1780px " } },
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'li',
             null,
-            this.renderShotWithName("territory-product-01")
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__Shot__["a" /* default */], { fileName: "territory-product-01" }),
+            ' '
           ),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'li',
             null,
-            this.renderShotWithName("territory-product-02")
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__Shot__["a" /* default */], { fileName: "territory-product-02" })
           ),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'li',
             null,
-            this.renderShotWithName("territory-product-03")
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__Shot__["a" /* default */], { fileName: "territory-product-03" })
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'li',
+            null,
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__Shot__["a" /* default */], { fileName: "territory-product-04" })
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'li',
+            null,
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__Shot__["a" /* default */], { fileName: "territory-product-05" })
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'li',
+            null,
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__Shot__["a" /* default */], { fileName: "territory-product-06" })
           )
         )
       ),
@@ -21778,15 +21812,30 @@ class TerritoryLaunch extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Comp
     );
   }
 
-  renderShotWithName(fileName) {
-    return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('figure', {
-      className: 'source-shot',
+}
+/* harmony export (immutable) */ __webpack_exports__["a"] = TerritoryLaunch;
+
+
+/***/ }),
+/* 39 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+
+
+class Shot extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
+  render() {
+    const { fileName } = this.props;
+
+    return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("figure", {
+      className: "source-shot",
       style: { backgroundImage: `url(assets/images/shots/${fileName}.png)` }
     });
   }
-
 }
-/* harmony export (immutable) */ __webpack_exports__["a"] = TerritoryLaunch;
+/* harmony export (immutable) */ __webpack_exports__["a"] = Shot;
 
 
 /***/ })

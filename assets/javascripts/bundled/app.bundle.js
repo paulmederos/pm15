@@ -21690,7 +21690,17 @@ class TerritoryLaunch extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Comp
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'p',
           null,
-          'I\u2019m currently helping fuel people who eat with purpose over at Territory Foods, where I lead product design. My team\u2019s most recent project involved a simultaneous product launch and rebrand that helps us serve our customers so much better than ever before.'
+          'As our business grew, we learned that there was an opportunity to position our brand beyond Power Supply\'s performance-oriented folks, to reach folks who see food as part of well-being.'
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'p',
+          null,
+          'We were attracting active, health-conscious achievers who were constantly seeking adventure; folks who saw health as holistic, with each their own paths to their happy places. But the Power Supply brand was designed for hardcore fitness at the intersection of CrossFit and Paleo.'
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'p',
+          null,
+          'So it was time to set ourselves up for a future focused on personalized nutrition. Enter Territory.'
         )
       ),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(

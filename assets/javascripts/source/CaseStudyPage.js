@@ -7,25 +7,22 @@ export default class CaseStudyPage extends React.Component {
     const { companyName, projectTitle } = this.props
 
     return (
-      <div className="project-container">
-        <main className="project-page">
-          <nav className="project-nav">
-            <button className="fab fab-back" onClick={this.props.onClosePressed}>
-              <i className="icon icon-back" />
-            </button>
-            <p className="project-meta"><b>{companyName}</b> - {projectTitle}</p>
-          </nav>
+      <main className="project-page">
+        <nav className="project-nav">
+          <button className="fab fab-back" onClick={this.props.onClosePressed}>
+            <i className="icon icon-back" />
+          </button>
+          <p className="project-meta"><b>{companyName}</b> - {projectTitle}</p>
+        </nav>
 
-          <section className="project-content animated animated-short fadeIn">
-            { this.props.children }
-          </section>
+        <section className="project-content animated animated-short fadeIn">
+          { this.props.children }
+        </section>
 
-          <footer className="wrap mid-wrap project-footer">
-            <button onClick={this.props.onClosePressed}>&larr; Back to the rest of the work</button>
-          </footer>
-        </main>
-        <aside className="overlay"></aside>
-    </div>
+        <footer className="wrap mid-wrap project-footer">
+          <button onClick={this.props.onClosePressed}>&larr; Back to the rest of the work</button>
+        </footer>
+      </main>
     )
   }
 

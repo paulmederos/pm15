@@ -28,11 +28,13 @@ export default class TerritoryLaunch extends React.Component {
 
         <h3 className="carousel-title">Process / source shots</h3>
         <div className="carousel-wrap">
-          <ul className="carousel-container wip-shots" style={{ width: "1780px "}}>
+          <ul className="carousel-container wip-shots" style={{ width: "2580px "}}>
             <li><Shot fileName={"territory-wip-01"} /></li>
             <li><Shot fileName={"territory-wip-02"} /></li>
             <li><Shot fileName={"territory-wip-03"} /></li>
             <li><Shot fileName={"territory-wip-04"} /></li>
+            <li><Shot fileName={"territory-wip-05"} /></li>
+            <li><Shot fileName={"territory-wip-06"} /></li>
           </ul>
         </div>
 

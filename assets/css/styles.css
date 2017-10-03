@@ -1752,6 +1752,7 @@ img {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.05);
   display: inline-block;
   overflow: hidden;
+  cursor: pointer;
   transition: all 0.32s cubic-bezier(0.62, 0.28, 0.23, 0.99); }
   .adventure-preview:hover {
     transform: scale(1.03);
@@ -1842,6 +1843,11 @@ img {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25), 0 1px 3px rgba(0, 0, 0, 0.15);
     background-color: #ec3b77;
     transition: all 0.32s cubic-bezier(0.62, 0.28, 0.23, 0.99); }
+  .fab:active {
+    outline: none;
+    box-shadow: none;
+    background-color: #d91558;
+    transition: all 0.32s cubic-bezier(0.62, 0.28, 0.23, 0.99); }
 
 .button-link {
   border: none;
@@ -1866,23 +1872,7 @@ img {
     background-size: 15px 24px;
     background-image: url("../images/icon-back.png"); }
 
-.project-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 5;
-  width: 100%;
-  height: 100%; }
-
 .project-page {
-  display: block;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow-y: scroll;
-  z-index: 6;
   background-color: white; }
 
 .project-nav {
@@ -1979,8 +1969,8 @@ img {
   cursor: pointer;
   transition: all 0.32s cubic-bezier(0.62, 0.28, 0.23, 0.99); }
   .source-shot:hover {
-    top: -1px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15), 0 1px 3px rgba(0, 0, 0, 0.1);
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
     transition: all 0.32s cubic-bezier(0.62, 0.28, 0.23, 0.99); }
 
 .wip-shots .source-shot {

@@ -21534,7 +21534,7 @@ class CaseStudyCard extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Compon
   render() {
     return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       'li',
-      { className: 'adventure-preview full-screen-adventure' },
+      { className: 'adventure-preview', onClick: this.props.onCardPressed },
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('figure', { className: `adventure-image ${this.props.projectHeaderClass}` }),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         'section',
@@ -21595,47 +21595,42 @@ class CaseStudyPage extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Compon
     const { companyName, projectTitle } = this.props;
 
     return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-      'div',
-      { className: 'project-container' },
+      'main',
+      { className: 'project-page' },
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-        'main',
-        { className: 'project-page' },
+        'nav',
+        { className: 'project-nav' },
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          'nav',
-          { className: 'project-nav' },
+          'button',
+          { className: 'fab fab-back', onClick: this.props.onClosePressed },
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'icon icon-back' })
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'p',
+          { className: 'project-meta' },
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            'button',
-            { className: 'fab fab-back', onClick: this.props.onClosePressed },
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'icon icon-back' })
+            'b',
+            null,
+            companyName
           ),
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            'p',
-            { className: 'project-meta' },
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              'b',
-              null,
-              companyName
-            ),
-            ' - ',
-            projectTitle
-          )
-        ),
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          'section',
-          { className: 'project-content animated animated-short fadeIn' },
-          this.props.children
-        ),
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          'footer',
-          { className: 'wrap mid-wrap project-footer' },
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            'button',
-            { onClick: this.props.onClosePressed },
-            '\u2190 Back to the rest of the work'
-          )
+          ' - ',
+          projectTitle
         )
       ),
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('aside', { className: 'overlay' })
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        'section',
+        { className: 'project-content animated animated-short fadeIn' },
+        this.props.children
+      ),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        'footer',
+        { className: 'wrap mid-wrap project-footer' },
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'button',
+          { onClick: this.props.onClosePressed },
+          '\u2190 Back to the rest of the work'
+        )
+      )
     );
   }
 
@@ -21708,7 +21703,7 @@ class TerritoryLaunch extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Comp
         { className: 'carousel-wrap' },
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'ul',
-          { className: 'carousel-container wip-shots', style: { width: "1780px " } },
+          { className: 'carousel-container wip-shots', style: { width: "2580px " } },
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'li',
             null,
@@ -21728,6 +21723,16 @@ class TerritoryLaunch extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Comp
             'li',
             null,
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__Shot__["a" /* default */], { fileName: "territory-wip-04" })
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'li',
+            null,
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__Shot__["a" /* default */], { fileName: "territory-wip-05" })
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'li',
+            null,
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__Shot__["a" /* default */], { fileName: "territory-wip-06" })
           )
         )
       ),

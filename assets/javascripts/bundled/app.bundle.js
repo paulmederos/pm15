@@ -21187,8 +21187,12 @@ module.exports = function() {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Header__ = __webpack_require__(33);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Portfolio__ = __webpack_require__(34);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Contact__ = __webpack_require__(36);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__projects_TerritoryLaunch__ = __webpack_require__(37);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Adventures__ = __webpack_require__(41);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Contact__ = __webpack_require__(36);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__projects_TerritoryLaunch__ = __webpack_require__(37);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__projects_PSExpansion__ = __webpack_require__(40);
+
+
 
 
 
@@ -21211,7 +21215,7 @@ class App extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
   componentWillMount() {
     this.setState({
       animateHome: true,
-      visibleProject: 'territory-brand'
+      visibleProject: null
     });
   }
 
@@ -21225,14 +21229,18 @@ class App extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
       null,
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__Header__["a" /* default */], { shouldAnimate: this.state.shouldAnimateHome }),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__Portfolio__["a" /* default */], { shouldAnimate: this.state.shouldAnimateHome, onCardPressed: this.handleCardPressed }),
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__Contact__["a" /* default */], { shouldAnimate: this.state.shouldAnimateHome })
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__Adventures__["a" /* default */], { shouldAnimate: this.state.shouldAnimateHome }),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__Contact__["a" /* default */], { shouldAnimate: this.state.shouldAnimateHome })
     );
   }
 
   renderProject(project) {
     switch (project) {
       case 'territory-brand':
-        return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__projects_TerritoryLaunch__["a" /* default */], { onClosePressed: this.handleWorkPageClosed });
+        return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5__projects_TerritoryLaunch__["a" /* default */], { onClosePressed: this.handleWorkPageClosed });
+        break;
+      case 'ps-expansion':
+        return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_6__projects_PSExpansion__["a" /* default */], { onClosePressed: this.handleWorkPageClosed });
         break;
       case 'apk-brand':
         return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(AmericanParkourLaunch, { onClosePressed: this.handleWorkPageClosed });
@@ -21400,7 +21408,7 @@ class Portfolio extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component 
   render() {
     return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       'section',
-      { className: `adventures ${this.props.shouldAnimate && "animated animated-mid fadeInUp"}` },
+      { className: `portfolio ${this.props.shouldAnimate && "animated animated-mid fadeInUp"}` },
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         'div',
         { className: 'wrap' },
@@ -21420,22 +21428,41 @@ class Portfolio extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component 
         { className: 'stack-container' },
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'ul',
-          { className: 'stack-of-adventures' },
+          { className: 'stack-of-work' },
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__CaseStudyCard__["a" /* default */], {
-            key: "territory-brand-launch",
             date: "2017",
-            role: "Design Lead",
+            role: "Head of Product Design",
+            key: "territory-brand-launch",
             projectHeaderClass: "territory",
-            projectTitle: "Territory Brand Launch",
-            description: "Our customers were outgrowing our brand, so we stepped it up.",
+            projectTitle: "Launching the Territory brand to multiply growth",
+            description: "Could we re-position our brand closer to our north star of personalized nutrition to reach more customers in a deeper, more valuable way?",
             onCardPressed: () => this.props.onCardPressed("territory-brand")
           }),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__CaseStudyCard__["a" /* default */], {
+            date: "2015",
+            role: "Product Design Lead",
+            key: "power-supply-city-expansion",
+            projectHeaderClass: "power-supply-city-expansion",
+            projectTitle: "Scaling Power Supply to new markets",
+            description: "Would the business model and product experience we developed in one market work in other markets across the country?",
+            onCardPressed: () => this.props.onCardPressed("ps-expansion")
+          }),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__CaseStudyCard__["a" /* default */], {
+
+            date: "2016",
+            role: "Sr. Product Designer",
+            key: "power-supply-personalization",
+            projectHeaderClass: "power-supply-personalization",
+            projectTitle: "Getting folks food they'll love for serious retention",
+            description: "What could we do to increase the odds that customers fell in love with our service?",
+            onCardPressed: () => this.props.onCardPressed("ps-expansion")
+          }),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__CaseStudyCard__["a" /* default */], {
             key: "apk-relaunch",
-            date: "2017",
+            date: "2013",
             role: "UX Lead",
             projectHeaderClass: "apk",
-            projectTitle: "Community & Store Relaunch",
+            projectTitle: "Community & ecommerce experience relaunch",
             description: "The largest int'l parkour community was ready to level up it's brand.",
             onCardPressed: () => this.props.onCardPressed("apk-brand")
           })
@@ -21468,11 +21495,11 @@ class CaseStudyCard extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Compon
   render() {
     return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       'li',
-      { className: 'adventure-preview', onClick: this.props.onCardPressed },
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('figure', { className: `adventure-image ${this.props.projectHeaderClass}` }),
+      { className: 'case-study-preview', onClick: this.props.onCardPressed },
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('figure', { className: `case-study-image ${this.props.projectHeaderClass}` }),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         'section',
-        { className: 'adventure-content' },
+        { className: 'case-study-content' },
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'h5',
           null,
@@ -21539,19 +21566,25 @@ class Contact extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             "p",
             { style: { lineHeight: "1.6" } },
-            "Set up a 1:1 time on ",
+            "Send me a note via ",
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
               "a",
-              { href: "https://calendly.com/pvm/30min", target: "_blank" },
-              "Calendly"
+              { href: "mailto:pvm@enchant.co", target: "_blank" },
+              "email"
             ),
-            " (currently open), or send me a DM over on ",
+            " or ",
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              "a",
+              { href: "https://www.linkedin.com/in/pmederos/", target: "_blank" },
+              "LinkedIn"
+            ),
+            ", or say hi over on ",
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
               "a",
               { href: "https://www.twitter.com/pvm", target: "_blank" },
               "Twitter"
             ),
-            "."
+            ". I'll normally respond back within a few days!"
           )
         )
       ),
@@ -21600,7 +21633,7 @@ class TerritoryLaunch extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Comp
       __WEBPACK_IMPORTED_MODULE_2__CaseStudyPage__["a" /* default */],
       {
         companyName: "Territory Foods",
-        projectTitle: "Brand Launch",
+        projectTitle: "Product + Brand Launch",
         onClosePressed: this.props.onClosePressed
       },
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -22021,6 +22054,591 @@ class Shot extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
   }
 }
 /* harmony export (immutable) */ __webpack_exports__["a"] = Shot;
+
+
+/***/ }),
+/* 40 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__CaseStudyPage__ = __webpack_require__(38);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Shot__ = __webpack_require__(39);
+
+
+
+
+
+
+class PSExpansion extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
+  render() {
+    return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      __WEBPACK_IMPORTED_MODULE_2__CaseStudyPage__["a" /* default */],
+      {
+        companyName: "Power Supply",
+        projectTitle: "National Expansion",
+        onClosePressed: this.props.onClosePressed
+      },
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        'header',
+        { className: 'project-page-header territory' },
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'div',
+          { className: 'wrap', style: { marginBottom: "2em" } },
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: 'assets/images/header-ps-expansion.png' })
+        )
+      ),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        'div',
+        { className: 'wrap mid-wrap' },
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'h2',
+          null,
+          'Designing a hyper-focused product for scale'
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'p',
+          null,
+          'Power Supply started with a hyper-focused product in a tiny niche (prepared meals + Paleo menu + Washington DC area.) We needed to grow to fulfill our vision, so we needed to learn if the model and product experience we developed in DC would work in other markets.'
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('hr', null),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'h3',
+          null,
+          'Background'
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'p',
+          null,
+          'I joined Power Supply in January of 2014, when they were just getting started in Washington, DC.'
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'p',
+          null,
+          'Power Supply helped fuel active folks with tasty, good-for-them food by working with local chefs to prepare and deliver meal plans. We were the "easy button" for people who wanted to eat Paleo or Vegetarian, without the hassle of meal prepping, shopping, or cooking.'
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'p',
+          null,
+          'At the time, most of the product was manual-intensive. It consisted of a static Wordpress site, a few forms that sent emails to the right people, and LOTS of spreadsheets. They had just finished building a payment subscription system (before products like Stripe subscriptions), and the customer experience was pretty freaking bare.'
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'p',
+          null,
+          'I was brought on to build the foundational customer experience and the first stab at the complex machinery that made up the internal culinary and logistics software. Fast-forward a year\u2014and tons of hard work\u2014later and boom \uD83D\uDCA5, Power Supply was thriving in DC.'
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'h3',
+          null,
+          'The Challenge'
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'p',
+          null,
+          'Our eyes were already set on the next goal: testing out our hypotheses around our growth strategy. We thought we\'d be able to replicate our current model in other cities.'
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'p',
+          null,
+          'There were plenty of leap-of-faith assumptions to test out:'
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'ul',
+          null,
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'li',
+            null,
+            'Would our product (prepared meals, paleo / vegetarian, subscription) resonate with the same customers in other markets?'
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'li',
+            null,
+            'Could we find partners (from chefs to delivery crews) to work with us?'
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'li',
+            null,
+            'Would we be able to keep the same pricing?'
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'li',
+            null,
+            'Could we change our product experience and systems to handle multiple markets?'
+          )
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'p',
+          null,
+          'After considering various factors, and running a few experiments, the first city we decided to target for expansion was Los Angeles.'
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'h3',
+          null,
+          'The Setup (Goals & Objectives)'
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'p',
+          null,
+          'We kicked-off the project with a few goals:'
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'p',
+          null,
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'b',
+            null,
+            '#1 The core product would stay the same, but we needed flexibility to scale our offerings.'
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
+          'Our market in DC handled a pretty large volume of meals, with multiple menus, portion sizes, plans, and delivery methods (pickup + direct.) We wouldn\u2019t be able to offer it all on day one in LA, and we didn\u2019t want to\u2014it was important that we learned which offerings would work best in different cities.'
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'p',
+          null,
+          'That meant we had to re-think every piece of the experience to account for flexibility in product offerings. We had to look at everything from how we talked about the plans and pricing, to how we showcased our network of independent chefs in each city. Oh, and the customer experience was just the tip of the iceberg: our culinary and logistics experiences also had to handle multiple cities with different offerings so they could share processes as we scaled.'
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'figure',
+          { 'class': 'image-container' },
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', {
+            src: '#',
+            alt: 'Multiple product offerings across different cities - size, lines, delivery, types'
+          }),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'p',
+            { 'class': 'image-subtext' },
+            'We had many variables in our product offerings that we wanted to test across different markets.'
+          )
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'p',
+          null,
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'b',
+            null,
+            '#2 We needed brand guidelines to help us work more quickly and consistently as we grew.'
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
+          'We didn\'t have brand guidelines, and our style guide was geared towards print. If we were going to grow the team and expand to multiple cities, we needed to have a system in place to support all the folks that would touch every point across our customer\'s experience.'
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'p',
+          null,
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'b',
+            null,
+            '#3 We wanted our customers to have a consistent, unified user experience across our platforms.'
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
+          'At the time, Power Supply\'s systems were spread all over the place. There was a Wordpress site for marketing pages, one app for ordering, another app for managing your order, yet another app to keep track of meals, another one to ask for reviews of meals, and a bunch of manual pieces on the logistics end that used different systems. All this created a pretty rough break in experiences for a bunch of users (customers, internal ops), and it\u2019d only get worse as we started operating in multiple cities.'
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'p',
+          null,
+          'We saw a path to integrating our systems so we could offer a much smoother user experience.'
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'p',
+          null,
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'b',
+            null,
+            '#4 We needed to launch by end of Q1 2015.'
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
+          'We needed to prove city expansion as a growth model to prep us for our next round of funding. We started investigating city expansion at the end of 2014, and started moving in Q4 2014. We had roughly 8-weeks to execute, so that our crew on the ground in LA could start prepping menus, logistics partners, and distribution partners. Customer launch was in 12-weeks. Talk about tight schedules!'
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'h3',
+          null,
+          'Team & my role'
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'p',
+          null,
+          'Our company was small at the time, only ~10 folks rowing the boat.'
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'p',
+          null,
+          'On the product-side, we were tiny: excluding our founder/CEO and our CMO, it was just two of us. I was leading design and front-end dev; Kevin was heading up software engineering.'
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'figure',
+          { 'class': 'image-container' },
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', {
+            src: '#',
+            alt: 'Patrick (ceo), Kevin (eng lead), and me at Seattle planning it all'
+          }),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'p',
+            { 'class': 'image-subtext' },
+            'A tiny product team: Patrick (CEO), Kevin (Eng Lead), and me (Design Lead)'
+          )
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'p',
+          null,
+          'In typical early startup fashion, I wore many hats:'
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'ul',
+          null,
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'li',
+            null,
+            'product strategy (how do we get closer to our vision, given constraints from biz, customers, and team?)'
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'li',
+            null,
+            'user research (why did people love us? What could we do better?)'
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'li',
+            null,
+            'brand design (messaging, tone, copywriting)'
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'li',
+            null,
+            'UX/IxD (flows, interactions, info architecture)'
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'li',
+            null,
+            'Front-end dev (HTML/CSS/JS systems; Rails architecture)'
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'li',
+            null,
+            'QA (end-to-end testing; roll-out strategy)'
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'li',
+            null,
+            'Comms design (timing, customer + partner heads up)'
+          )
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'p',
+          null,
+          'We contracted two others to help strengthen our team in key areas: a brand designer for print & packaging touch-points, and a front-end developer to help us build the client-side.'
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'h3',
+          null,
+          'The Process'
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'p',
+          null,
+          'You\'re probably familiar with the usual design process ... identify goals & assumptions, explore potential paths, lean on constraints to help make decisions, refine down, test, iterate, listen, repeat, etc. etc.'
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'p',
+          null,
+          'We did all of that here, but I want to highlight some of the more exciting parts of the initiative, unique to this business.'
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'p',
+          null,
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'b',
+            null,
+            'Working hand-in-hand with ops to coordinate launch timing.'
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
+          'We had to get the "back of the house" ready so that our ops teams could do what they needed to do: recruit chefs; test & iterate meals; prepare menus ahead of time to test assumptions about product demand in new market; and test runs through production cycles (checklists, labels, quantities, locations, etc) to train up new ops teammates.'
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'p',
+          null,
+          'I was responsible for the production and execution: identifying needs, ironing out a schedule that worked for all parties, designing + building the changes to handle multi-city ops, testing, training our staff, and iterating on the roughest spots. I had air cover from our CEO to smooth out the more gnarly timelines and requirements, and worked closely with our engineering lead to figure out how we were going to change the underlying production systems.'
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'figure',
+          { 'class': 'image-container' },
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', {
+            src: '#',
+            alt: 'Ops and logistics pieces - [Image of Garden + pick/pack room with checklists + label lists]'
+          }),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'p',
+            { 'class': 'image-subtext' },
+            'Coordinating with ops/logistics to get them operating in multi-cities was first 1st phase.'
+          )
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'p',
+          null,
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'b',
+            null,
+            'Coordinate branding & marketing across physical and digital mediums.'
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
+          'Until this point, we didn\'t mind that our physical/digital stuff was out of sync. But as we planned to scale, having consistent design across our experience became more important for a few reasons: the usual brand consistency stuff, but more important was the ability for us to pump out experiments more quickly across multiple cities to learn as much as we could about what worked and what didn\'t.'
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'figure',
+          { 'class': 'image-container' },
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', {
+            src: '#',
+            alt: 'Designing across media - [Image of PS designs across mediums - fridge, meal, landing page, email]'
+          }),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'p',
+            { 'class': 'image-subtext' },
+            'A consistent experience across phyiscal and digital was key to establishing our brand.'
+          )
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'p',
+          null,
+          'My focus was on the digital experience, where I spent most of my time breathing new life in the form of a digital style guide, setting us up with voice, tone, colors, web typography, use of photography, and layouts for both marketing pages + product/app flows.'
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'p',
+          null,
+          'I worked closely with our CMO and our brand designer to map out customer journey, so we could identify physical/digital cross-over, and plan for things like a consistent meal rating experience ("eat meal, see CTA on the label, easily punch in URL, visit site, rate meal they just ate") or referral code redemptions. We shared WIPs so we could call out similar identity markers (e.g. iconography, gradients, copy tone) and make our work stronger together.'
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'p',
+          null,
+          'I was directly responsible for information architecture (huge piece of the puzzle: how much could we keep generic across all cities? What had to be city-specific?), sketching, wireframes, flows, mocks (hand-in-hand with the digital brand work), and implementing the designs (most of the front-end development fell to me.)'
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'p',
+          null,
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'b',
+            null,
+            'Testing customer experiences with early partners.'
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
+          'Our core distribution channel was through local gym partners. In exchange for a commission of sales, they let us put a fridge in their gym where customers would pick up their meals. The gym community was a fantastic jumpstart for orders in a location (target audience + activated community == word of mouth referrals), so signing up location partners was an important part of expansion.'
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'figure',
+          { 'class': 'image-container' },
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', {
+            src: '#',
+            alt: 'A gym owner and a happy quote - [Image of gym owner + quote]'
+          }),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'p',
+            { 'class': 'image-subtext' },
+            'Partnering with early pickup partners played an important role in successful city launches.'
+          )
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'p',
+          null,
+          'One of the ways we built a relationship with our "founding gyms" was by letting them in on the building process. We asked them to be beta testers while we smoothed out the production process for the first few weeks. We took their feedback to heart, iterating quickly to nail down experiences until they felt it would be great for their gym members.'
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'p',
+          null,
+          'I worked directly with our "founding partners" to guide them through the process, listen to their feedback, and keep them updated as we improved.'
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'h3',
+          null,
+          'Key Results'
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'p',
+          null,
+          'We successfully launched our first city expansion (Los Angeles) on-time. With each successive city launch, we layered on better ways to help us scale, to the point where our latest launch (in Dallas-Ft. Worth) was the smoothest, quickest, and most cost effective yet. We proved we could profitably expand our geographic footprint, which played a vital role in growth and future fundraising. Read more about city expansion.'
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'p',
+          null,
+          'We had our first digital style guide at the company (code name Rainbow Dash \uD83C\uDF08 \uD83D\uDC34) + it\u2019s front-end dev equivalent. The design system we built held strong for years (until our major rebrand to Territory.) It helped us build, launch, and iterate new features very quickly, with an incredibly small team. Customers were thrilled with the updates, and we raked in positive feedback across the board about our customer experience.'
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'p',
+          null,
+          'We achieved our integrated system, which has played a pivotal role in building such a smooth experience for our customers. It\u2019s been the foundation that\u2019s made a lot of our future work around personalized nutrition possible.'
+        )
+      ),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        'h3',
+        { className: 'carousel-title' },
+        'Process / source shots'
+      ),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        'div',
+        { className: 'carousel-wrap' },
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'ul',
+          { className: 'carousel-container wip-shots', style: { width: "2580px " } },
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'li',
+            null,
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__Shot__["a" /* default */], { fileName: "territory-wip-01" })
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'li',
+            null,
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__Shot__["a" /* default */], { fileName: "territory-wip-02" })
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'li',
+            null,
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__Shot__["a" /* default */], { fileName: "territory-wip-03" })
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'li',
+            null,
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__Shot__["a" /* default */], { fileName: "territory-wip-04" })
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'li',
+            null,
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__Shot__["a" /* default */], { fileName: "territory-wip-05" })
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'li',
+            null,
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__Shot__["a" /* default */], { fileName: "territory-wip-06" })
+          )
+        )
+      ),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        'h3',
+        { className: 'carousel-title' },
+        'Product shots'
+      ),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        'div',
+        { className: 'carousel-wrap' },
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'ul',
+          { className: 'carousel-container product-shots', style: { width: "1780px " } },
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'li',
+            null,
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__Shot__["a" /* default */], { fileName: "territory-product-01" }),
+            ' '
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'li',
+            null,
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__Shot__["a" /* default */], { fileName: "territory-product-02" })
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'li',
+            null,
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__Shot__["a" /* default */], { fileName: "territory-product-03" })
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'li',
+            null,
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__Shot__["a" /* default */], { fileName: "territory-product-04" })
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'li',
+            null,
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__Shot__["a" /* default */], { fileName: "territory-product-05" })
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'li',
+            null,
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__Shot__["a" /* default */], { fileName: "territory-product-06" })
+          )
+        )
+      )
+    );
+  }
+
+}
+/* harmony export (immutable) */ __webpack_exports__["a"] = PSExpansion;
+
+
+/***/ }),
+/* 41 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__CaseStudyCard__ = __webpack_require__(35);
+
+
+
+
+
+const listOfAdventures = [{
+  class: "designers-hearth",
+  title: "Designer’s Hearth",
+  description: "A local meetup in Silicon Valley for designers to get together to share stories, make frindships, and grow professionally.",
+  linkText: "Come say hi over coffee",
+  linkURL: "http://mv.designershearth.com/"
+}];
+
+class Adventures extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
+  render() {
+    return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      'section',
+      { className: `adventures ${this.props.shouldAnimate && "animated animated-mid fadeInUp"}` },
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        'div',
+        { className: 'wrap' },
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'h2',
+          null,
+          'Adventures, projects, etc.'
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'p',
+          null,
+          'As a self-starter and maker, you\u2019ll always find me building something to elevate others. Here are a few things I\u2019ve personally made and nurtured on my own time:'
+        )
+      ),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        'div',
+        { className: 'stack-container' },
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'ul',
+          { className: 'stack-of-adventures' },
+          listOfAdventures.map(adventure => __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'li',
+            { key: adventure.class, className: `adventure-card ${adventure.class}` },
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: 'adventure-preview' }),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              'div',
+              { className: 'adventure-content' },
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'h3',
+                { className: 'adventure-title' },
+                adventure.title
+              ),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'p',
+                { className: 'adventure-description' },
+                adventure.description
+              ),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'a',
+                { href: adventure.linkURL, target: '_blank' },
+                adventure.linkText,
+                ' \u2192'
+              )
+            )
+          ))
+        )
+      )
+    );
+  }
+}
+/* harmony export (immutable) */ __webpack_exports__["a"] = Adventures;
 
 
 /***/ })

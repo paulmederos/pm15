@@ -550,9 +550,9 @@ th {
   66.6% {
     transform: skewX(-0.78125deg) skewY(-0.78125deg); }
   77.7% {
-    transform: skewX(0.39063deg) skewY(0.39063deg); }
+    transform: skewX(0.390625deg) skewY(0.390625deg); }
   88.8% {
-    transform: skewX(-0.19531deg) skewY(-0.19531deg); } }
+    transform: skewX(-0.1953125deg) skewY(-0.1953125deg); } }
 .jello {
   animation-name: jello;
   transform-origin: center; }
@@ -1364,7 +1364,7 @@ html {
   height: 100%;
   max-height: 100%;
   font-size: 62.5%;
-  -webkit-tap-highlight-color: transparent; }
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
 
 body {
   height: 100%;
@@ -1709,12 +1709,12 @@ figure {
   .the-gig {
     display: block; } }
 
-.adventures {
+.portfolio {
   background-color: #FFFBF2;
   padding: 12rem 0;
   overflow: hidden;
   position: relative; }
-  .adventures h2, .adventures p {
+  .portfolio h2, .portfolio p {
     z-index: 1;
     max-width: 455px; }
 
@@ -1742,7 +1742,7 @@ figure {
   .stack-container::-webkit-scrollbar {
     display: none; }
 
-.stack-of-adventures {
+.stack-of-work {
   z-index: 1;
   display: flex;
   flex-direction: row;
@@ -1753,7 +1753,7 @@ figure {
   margin-left: 6.4rem;
   width: 2400px; }
 
-.adventure-preview {
+.case-study-preview {
   background-color: white;
   border-radius: 8px;
   max-width: 360px;
@@ -1763,42 +1763,51 @@ figure {
   overflow: hidden;
   cursor: pointer;
   transition: all 0.32s cubic-bezier(0.62, 0.28, 0.23, 0.99); }
-  .adventure-preview:hover {
+  .case-study-preview:hover {
     transform: scale(1.03);
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1), 0px 0px 4px rgba(0, 0, 0, 0.1);
     transition: all 0.32s cubic-bezier(0.62, 0.28, 0.23, 0.99); }
 
-.adventure-image {
+.case-study-image {
   height: 20.5rem;
   background-color: gray;
   margin: 0;
   background-size: cover; }
-  .adventure-image.territory {
+  .case-study-image.territory {
     background-color: #FAF6ED;
     background-image: url("../images/territory-preview.png"); }
-  .adventure-image.ux-book {
+  .case-study-image.ux-book {
     background-color: #FF8964;
     background-image: url("../images/ux-book-preview.png"); }
-  .adventure-image.designers-hearth {
+  .case-study-image.designers-hearth {
     background-color: #ED1C40;
     background-image: url("../images/meetup-preview.png"); }
-  .adventure-image.seishin {
+  .case-study-image.seishin {
     background-color: #F6C70B;
     background-image: url("../images/seishin-preview.png"); }
-  .adventure-image.kale {
+  .case-study-image.kale {
     background-color: #24B47D;
     background-image: url("../images/kale-preview.png"); }
-  .adventure-image.apk {
+  .case-study-image.apk {
     background-color: #2F80ED;
     background-image: url("../images/apk-preview.png"); }
 
-.adventure-content {
+.case-study-content {
   padding: 3rem; }
-  .adventure-content h3 {
+  .case-study-content h3 {
     font-size: 2.4rem; }
-  .adventure-content a {
+  .case-study-content a {
     color: #E91F64;
     font-weight: 500; }
+
+.adventures {
+  background-color: white;
+  padding: 12rem 0;
+  overflow: hidden;
+  position: relative; }
+  .adventures h2, .adventures p {
+    z-index: 1;
+    max-width: 455px; }
 
 .contact {
   background-color: #95C82E;

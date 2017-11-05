@@ -407,7 +407,7 @@ figure {
   }
 }
 
-.adventures {
+.portfolio {
   background-color: #FFFBF2;
   padding: 12rem 0;
   overflow: hidden;
@@ -448,7 +448,7 @@ figure {
   }
 }
 
-.stack-of-adventures {
+.stack-of-work {
   z-index: 1;
   display: flex;
   flex-direction: row;
@@ -460,7 +460,7 @@ figure {
   width: 2400px;
 }
 
-.adventure-preview {
+.case-study-preview {
   background-color: white;
   border-radius: 8px;
   max-width: 360px;
@@ -479,7 +479,7 @@ figure {
   }
 }
 
-.adventure-image {
+.case-study-image {
   height: 20.5rem;
   background-color: gray;
   margin: 0;
@@ -516,7 +516,7 @@ figure {
   }
 }
 
-.adventure-content {
+.case-study-content {
   padding: 3rem;
 
   h3 {
@@ -526,6 +526,18 @@ figure {
   a {
     color: $color_enchant;
     font-weight: 500;
+  }
+}
+
+.adventures {
+  background-color: white;
+  padding: 12rem 0;
+  overflow: hidden;
+  position: relative;
+
+  h2, p {
+    z-index: 1;
+    max-width: 455px;
   }
 }
 

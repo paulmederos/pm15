@@ -9,7 +9,7 @@ export default class TerritoryLaunch extends React.Component {
     return (
       <CaseStudyPage
         companyName={"Territory Foods"}
-        projectTitle={"Brand Launch"}
+        projectTitle={"Product + Brand Launch"}
         onClosePressed={this.props.onClosePressed}
       >
         <header className="project-page-header territory">

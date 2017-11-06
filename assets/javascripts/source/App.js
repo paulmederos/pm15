@@ -62,6 +62,7 @@ export default class App extends React.Component {
     this.setState({
       visibleProject: project
     })
+    document.body.scrollTop = document.documentElement.scrollTop = 0;
   }
 
   handleWorkPageClosed(){
@@ -69,6 +70,7 @@ export default class App extends React.Component {
       shouldAnimateHome: false,
       visibleProject: null
     })
+    document.body.scrollTop = document.documentElement.scrollTop = 0;
   }
 
 }

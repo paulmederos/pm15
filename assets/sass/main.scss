@@ -490,24 +490,9 @@ figure {
     background-image: url('../images/territory-preview.png');
   }
 
-  &.ux-book {
-    background-color: #FF8964;
-    background-image: url('../images/ux-book-preview.png');
-  }
-
-  &.designers-hearth {
-    background-color: #ED1C40;
-    background-image: url('../images/meetup-preview.png');
-  }
-
-  &.seishin {
-    background-color: #F6C70B;
-    background-image: url('../images/seishin-preview.png');
-  }
-
-  &.kale {
-    background-color: #24B47D;
-    background-image: url('../images/kale-preview.png');
+  &.ps-expansion {
+    background-color: #0C8AA5;
+    background-image: url('../images/preview-ps-expansion.png');
   }
 
   &.apk {
@@ -530,7 +515,7 @@ figure {
 }
 
 .adventures {
-  background-color: white;
+  background-color: #fafafa;
   padding: 12rem 0;
   overflow: hidden;
   position: relative;
@@ -538,6 +523,131 @@ figure {
   h2, p {
     z-index: 1;
     max-width: 455px;
+  }
+}
+
+.stack-of-adventures {
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  list-style: none;
+  margin-top: 6.4rem;
+  padding: 0;
+  margin-left: 6.4rem;
+  width: 5100px;
+
+  @include mq-personal {
+
+  }
+}
+
+.adventure-card {
+  display: flex;
+  justify-content: flex-start;
+  background-color: white;
+  width: 520px;
+  margin-right: 3.6rem;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  cursor: pointer;
+  @include transition;
+
+  &:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1),
+                0px 0px 4px rgba(0, 0, 0, 0.1);
+    @include transition;
+  }
+
+  @include mq-personal {
+    max-width: 240px;
+    flex-direction: column;
+  }
+}
+
+.adventure-image {
+  height: 100%;
+  width: 100%;
+  max-width: 16rem;
+  background-color: lightGray;
+  margin: 0;
+  background-size: cover;
+  background-position: center center;
+
+  @include mq-personal {
+    height: 16rem;
+    max-width: 100%;
+  }
+
+  &.ux-book {
+    background-color: #FF8964;
+    background-image: url('../images/ux-book-preview.png');
+  }
+
+  &.designers-hearth {
+    background-color: #ED1C40;
+    background-image: url('../images/meetup-preview.png');
+  }
+
+  &.seishin {
+    background-color: #F6C70B;
+    background-image: url('../images/adventure-seishin.png');
+  }
+
+  &.kale {
+    background-color: #24B47D;
+    background-image: url('../images/kale-preview.png');
+  }
+
+  &.apk {
+    background-color: #2F80ED;
+    background-image: url('../images/apk-preview.png');
+  }
+
+  &.culture-camp {
+    background-color: #FF9D34;
+    background-image: url('../images/adventure-culture-camp.png');
+  }
+
+  &.chef-club {
+    background-color: #BD1833;
+    background-image: url('../images/adventure-chef-club.png');
+  }
+
+  &.cor {
+    background-color: #21A5D5;
+    background-image: url('../images/adventure-cor.png');
+  }
+
+  &.frc-talent {
+    background-color: #03E7B0;
+    background-image: url('../images/adventure-frc-talent.png');
+  }
+
+  &.sohelpful {
+    background-color: #F48854;
+    background-image: url('../images/adventure-sohelpful.png');
+  }
+}
+
+.adventure-content {
+  padding: 2rem;
+
+  h3 {
+    font-size: 1.8rem;
+  }
+
+  p {
+    font-size: 1.3rem;
+    margin-bottom: .5em;
+  }
+
+  a {
+    font-size: 1.3rem;
+    color: $color_enchant;
+    font-weight: 500;
+    margin-bottom: 0;
   }
 }
 

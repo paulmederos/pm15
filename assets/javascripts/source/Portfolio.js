@@ -7,12 +7,13 @@ export default class Portfolio extends React.Component {
   render() {
     return (
       <section className={`portfolio ${this.props.shouldAnimate && "animated animated-mid fadeInUp"}`}>
+        <a id="portfolio"></a>
         <div className="wrap">
           <h2>Work Portfolio</h2>
           <p>
-            In my decade+ of professional experience, I’ve applied my CS/HCI,
-            entrepreneurship, and design backgrounds to solving legit problems
-            for people and businesses. Feel free to explore a few recent highlights:
+            I’ve applied my design, CS/HCI, and entrepreneurship backgrounds
+            to solving legit problems for people and businesses.
+            Take a look at recent case studies:
           </p>
         </div>
 
@@ -32,15 +33,14 @@ export default class Portfolio extends React.Component {
             <CaseStudyCard
               date={"2015"}
               role={"Product Design Lead"}
-              key={"power-supply-city-expansion"}
-              projectHeaderClass={"power-supply-city-expansion"}
+              key={"ps-expansion"}
+              projectHeaderClass={"ps-expansion"}
               projectTitle={"Scaling Power Supply to new markets"}
               description={"Would the business model and product experience we developed in one market work in other markets across the country?"}
               onCardPressed={() => this.props.onCardPressed("ps-expansion")}
             />
 
             <CaseStudyCard
-
               date={"2016"}
               role={"Sr. Product Designer"}
               key={"power-supply-personalization"}

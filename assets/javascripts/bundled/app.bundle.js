@@ -21889,6 +21889,11 @@ class TerritoryLaunch extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Comp
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'p',
           null,
+          'Power Supply helped fuel active folks with tasty, good-for-them food by working with local chefs to prepare and deliver meal plans. We were the "easy button" for people who wanted to eat Paleo or Vegetarian, without the hassle of meal prepping, shopping, or cooking.'
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'p',
+          null,
           'Through the life of Power Supply, we intentionally targeted performance eaters. We reached them through local communities\u2014e.g. CrossFit gyms\u2014where they spent their time at.'
         ),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -21911,7 +21916,12 @@ class TerritoryLaunch extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Comp
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'p',
           null,
-          'But these performance eaters weren\'t the only folks who found our product appealing, useful, and irreplaceable.'
+          'But these performance eaters ',
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'b',
+            null,
+            'weren\'t the only folks who found our product appealing, useful, and irreplaceable.'
+          )
         ),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__CaseStudyFigure__["a" /* default */], {
           imageUrl: "assets/images/studies/tl-research-traits.png",
@@ -21920,12 +21930,17 @@ class TerritoryLaunch extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Comp
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'p',
           null,
+          'We were attracting other generally active, health-conscious achievers. These were folks who were constantly seeking adventure; folks who saw health as a holistic practice,',
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'b',
             null,
-            'We were attracting other generally active, health-conscious achievers.'
-          ),
-          ' These were folks who were constantly seeking adventure; folks who saw health as a holistic practice, each person with their own path to wellness. Some were parents with no time to cook dinner, but still yearned for something that fit their health goals. Some were tired of the same crappy lunch they ate at the office every day. Some folks really enjoyed cooking, but couldn\'t find the time to do it all the time.'
+            '\xA0each person with their own path to wellness.'
+          )
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'p',
+          null,
+          'Some were parents with no time to cook dinner, but still yearned for something that fit their health goals. Some were tired of the same crappy lunch they ate at the office every day. Some folks really enjoyed cooking, but couldn\'t find the time to do it all the time.'
         ),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'p',
@@ -21975,12 +21990,18 @@ class TerritoryLaunch extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Comp
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'p',
           null,
-          'We were uncovering the makings of a huge opportunity. Folks were "hacking" at our offering, using some of the very basic tools we gave them to put together meal plans that uniquely fit them.'
+          'Folks were "hacking" at our offering, using some of the very basic tools we gave them to put together meal plans that uniquely fit them.'
         ),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'p',
           null,
-          'We believed that if we spoke more directly to personalized nutrition, that we\'d be able to grow by leaps and bounds. It was time to chart our way through new territory, to set ourselves up for a future focused on personalized nutrition.'
+          'We believed that ',
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'b',
+            null,
+            'if we spoke more directly to personalized nutrition, that we\'d be able to grow by leaps and bounds.'
+          ),
+          'It was time to chart our way through new territory, to set ourselves up for a future focused on personalized nutrition.'
         ),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__CaseStudyFigure__["a" /* default */], {
           imageUrl: "assets/images/studies/tl-opportunity-chart.png",
@@ -22035,12 +22056,13 @@ class TerritoryLaunch extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Comp
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'p',
             null,
-            'Many of our growth hypotheses relied on us having a more inclusive product offering / brand, so we could fine-tune experiments to specific types of customers.'
-          ),
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            'p',
-            null,
-            'That meant we needed a crazy fast turnaround time: 3-to-6 months, so that we\'d be better positioned to find growth opportunities through the second half of 2017.'
+            'Many of our growth hypotheses relied on us having a more inclusive product offering / brand, so we could fine-tune experiments to specific types of customers. That meant we needed a crazy fast turnaround time:\xA0',
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              'i',
+              null,
+              '3-to-6 months'
+            ),
+            ', so that we\'d be better positioned to find growth opportunities through the second half of 2017.'
           ),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'h4',
@@ -22050,7 +22072,12 @@ class TerritoryLaunch extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Comp
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'p',
             null,
-            'Even though customers consistently raved about the food, they were less enthusiastic about the surrounding parts of the experience. For example, we bundled our meal packs in saran wrap because it was cost-effective, it got the job done, and it felt raw/real... feelings we wanted to evoke from our earliest customers. But new customers would get their meals and wonder "what in the world is this? why so much plastic? Ew."'
+            'Even though customers consistently raved about the food, they were less enthusiastic about the surrounding parts of the experience.'
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'p',
+            null,
+            'For example: we bundled our meal packs in saran wrap because it was cost-effective, it got the job done, and it felt raw/real... \u2190 all feelings we wanted to evoke from our earliest customers. But new customers would get their meals and wonder "what in the world is this? why so much plastic? Ew."'
           ),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'p',
@@ -22058,6 +22085,7 @@ class TerritoryLaunch extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Comp
             'We wanted to take this opportunity to level-up the way people perceived us, to reflect the incredibly high-quality nature of our food.'
           )
         ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('hr', null),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'h3',
           null,
@@ -22066,7 +22094,7 @@ class TerritoryLaunch extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Comp
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'p',
           null,
-          'Our customer journey spans so many different touch-points, both physical and digital. Bringing a rebrand to life meant considering the customer experience across that entire journey. That meant we needed to pull together teammates from every discipline:'
+          'Our customer journey spans so many different touch-points, both physical and digital. Bringing a product experience to life around personalized nutrition meant considering the customer experience across that entire journey. That meant we needed to pull together teammates from every discipline:'
         ),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'ul',
@@ -22089,7 +22117,7 @@ class TerritoryLaunch extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Comp
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'li',
             null,
-            'A special team (the "Branditos") of cross-functional folks: culinary, logistics, sales, people ops, etc. to make sure we\u2019ve covered all touch-points along the CX, and for our partners (e.g. chefs)'
+            'A special team (the "Branditos") of cross-functional folks: culinary, logistics, sales, customer support, people ops, etc. to make sure we\u2019ve covered all touch-points, for both customers and our partners (e.g. chefs, gyms)'
           )
         ),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -22118,12 +22146,12 @@ class TerritoryLaunch extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Comp
               { href: 'https://redantler.com/', target: '_blank' },
               'Red Antler'
             ),
-            ' helped us piece together our brand strategy based on the research, then execute on the rebrand (from naming to style guides.) We worked with a mid-sized team of 8\u201310 folks.'
+            ' helped us piece together our brand strategy based on the research, then execute on the rebrand (from naming to style guides.) We worked with a mid-sized team of 6\u20138 folks.'
           )
         ),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__CaseStudyFigure__["a" /* default */], {
           imageUrl: "assets/images/studies/tl-ra-team.jpg",
-          subText: `We worked with RA's NYC studio through brand exercises like identity mood boarding.`
+          subText: `We worked with Red Antler's NYC studio through brand exercises like mood boarding to set the stage for brand explorations.`
         }),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'p',

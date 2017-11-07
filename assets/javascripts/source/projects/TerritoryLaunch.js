@@ -36,11 +36,20 @@ export default class TerritoryLaunch extends React.Component {
           <h3>Background</h3>
 
           <p>
+            Power Supply helped fuel active folks with tasty,
+            good-for-them food by working with local chefs to
+            prepare and deliver meal plans. We were the "easy button"
+            for people who wanted to eat Paleo or Vegetarian,
+            without the hassle of meal prepping, shopping, or
+            cooking.
+          </p>
+          <p>
             Through the life of Power Supply, we intentionally targeted
             performance eaters. We reached them through local communities—e.g. CrossFit
             gyms—where they spent their time at.
           </p>
-          <p>Our lexicon included words
+          <p>
+            Our lexicon included words
             like "meal prep", "macros", "Paleo-friendly", etc. You'd
             find our community builders at <i>the</i> CrossFit Games hanging
             with pro athletes; posting videos of themselves finishing
@@ -50,8 +59,8 @@ export default class TerritoryLaunch extends React.Component {
           </p>
 
           <p>
-            But these performance eaters weren't the only folks
-            who found our product appealing, useful, and irreplaceable.
+            But these performance eaters <b>weren't the only folks
+            who found our product appealing, useful, and irreplaceable.</b>
           </p>
 
           <CaseStudyFigure
@@ -60,10 +69,13 @@ export default class TerritoryLaunch extends React.Component {
           />
 
           <p>
-            <b>We were attracting other generally active, health-conscious
-            achievers.</b> These were folks who were constantly seeking
+            We were attracting other generally active, health-conscious
+            achievers. These were folks who were constantly seeking
             adventure; folks who saw health as a holistic practice,
-            each person with their own path to wellness. Some were
+            <b>&nbsp;each person with their own path to wellness.</b>
+          </p>
+          <p>
+            Some were
             parents with no time to cook dinner, but still yearned
             for something that fit their health goals. Some were
             tired of the same crappy lunch they ate at the office
@@ -101,15 +113,14 @@ export default class TerritoryLaunch extends React.Component {
           </ul>
 
           <p>
-            We were uncovering the makings of a huge opportunity.
             Folks were "hacking" at our offering, using some of the
             very basic tools we gave them to put together meal plans
             that uniquely fit them.
           </p>
 
           <p>
-            We believed that if we spoke more directly to personalized
-            nutrition, that we'd be able to grow by leaps and bounds.
+            We believed that <b>if we spoke more directly to personalized
+            nutrition, that we'd be able to grow by leaps and bounds.</b>
             It was time to chart our way through new territory, to
             set ourselves up for a future focused on personalized nutrition.
           </p>
@@ -156,10 +167,8 @@ export default class TerritoryLaunch extends React.Component {
               Many of our growth hypotheses relied on us having a
               more inclusive product offering / brand, so we could
               fine-tune experiments to specific types of customers.
-            </p>
-            <p>
-              That meant we needed a crazy fast turnaround time:
-              3-to-6 months, so that we'd be better positioned to
+              That meant we needed a crazy fast turnaround time:&nbsp;
+              <i>3-to-6 months</i>, so that we'd be better positioned to
               find growth opportunities through the second half
               of 2017.
             </p>
@@ -170,9 +179,12 @@ export default class TerritoryLaunch extends React.Component {
             <p>
               Even though customers consistently raved about the
               food, they were less enthusiastic about the surrounding
-              parts of the experience. For example, we bundled our
+              parts of the experience.
+            </p>
+            <p>
+              For example: we bundled our
               meal packs in saran wrap because it was cost-effective,
-              it got the job done, and it felt raw/real... feelings
+              it got the job done, and it felt raw/real... &larr; all feelings
               we wanted to evoke from our earliest customers. But
               new customers would get their meals and wonder "what
               in the world is this? why so much plastic? Ew."
@@ -184,11 +196,13 @@ export default class TerritoryLaunch extends React.Component {
             </p>
           </section>
 
+          <hr />
 
           <h3>Team & my role</h3>
           <p>
             Our customer journey spans so many different touch-points,
-            both physical and digital. Bringing a rebrand to life
+            both physical and digital. Bringing a product experience to life
+            around personalized nutrition
             meant considering the customer experience across that
             entire journey. That meant we needed to pull together
             teammates from every discipline:
@@ -198,19 +212,19 @@ export default class TerritoryLaunch extends React.Component {
             <li>Our CMO Robert lead the charge, supported by our CEO Patrick, COO Jeff, and myself acting as head of product design.</li>
             <li>Our in-house design team (Trisha, Susie, Erin, Chris) spanning brand experience, print, copywriting, and UX.</li>
             <li>Our product + engineering team</li>
-            <li>A special team (the "Branditos") of cross-functional folks: culinary, logistics, sales, people ops, etc. to make sure we’ve covered all touch-points along the CX, and for our partners (e.g. chefs)</li>
+            <li>A special team (the "Branditos") of cross-functional folks: culinary, logistics, sales, customer support, people ops, etc. to make sure we’ve covered all touch-points, for both customers and our partners (e.g. chefs, gyms)</li>
           </ul>
 
           <p>We also worked with external stakeholders throughout the initiative:</p>
 
           <ul>
             <li><a href="http://www.brandintersection.com/" target="_blank">Brand Intersection Group</a> conducted the earlier customer + brand research. We worked with a small team of 2–4 folks.</li>
-            <li><a href="https://redantler.com/" target="_blank">Red Antler</a> helped us piece together our brand strategy based on the research, then execute on the rebrand (from naming to style guides.) We worked with a mid-sized team of 8–10 folks.</li>
+            <li><a href="https://redantler.com/" target="_blank">Red Antler</a> helped us piece together our brand strategy based on the research, then execute on the rebrand (from naming to style guides.) We worked with a mid-sized team of 6–8 folks.</li>
           </ul>
 
           <CaseStudyFigure
             imageUrl={"assets/images/studies/tl-ra-team.jpg"}
-            subText={`We worked with RA's NYC studio through brand exercises like identity mood boarding.`}
+            subText={`We worked with Red Antler's NYC studio through brand exercises like mood boarding to set the stage for brand explorations.`}
           />
 
           <p>

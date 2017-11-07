@@ -1970,10 +1970,17 @@ figure {
 .project-page {
   background-color: white; }
 
+.project-title {
+  font-size: 2.8em;
+  line-height: 1.2;
+  text-align: center; }
+
 .project-page h4 {
   font-size: 1em;
   font-weight: bold;
-  font-family: "Inter UI", "San Francisco", "Roboto", "Droid Sans", sans-serif; }
+  font-family: "Inter UI", "San Francisco", "Roboto", "Droid Sans", sans-serif;
+  line-height: 1.54;
+  margin-top: 2em; }
 
 .image-subtext {
   font-size: .8em;
@@ -2026,6 +2033,10 @@ figure {
   min-height: 1000px; }
   .project-content h3 {
     margin-top: 3em; }
+
+.objectives {
+  padding-left: 1em;
+  border-left: 4px solid #E91F64; }
 
 .project-footer {
   margin-top: 54px;

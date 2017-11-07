@@ -760,10 +760,18 @@ figure {
   background-color: white;
 }
 
+.project-title {
+  font-size: 2.8em;
+  line-height: 1.2;
+  text-align: center;
+}
+
 .project-page h4 {
   font-size: 1em;
   font-weight: bold;
   font-family: $primary_font_stack;
+  line-height: 1.54;
+  margin-top: 2em;
 }
 
 .image-subtext {
@@ -833,6 +841,11 @@ figure {
   h3 {
     margin-top: 3em;
   }
+}
+
+.objectives {
+  padding-left: 1em;
+  border-left: 4px solid $color_enchant;
 }
 
 .project-footer {

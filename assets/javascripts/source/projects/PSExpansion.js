@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import CaseStudyPage from '../CaseStudyPage'
+import CaseStudyFigure from '../CaseStudyFigure'
 import Shot from '../Shot'
 
 export default class PSExpansion extends React.Component {
@@ -19,7 +20,9 @@ export default class PSExpansion extends React.Component {
         </header>
 
         <div className="wrap mid-wrap">
-          <h2>Designing a hyper-focused product for scale</h2>
+          <h2 className="project-title">
+            Designing a hyper-focused product for scale
+          </h2>
           <p>
             Power Supply started with a hyper-focused product in a
             tiny niche (prepared meals + Paleo menu + Washington DC area.)
@@ -108,15 +111,11 @@ export default class PSExpansion extends React.Component {
             as we scaled.
           </p>
 
-          <figure class="image-container">
-            <img
-              src="#"
-              alt="Multiple product offerings across different cities - size, lines, delivery, types"
-            />
-            <p class="image-subtext">
-              We had many variables in our product offerings that we wanted to test across different markets.
-            </p>
-          </figure>
+          <CaseStudyFigure
+            imageUrl={"assets/images/studies/pse-ordering.gif"}
+            altText={`Multiple product offerings across different cities - size, lines, delivery, types`}
+            subText={`We had many variables in our product offerings that we wanted to test across different markets: menus, sizes, delivery options, prices, etc.`}
+          />
 
           <p>
             <b>#2 We needed brand guidelines to help us work more quickly and consistently as we grew.</b><br />
@@ -148,16 +147,11 @@ export default class PSExpansion extends React.Component {
             On the product-side, we were tiny: excluding our founder/CEO and our CMO, it was just two of us. I was leading design and front-end dev; Kevin was heading up software engineering.
           </p>
 
-
-          <figure class="image-container">
-            <img
-              src="#"
-              alt="Patrick (ceo), Kevin (eng lead), and me at Seattle planning it all"
-            />
-            <p class="image-subtext">
-              A tiny product team: Patrick (CEO), Kevin (Eng Lead), and me (Design Lead)
-            </p>
-          </figure>
+          <CaseStudyFigure
+            imageUrl={"assets/images/studies/pse-team-01.jpg"}
+            altText={`Patrick (ceo), Kevin (eng lead), and me in LA planning it all`}
+            subText={`A tiny product team: Patrick (CEO), Kevin (Eng Lead), and me (Design Lead.) It was a bright day, and Kevin loves the Seahawks.`}
+          />
 
           <p>In typical early startup fashion, I wore many hats:</p>
 
@@ -186,30 +180,22 @@ export default class PSExpansion extends React.Component {
 
           <p>I was responsible for the production and execution: identifying needs, ironing out a schedule that worked for all parties, designing + building the changes to handle multi-city ops, testing, training our staff, and iterating on the roughest spots. I had air cover from our CEO to smooth out the more gnarly timelines and requirements, and worked closely with our engineering lead to figure out how we were going to change the underlying production systems.</p>
 
-          <figure class="image-container">
-            <img
-              src="#"
-              alt="Ops and logistics pieces - [Image of Garden + pick/pack room with checklists + label lists]"
-            />
-            <p class="image-subtext">
-              Coordinating with ops/logistics to get them operating in multi-cities was first 1st phase.
-            </p>
-          </figure>
+          <CaseStudyFigure
+            imageUrl={"assets/images/studies/pse-pick-and-pack.png"}
+            altText={`Ops and logistics pieces - [Image of Garden + pick/pack room with checklists + label lists]`}
+            subText={`Customer UX is tip of the iceberg: most of our system revolves around logistics, like making sure each chef has all the info (what meals?) and supplies (label PDFs) they need. Coordinating with Ops to get them operating in multi-cities was our 1st phase.`}
+          />
 
           <p>
             <b>Coordinate branding & marketing across physical and digital mediums.</b><br />
             Until this point, we didn't mind that our physical/digital stuff was out of sync. But as we planned to scale, having consistent design across our experience became more important for a few reasons: the usual brand consistency stuff, but more important was the ability for us to pump out experiments more quickly across multiple cities to learn as much as we could about what worked and what didn't.
           </p>
 
-          <figure class="image-container">
-            <img
-              src="#"
-              alt="Designing across media - [Image of PS designs across mediums - fridge, meal, landing page, email]"
-            />
-            <p class="image-subtext">
-              A consistent experience across phyiscal and digital was key to establishing our brand.
-            </p>
-          </figure>
+          <CaseStudyFigure
+            imageUrl={"assets/images/studies/pse-cross-media.png"}
+            altText={`Designing across media - [Image of PS designs across mediums - fridge, meal, landing page, email]`}
+            subText={`A consistent experience across phyiscal and digital was key to establishing our brand.`}
+          />
 
           <p>My focus was on the digital experience, where I spent most of my time breathing new life in the form of a digital style guide, setting us up with voice, tone, colors, web typography, use of photography, and layouts for both marketing pages + product/app flows.</p>
 
@@ -222,16 +208,11 @@ export default class PSExpansion extends React.Component {
             Our core distribution channel was through local gym partners. In exchange for a commission of sales, they let us put a fridge in their gym where customers would pick up their meals. The gym community was a fantastic jumpstart for orders in a location (target audience + activated community == word of mouth referrals), so signing up location partners was an important part of expansion.
           </p>
 
-
-          <figure class="image-container">
-            <img
-              src="#"
-              alt="A gym owner and a happy quote - [Image of gym owner + quote]"
-            />
-            <p class="image-subtext">
-              Partnering with early pickup partners played an important role in successful city launches.
-            </p>
-          </figure>
+          <CaseStudyFigure
+            imageUrl={"assets/images/studies/pse-gym-owner.jpg"}
+            altText={`A gym owner and a happy quote - [Image of gym owner + quote]`}
+            subText={`Partnering with early pickup partners played an important role in successful city launches.`}
+          />
 
           <p>One of the ways we built a relationship with our "founding gyms" was by letting them in on the building process. We asked them to be beta testers while we smoothed out the production process for the first few weeks. We took their feedback to heart, iterating quickly to nail down experiences until they felt it would be great for their gym members.</p>
 
@@ -247,25 +228,29 @@ export default class PSExpansion extends React.Component {
 
         <h3 className="carousel-title">Process / source shots</h3>
         <div className="carousel-wrap">
-          <ul className="carousel-container wip-shots" style={{ width: "2580px "}}>
-            <li><Shot fileName={"territory-wip-01"} /></li>
-            <li><Shot fileName={"territory-wip-02"} /></li>
-            <li><Shot fileName={"territory-wip-03"} /></li>
-            <li><Shot fileName={"territory-wip-04"} /></li>
-            <li><Shot fileName={"territory-wip-05"} /></li>
-            <li><Shot fileName={"territory-wip-06"} /></li>
+          <ul className="carousel-container wip-shots" style={{ width: "3850px "}}>
+            <li><Shot fileName={"pse-wip-10"} /></li>
+            <li><Shot fileName={"pse-wip-06"} /></li>
+            <li><Shot fileName={"pse-wip-02"} /></li>
+            <li><Shot fileName={"pse-wip-01"} /></li>
+            <li><Shot fileName={"pse-wip-03"} /></li>
+            <li><Shot fileName={"pse-wip-04"} /></li>
+            <li><Shot fileName={"pse-wip-05"} /></li>
+            <li><Shot fileName={"pse-wip-07"} /></li>
+            <li><Shot fileName={"pse-wip-08"} /></li>
           </ul>
         </div>
 
         <h3 className="carousel-title">Product shots</h3>
         <div className="carousel-wrap">
-          <ul className="carousel-container product-shots" style={{ width: "1780px "}}>
-            <li><Shot fileName={"territory-product-01"} /> </li>
-            <li><Shot fileName={"territory-product-02"} /></li>
-            <li><Shot fileName={"territory-product-03"} /></li>
-            <li><Shot fileName={"territory-product-04"} /></li>
-            <li><Shot fileName={"territory-product-05"} /></li>
-            <li><Shot fileName={"territory-product-06"} /></li>
+          <ul className="carousel-container product-shots" style={{ width: "2100px"}}>
+            <li><Shot fileName={"pse-product-01"} /> </li>
+            <li><Shot fileName={"pse-product-02"} /></li>
+            <li><Shot fileName={"pse-product-03"} /></li>
+            <li><Shot fileName={"pse-product-04"} /></li>
+            <li><Shot fileName={"pse-product-05"} /></li>
+            <li><Shot fileName={"pse-product-06"} /></li>
+            <li><Shot fileName={"pse-product-07"} /></li>
           </ul>
         </div>
 

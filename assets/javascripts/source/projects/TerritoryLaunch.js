@@ -25,10 +25,10 @@ export default class TerritoryLaunch extends React.Component {
             Launching the Territory brand for continued, sustained growth
           </h2>
           <p>
-            The Power Supply brand was tailored to a performance-oriented,
+            Power Supply was tailored to a performance-oriented,
             CrossFit/Paleo loving customer. As our business grew,
             we learned that there was an opportunity to position our
-            brand beyond Power Supply's performance-oriented folks.
+            brand beyond performance-oriented folks.
           </p>
 
           <hr />

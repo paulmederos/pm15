@@ -21878,7 +21878,7 @@ class TerritoryLaunch extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Comp
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'p',
           null,
-          'The Power Supply brand was tailored to a performance-oriented, CrossFit/Paleo loving customer. As our business grew, we learned that there was an opportunity to position our brand beyond Power Supply\'s performance-oriented folks.'
+          'Power Supply was tailored to a performance-oriented, CrossFit/Paleo loving customer. As our business grew, we learned that there was an opportunity to position our brand beyond performance-oriented folks.'
         ),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('hr', null),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(

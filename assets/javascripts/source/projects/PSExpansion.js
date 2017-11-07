@@ -13,7 +13,7 @@ export default class PSExpansion extends React.Component {
         projectTitle={"National Expansion"}
         onClosePressed={this.props.onClosePressed}
       >
-        <header className="project-page-header territory">
+        <header className="project-page-header ps-expansion">
           <div className="wrap" style={{marginBottom: "2em"}}>
             <img src="assets/images/header-ps-expansion.png" />
           </div>
@@ -21,14 +21,14 @@ export default class PSExpansion extends React.Component {
 
         <div className="wrap mid-wrap">
           <h2 className="project-title">
-            Designing a hyper-focused product for scale
+            Scaling Power Supply across the country
           </h2>
           <p>
             Power Supply started with a hyper-focused product in a
             tiny niche (prepared meals + Paleo menu + Washington DC area.)
-            We needed to grow to fulfill our vision, so we needed to learn
-            if the model and product experience we developed in DC
-            would work in other markets.
+            We wanted to grow to fulfill our vision of easily accessible good-for-you food.
+            To grow, we needed to learn if the model and product experience we
+            developed in our first market would work around the country.
           </p>
 
           <hr />
@@ -37,7 +37,7 @@ export default class PSExpansion extends React.Component {
 
           <p>
             I joined Power Supply in January of 2014, when they were
-            just getting started in Washington, DC.
+            just starting to blossom in the DC Metropolitan area.
           </p>
 
           <p>
@@ -66,12 +66,13 @@ export default class PSExpansion extends React.Component {
             boom 💥, Power Supply was thriving in DC.
           </p>
 
+          <hr />
+
           <h3>The Challenge</h3>
           <p>
-            Our eyes were already set on the next goal:
-            testing out our hypotheses around our growth
-            strategy. We thought we'd be able to replicate
-            our current model in other cities.
+            Since we'd proven traction in DC, our eyes were already set on the next goal:
+            testing out our growth hypotheses. We thought we'd be able to replicate and scale
+            our current model/experience in other cities.
           </p>
 
           <p>
@@ -81,8 +82,8 @@ export default class PSExpansion extends React.Component {
           <ul>
             <li>Would our product (prepared meals, paleo / vegetarian, subscription) resonate with the same customers in other markets?</li>
             <li>Could we find partners (from chefs to delivery crews) to work with us?</li>
-            <li>Would we be able to keep the same pricing?</li>
-            <li>Could we change our product experience and systems to handle multiple markets?</li>
+            <li>How would pricing change in different cities?</li>
+            <li>Could we adapt our product experience and systems to operate multiple markets?</li>
           </ul>
 
           <p>
@@ -90,6 +91,8 @@ export default class PSExpansion extends React.Component {
             few experiments, the first city we decided to
             target for expansion was Los Angeles.
           </p>
+
+          <hr />
 
           <h3>The Setup (Goals & Objectives)</h3>
 
@@ -127,7 +130,6 @@ export default class PSExpansion extends React.Component {
             At the time, Power Supply's systems were spread all over the place. There was a Wordpress site for marketing pages, one app for ordering, another app for managing your order, yet another app to keep track of meals, another one to ask for reviews of meals, and a bunch of manual pieces on the logistics end that used different systems. All this created a pretty rough break in experiences for a bunch of users (customers, internal ops), and it’d only get worse as we started operating in multiple cities.
           </p>
 
-
           <p>
             We saw a path to integrating our systems so we could offer a much smoother user experience.
           </p>
@@ -137,6 +139,7 @@ export default class PSExpansion extends React.Component {
             We needed to prove city expansion as a growth model to prep us for our next round of funding. We started investigating city expansion at the end of 2014, and started moving in Q4 2014. We had roughly 8-weeks to execute, so that our crew on the ground in LA could start prepping menus, logistics partners, and distribution partners. Customer launch was in 12-weeks. Talk about tight schedules!
           </p>
 
+          <hr />
 
           <h3>Team & my role</h3>
           <p>
@@ -144,7 +147,7 @@ export default class PSExpansion extends React.Component {
           </p>
 
           <p>
-            On the product-side, we were tiny: excluding our founder/CEO and our CMO, it was just two of us. I was leading design and front-end dev; Kevin was heading up software engineering.
+            On the product-side, we were tiny: excluding our founder/CEO and our CMO, it was just two of us. I was leading design and product experience; Kevin was heading up software engineering.
           </p>
 
           <CaseStudyFigure
@@ -165,7 +168,7 @@ export default class PSExpansion extends React.Component {
             <li>Comms design (timing, customer + partner heads up)</li>
           </ul>
 
-          <p>We contracted two others to help strengthen our team in key areas: a brand designer for print & packaging touch-points, and a front-end developer to help us build the client-side.</p>
+          <p>For this initiative, <b>we contracted two others to help strengthen our team in key areas</b>: a brand designer for print & packaging touch-points, and a front-end developer to help us build the client-side.</p>
 
           <h3>The Process</h3>
 
@@ -197,11 +200,13 @@ export default class PSExpansion extends React.Component {
             subText={`A consistent experience across phyiscal and digital was key to establishing our brand.`}
           />
 
-          <p>My focus was on the digital experience, where I spent most of my time breathing new life in the form of a digital style guide, setting us up with voice, tone, colors, web typography, use of photography, and layouts for both marketing pages + product/app flows.</p>
+          <p>My focus was on the digital experience, where I spent most of my time thnking through information architecture, and breathing new life in the form of a digital style guide.</p>
 
-          <p>I worked closely with our CMO and our brand designer to map out customer journey, so we could identify physical/digital cross-over, and plan for things like a consistent meal rating experience ("eat meal, see CTA on the label, easily punch in URL, visit site, rate meal they just ate") or referral code redemptions. We shared WIPs so we could call out similar identity markers (e.g. iconography, gradients, copy tone) and make our work stronger together.</p>
+          <p>I was directly responsible for information architecture. It was a huge piece of the puzzle: how much could we keep generic across all cities? What had to be city-specific?. I spent my time sketching, wireframing, mapping flows, mocks (hand-in-hand with the digital brand work), and implementing the designs (I handled most of the front-end development.)</p>
 
-          <p>I was directly responsible for information architecture (huge piece of the puzzle: how much could we keep generic across all cities? What had to be city-specific?), sketching, wireframes, flows, mocks (hand-in-hand with the digital brand work), and implementing the designs (most of the front-end development fell to me.)</p>
+          <p>I worked closely with our CMO and our brand designer to map out customer journey, so we could identify physical/digital cross-over, and plan for things like a consistent meal rating experience ("eat meal, see CTA on the label, easily punch in URL, visit site, rate meal they just ate") or referral code redemptions. We shared WIPs so we could call out similar identity markers (e.g. iconography, gradients, copy tone) and make our work stronger together. I set us up with voice, tone, colors, web typography, use of photography, and layouts for both marketing pages + product/app flows.</p>
+
+
 
           <p>
             <b>Testing customer experiences with early partners.</b><br />
@@ -214,16 +219,19 @@ export default class PSExpansion extends React.Component {
             subText={`Partnering with early pickup partners played an important role in successful city launches.`}
           />
 
-          <p>One of the ways we built a relationship with our "founding gyms" was by letting them in on the building process. We asked them to be beta testers while we smoothed out the production process for the first few weeks. We took their feedback to heart, iterating quickly to nail down experiences until they felt it would be great for their gym members.</p>
+          <p>One of the ways we built a relationship with our "founding partners" was by letting them in on the building process. We asked them to be beta testers while we smoothed out the production process for the first few weeks. We took their feedback to heart, iterating quickly to nail down experiences until they felt it would be great for their gym members.</p>
 
           <p>I worked directly with our "founding partners" to guide them through the process, listen to their feedback, and keep them updated as we improved.</p>
 
           <h3>Key Results</h3>
-          <p>We successfully launched our first city expansion (Los Angeles) on-time. With each successive city launch, we layered on better ways to help us scale, to the point where our latest launch (in Dallas-Ft. Worth) was the smoothest, quickest, and most cost effective yet. We proved we could profitably expand our geographic footprint, which played a vital role in growth and future fundraising. Read more about city expansion.</p>
+          <p>We successfully launched our first city expansion (Los Angeles) on-time. <b>With each successive city launch, we layered on better ways to help us scale</b>, to the point where our latest launch (in Dallas-Ft. Worth) was the smoothest, quickest, and most cost effective yet. We proved we could profitably expand our geographic footprint, which played a vital role in growth and future fundraising. Read more about city expansion.</p>
 
-          <p>We had our first digital style guide at the company (code name Rainbow Dash 🌈 🐴) + it’s front-end dev equivalent. The design system we built held strong for years (until our major rebrand to Territory.) It helped us build, launch, and iterate new features very quickly, with an incredibly small team. Customers were thrilled with the updates, and we raked in positive feedback across the board about our customer experience.</p>
+          <p>We had our <b>first digital style guide at the company</b> (code name Rainbow Dash 🌈 🐴) + it’s front-end dev equivalent. The design system we built held strong for years (until our major rebrand to Territory.) It helped us build, launch, and iterate new features very quickly, with an incredibly small team. Customers were thrilled with the updates, and we raked in positive feedback across the board about our customer experience.</p>
 
-          <p>We achieved our integrated system, which has played a pivotal role in building such a smooth experience for our customers. It’s been the foundation that’s made a lot of our future work around personalized nutrition possible.</p>
+          <p>We achieved our <b>integrated system</b>, which has played a pivotal role in building such a smooth experience for our customers. It’s been the foundation that’s made a lot of our future work around personalized nutrition possible.</p>
+
+          <hr />
+          <p><i>We've since re-branded to Territory, so there's no live site you can play with Power Supply stuff. That said, you can see all of this work in it's latest form <a href="https://www.territoryfood.com">on the Territory site</a>.</i></p>
         </div>
 
         <h3 className="carousel-title">Process / source shots</h3>

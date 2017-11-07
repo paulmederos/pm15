@@ -2024,6 +2024,14 @@ figure {
     @media (max-width: 30em) {
       .project-page-header.territory {
         margin-bottom: 0; } }
+  .project-page-header.ps-expansion {
+    background-color: #1598B3;
+    background-image: -webkit-linear-gradient(45deg, rgba(65, 220, 220, 0.8) 0%, rgba(30, 135, 169, 0.4) 100%);
+    background-image: linear-gradient(45deg, rgba(65, 220, 220, 0.8) 0%, rgba(30, 135, 169, 0.4) 100%);
+    margin-bottom: 10em; }
+    @media (max-width: 30em) {
+      .project-page-header.ps-expansion {
+        margin-bottom: 0; } }
   .project-page-header img {
     position: relative;
     top: 108px; }

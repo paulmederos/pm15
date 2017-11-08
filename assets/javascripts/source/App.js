@@ -20,9 +20,12 @@ export default class App extends React.Component {
   }
 
   componentWillMount(){
+    var location = window.location.hash.replace(/^#\/?|\/$/g, '').split('/')[0]
+    location ? location : null
+
     this.setState({
       animateHome: true,
-      visibleProject: null,
+      visibleProject: location,
     })
   }
 
@@ -62,6 +65,7 @@ export default class App extends React.Component {
     this.setState({
       visibleProject: project
     })
+    window.location.hash = project
     document.body.scrollTop = document.documentElement.scrollTop = 0;
   }
 
@@ -70,6 +74,7 @@ export default class App extends React.Component {
       shouldAnimateHome: false,
       visibleProject: null
     })
+    window.location.hash = ''
     document.body.scrollTop = document.documentElement.scrollTop = 0;
   }
 

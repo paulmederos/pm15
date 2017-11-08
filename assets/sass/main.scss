@@ -448,6 +448,8 @@ figure {
   }
 }
 
+$number_of_case_study_cards: 2;
+
 .stack-of-work {
   z-index: 1;
   display: flex;
@@ -457,7 +459,8 @@ figure {
   margin-top: 6.4rem;
   padding: 0;
   margin-left: 6.4rem;
-  width: 2400px;
+  min-width: 100%;
+  width: (400px * $number_of_case_study_cards);
 }
 
 .case-study-preview {
@@ -526,6 +529,7 @@ figure {
   }
 }
 
+$number_of_adventure_cards: 9;
 .stack-of-adventures {
   z-index: 1;
   display: flex;
@@ -535,7 +539,8 @@ figure {
   margin-top: 6.4rem;
   padding: 0;
   margin-left: 6.4rem;
-  width: 5100px;
+  min-width: 100%;
+  width: (540px * $number_of_adventure_cards); // should change based on # of cards
 
   @include mq-personal {
 

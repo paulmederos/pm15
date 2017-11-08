@@ -54,9 +54,6 @@ export default class App extends React.Component {
       case 'ps-expansion':
         return <PSExpansion onClosePressed={this.handleWorkPageClosed}/>
         break;
-      case 'apk-brand':
-        return <AmericanParkourLaunch onClosePressed={this.handleWorkPageClosed}/>
-        break;
     }
   }
 

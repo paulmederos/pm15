@@ -19,7 +19,6 @@ export default class Portfolio extends React.Component {
 
         <div className="stack-container">
           <ul className="stack-of-work">
-
             <CaseStudyCard
               date={"2017"}
               role={"Head of Product Design"}
@@ -39,27 +38,6 @@ export default class Portfolio extends React.Component {
               description={"Would the business model and product experience we developed in one market work in other markets across the country?"}
               onCardPressed={() => this.props.onCardPressed("ps-expansion")}
             />
-
-            <CaseStudyCard
-              date={"2016"}
-              role={"Sr. Product Designer"}
-              key={"power-supply-personalization"}
-              projectHeaderClass={"power-supply-personalization"}
-              projectTitle={"Getting folks food they'll love for serious retention"}
-              description={"What could we do to increase the odds that customers fell in love with our service?"}
-              onCardPressed={() => this.props.onCardPressed("ps-expansion")}
-            />
-
-            <CaseStudyCard
-              key={"apk-relaunch"}
-              date={"2013"}
-              role={"UX Lead"}
-              projectHeaderClass={"apk"}
-              projectTitle={"Community & ecommerce experience relaunch"}
-              description={"The largest int'l parkour community was ready to level up it's brand."}
-              onCardPressed={() => this.props.onCardPressed("apk-brand")}
-            />
-
           </ul>
         </div>
         <figure className="cool-blobs"></figure>

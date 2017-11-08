@@ -1751,7 +1751,8 @@ figure {
   margin-top: 6.4rem;
   padding: 0;
   margin-left: 6.4rem;
-  width: 2400px; }
+  min-width: 100%;
+  width: 800px; }
 
 .case-study-preview {
   background-color: white;
@@ -1809,7 +1810,8 @@ figure {
   margin-top: 6.4rem;
   padding: 0;
   margin-left: 6.4rem;
-  width: 5100px; }
+  min-width: 100%;
+  width: 4860px; }
 
 .adventure-card {
   display: flex;

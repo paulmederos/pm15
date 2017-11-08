@@ -1028,7 +1028,7 @@ class CaseStudyCard extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Compon
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'button',
           { className: 'button-link', onClick: this.props.onCardPressed },
-          'Learn about the work \u2192'
+          'Read the case study \u2192'
         )
       )
     );
@@ -21361,9 +21361,12 @@ class App extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
   }
 
   componentWillMount() {
+    var location = window.location.hash.replace(/^#\/?|\/$/g, '').split('/')[0];
+    location ? location : null;
+
     this.setState({
       animateHome: true,
-      visibleProject: 'ps-expansion'
+      visibleProject: location
     });
   }
 
@@ -21390,9 +21393,6 @@ class App extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
       case 'ps-expansion':
         return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_6__projects_PSExpansion__["a" /* default */], { onClosePressed: this.handleWorkPageClosed });
         break;
-      case 'apk-brand':
-        return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(AmericanParkourLaunch, { onClosePressed: this.handleWorkPageClosed });
-        break;
     }
   }
 
@@ -21401,6 +21401,7 @@ class App extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
     this.setState({
       visibleProject: project
     });
+    window.location.hash = project;
     document.body.scrollTop = document.documentElement.scrollTop = 0;
   }
 
@@ -21409,6 +21410,7 @@ class App extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
       shouldAnimateHome: false,
       visibleProject: null
     });
+    window.location.hash = '';
     document.body.scrollTop = document.documentElement.scrollTop = 0;
   }
 
@@ -21597,24 +21599,6 @@ class Portfolio extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component 
             projectTitle: "Scaling Power Supply to new markets",
             description: "Would the business model and product experience we developed in one market work in other markets across the country?",
             onCardPressed: () => this.props.onCardPressed("ps-expansion")
-          }),
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__CaseStudyCard__["a" /* default */], {
-            date: "2016",
-            role: "Sr. Product Designer",
-            key: "power-supply-personalization",
-            projectHeaderClass: "power-supply-personalization",
-            projectTitle: "Getting folks food they'll love for serious retention",
-            description: "What could we do to increase the odds that customers fell in love with our service?",
-            onCardPressed: () => this.props.onCardPressed("ps-expansion")
-          }),
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__CaseStudyCard__["a" /* default */], {
-            key: "apk-relaunch",
-            date: "2013",
-            role: "UX Lead",
-            projectHeaderClass: "apk",
-            projectTitle: "Community & ecommerce experience relaunch",
-            description: "The largest int'l parkour community was ready to level up it's brand.",
-            onCardPressed: () => this.props.onCardPressed("apk-brand")
           })
         )
       ),
@@ -22156,6 +22140,17 @@ class TerritoryLaunch extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Comp
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'p',
           null,
+          'Oh, and did I mention ',
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'b',
+            null,
+            'we\'re a fully remote company'
+          ),
+          '? Yup. \uD83D\uDD2E'
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'p',
+          null,
           'As ',
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'b',
@@ -22568,7 +22563,7 @@ class PSExpansion extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Componen
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'p',
           null,
-          'After considering various factors, and running a few experiments, the first city we decided to target for expansion was Los Angeles.'
+          'After considering various factors, and running a few experiments, the first city we decided to target for expansion was Los Angeles. \uD83C\uDFD6'
         ),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('hr', null),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -22582,63 +22577,67 @@ class PSExpansion extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Componen
           'We kicked-off the project with a few goals:'
         ),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          'p',
-          null,
+          'section',
+          { className: 'objectives' },
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            'b',
+            'p',
             null,
-            '#1 The core product would stay the same, but we needed flexibility to scale our offerings.'
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              'b',
+              null,
+              '#1 The core product would stay the same, but we needed flexibility to scale our offerings.'
+            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
+            'Our market in DC handled a pretty large volume of meals, with multiple menus, portion sizes, plans, and delivery methods (pickup + direct.) We wouldn\u2019t be able to offer it all on day one in LA, and we didn\u2019t want to\u2014it was important that we learned which offerings would work best in different cities.'
           ),
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
-          'Our market in DC handled a pretty large volume of meals, with multiple menus, portion sizes, plans, and delivery methods (pickup + direct.) We wouldn\u2019t be able to offer it all on day one in LA, and we didn\u2019t want to\u2014it was important that we learned which offerings would work best in different cities.'
-        ),
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          'p',
-          null,
-          'That meant we had to re-think every piece of the experience to account for flexibility in product offerings. We had to look at everything from how we talked about the plans and pricing, to how we showcased our network of independent chefs in each city. Oh, and the customer experience was just the tip of the iceberg: our culinary and logistics experiences also had to handle multiple cities with different offerings so they could share processes as we scaled.'
-        ),
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__CaseStudyFigure__["a" /* default */], {
-          imageUrl: "assets/images/studies/pse-ordering.gif",
-          altText: `Multiple product offerings across different cities - size, lines, delivery, types`,
-          subText: `We had many variables in our product offerings that we wanted to test across different markets: menus, sizes, delivery options, prices, etc.`
-        }),
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          'p',
-          null,
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            'b',
+            'p',
             null,
-            '#2 We needed brand guidelines to help us work more quickly and consistently as we grew.'
+            'That meant we had to re-think every piece of the experience to account for flexibility in product offerings. We had to look at everything from how we talked about the plans and pricing, to how we showcased our network of independent chefs in each city. Oh, and the customer experience was just the tip of the iceberg: our culinary and logistics experiences also had to handle multiple cities with different offerings so they could share processes as we scaled.'
           ),
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
-          'We didn\'t have brand guidelines, and our style guide was geared towards print. If we were going to grow the team and expand to multiple cities, we needed to have a system in place to support all the folks that would touch every point across our customer\'s experience.'
-        ),
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          'p',
-          null,
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__CaseStudyFigure__["a" /* default */], {
+            imageUrl: "assets/images/studies/pse-ordering.gif",
+            altText: `Multiple product offerings across different cities - size, lines, delivery, types`,
+            subText: `We had many variables in our product offerings that we wanted to test across different markets: menus, sizes, delivery options, prices, etc.`
+          }),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            'b',
+            'p',
             null,
-            '#3 We wanted our customers to have a consistent, unified user experience across our platforms.'
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              'b',
+              null,
+              '#2 We needed brand guidelines to help us work more quickly and consistently as we grew.'
+            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
+            'We didn\'t have brand guidelines, and our style guide was geared towards print. If we were going to grow the team and expand to multiple cities, we needed to have a system in place to support all the folks that would touch every point across our customer\'s experience.'
           ),
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
-          'At the time, Power Supply\'s systems were spread all over the place. There was a Wordpress site for marketing pages, one app for ordering, another app for managing your order, yet another app to keep track of meals, another one to ask for reviews of meals, and a bunch of manual pieces on the logistics end that used different systems. All this created a pretty rough break in experiences for a bunch of users (customers, internal ops), and it\u2019d only get worse as we started operating in multiple cities.'
-        ),
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          'p',
-          null,
-          'We saw a path to integrating our systems so we could offer a much smoother user experience.'
-        ),
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          'p',
-          null,
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            'b',
+            'p',
             null,
-            '#4 We needed to launch by end of Q1 2015.'
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              'b',
+              null,
+              '#3 We wanted our customers to have a consistent, unified user experience across our platforms.'
+            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
+            'At the time, Power Supply\'s systems were spread all over the place. There was a Wordpress site for marketing pages, one app for ordering, another app for managing your order, yet another app to keep track of meals, another one to ask for reviews of meals, and a bunch of manual pieces on the logistics end that used different systems. All this created a pretty rough break in experiences for a bunch of users (customers, internal ops), and it\u2019d only get worse as we started operating in multiple cities.'
           ),
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
-          'We needed to prove city expansion as a growth model to prep us for our next round of funding. We started investigating city expansion at the end of 2014, and started moving in Q4 2014. We had roughly 8-weeks to execute, so that our crew on the ground in LA could start prepping menus, logistics partners, and distribution partners. Customer launch was in 12-weeks. Talk about tight schedules!'
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'p',
+            null,
+            'We saw a path to integrating our systems so we could offer a much smoother user experience.'
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'p',
+            null,
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              'b',
+              null,
+              '#4 We needed to launch by end of Q1 2015.'
+            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
+            'We needed to prove city expansion as a growth model to prep us for our next round of funding. We started investigating city expansion at the end of 2014, and started moving in Q4 2014. We had roughly 8-weeks to execute, so that our crew on the ground in LA could start prepping menus, logistics partners, and distribution partners. Customer launch was in 12-weeks. Talk about tight schedules!'
+          )
         ),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('hr', null),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -22649,7 +22648,7 @@ class PSExpansion extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Componen
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'p',
           null,
-          'Our company was small at the time, only ~10 folks rowing the boat.'
+          'Our company was small at the time, only ~10 folks rowing the boat. \uD83D\uDEF6'
         ),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'p',
@@ -22737,7 +22736,7 @@ class PSExpansion extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Componen
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'b',
             null,
-            'Working hand-in-hand with ops to coordinate launch timing.'
+            'Working hand-in-hand with ops \u2699\uFE0F to coordinate launch timing.'
           ),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
           'We had to get the "back of the house" ready so that our ops teams could do what they needed to do: recruit chefs; test & iterate meals; prepare menus ahead of time to test assumptions about product demand in new market; and test runs through production cycles (checklists, labels, quantities, locations, etc) to train up new ops teammates.'
@@ -22761,7 +22760,7 @@ class PSExpansion extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Componen
             'Coordinate branding & marketing across physical and digital mediums.'
           ),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
-          'Until this point, we didn\'t mind that our physical/digital stuff was out of sync. But as we planned to scale, having consistent design across our experience became more important for a few reasons: the usual brand consistency stuff, but more important was the ability for us to pump out experiments more quickly across multiple cities to learn as much as we could about what worked and what didn\'t.'
+          'Until this point, we didn\'t mind that our physical/digital stuff was out of sync. But as we planned to scale, \u2728 having consistent design across our experience became more important \u2728 for the usual brand consistency stuff, but more important was the ability for us to pump out experiments more quickly across multiple cities to learn as much as we could about what worked and what didn\'t. \uD83D\uDD2C'
         ),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__CaseStudyFigure__["a" /* default */], {
           imageUrl: "assets/images/studies/pse-cross-media.png",

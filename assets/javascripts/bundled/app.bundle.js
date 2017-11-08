@@ -23232,6 +23232,11 @@ class PSFood extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
           null,
           'We started building. I made design direction decisions quickly, and let folks know these decisions could (and should) be re-evaluated after testing. This helped us move very quickly, gaining momentum often.'
         ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__CaseStudyFigure__["a" /* default */], {
+          imageUrl: "assets/images/studies/psf-code.png",
+          altText: ``,
+          subText: `Being in the codebase, I was able to very quickly iterate and test changes. That helped me get feedback from real customers super fast.`
+        }),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'h4',
           null,
@@ -23242,6 +23247,11 @@ class PSFood extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
           null,
           'As soon as designs were shipped, I\'d pay attention to feedback and analytics. Whatever I learned, I\'d share with the team. It helped us understand what was working and what wasn\'t, so we could keep pushing forward.'
         ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__CaseStudyFigure__["a" /* default */], {
+          imageUrl: "assets/images/studies/psf-sharing-feedback.png",
+          altText: ``,
+          subText: `At certain feedback checkpoints, I'd synthesize and share for the group so we could all stay on the same page about how customers were feeling.`
+        }),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'p',
           null,

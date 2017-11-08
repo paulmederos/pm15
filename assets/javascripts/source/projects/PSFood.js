@@ -54,7 +54,7 @@ export default class PSFood extends React.Component {
             They were starting to blossom in Washington DC.
             They had a bunch of assumptions around how they could better serve their customers,
             and <b>top of the list was a better customer experience</b> around
-            getting food they'll love. I was brought on to find that better CX ⛵️ 🔭 
+            getting food they'll love. I was brought on to find that better CX ⛵️ 🔭
           </p>
 
           <CaseStudyFigure
@@ -151,6 +151,12 @@ export default class PSFood extends React.Component {
             us move very quickly, gaining momentum often.
           </p>
 
+          <CaseStudyFigure
+            imageUrl={"assets/images/studies/psf-code.png"}
+            altText={``}
+            subText={`Being in the codebase, I was able to very quickly iterate and test changes. That helped me get feedback from real customers super fast.`}
+          />
+
           <h4>I shared findings—and lessons learned—often.</h4>
           <p>
             As soon as designs were shipped,
@@ -158,6 +164,12 @@ export default class PSFood extends React.Component {
             with the team. It helped us understand what was working and what wasn't, so
             we could keep pushing forward.
           </p>
+
+          <CaseStudyFigure
+            imageUrl={"assets/images/studies/psf-sharing-feedback.png"}
+            altText={``}
+            subText={`At certain feedback checkpoints, I'd synthesize and share for the group so we could all stay on the same page about how customers were feeling.`}
+          />
 
           <p>
             On the ops side, one of the most important things we learned early on (thanks to rapid prototyping)

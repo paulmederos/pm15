@@ -390,6 +390,9 @@ th {
   animation-duration: 1s;
   animation-fill-mode: both; }
 
+.animated-short {
+  animation-delay: .4s; }
+
 .animated-mid {
   animation-delay: 1s; }
 
@@ -547,9 +550,9 @@ th {
   66.6% {
     transform: skewX(-0.78125deg) skewY(-0.78125deg); }
   77.7% {
-    transform: skewX(0.39063deg) skewY(0.39063deg); }
+    transform: skewX(0.390625deg) skewY(0.390625deg); }
   88.8% {
-    transform: skewX(-0.19531deg) skewY(-0.19531deg); } }
+    transform: skewX(-0.1953125deg) skewY(-0.1953125deg); } }
 .jello {
   animation-name: jello;
   transform-origin: center; }
@@ -1361,14 +1364,14 @@ html {
   height: 100%;
   max-height: 100%;
   font-size: 62.5%;
-  -webkit-tap-highlight-color: transparent; }
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
 
 body {
   height: 100%;
   max-height: 100%;
   font-family: "Inter UI", "San Francisco", "Roboto", "Droid Sans", sans-serif;
   font-size: 1.7rem;
-  line-height: 1.4em;
+  line-height: 1.45;
   color: #2D2333;
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased; }
@@ -1395,7 +1398,8 @@ h1, h2 {
   font-size: 2.8rem;
   margin-bottom: 1em;
   color: #333;
-  line-height: 1; }
+  line-height: 1.2;
+  font-feature-settings: normal; }
 
 h3 {
   font-size: 2.1rem;
@@ -1433,8 +1437,8 @@ p, ul, ol, dl {
   -ms-font-feature-settings: 'liga' 1, 'onum' 1, 'kern' 1;
   -o-font-feature-settings: 'liga' 1, 'onum' 1, 'kern' 1;
   font-feature-settings: 'liga' 1, 'onum' 1, 'kern' 1;
-  margin: 0 0 1.5em 0;
-  line-height: 1.38;
+  margin: 0 0 1.8em 0;
+  line-height: 1.54;
   font-weight: 300; }
 
 ol, ul {
@@ -1444,6 +1448,9 @@ ol ol, ul ul,
 ul ol, ol ul {
   margin: 0 0 0.4em 0;
   padding-left: 2em; }
+
+li {
+  margin-bottom: .75em; }
 
 dl dt {
   float: left;
@@ -1594,6 +1601,11 @@ margin on the iframe, cause it breaks stuff. */
 img {
   max-width: 100%; }
 
+figure {
+  margin: 0;
+  margin-bottom: 3em;
+  margin-top: 3em; }
+
 /* ==========================================================================
     2. Utilities - These things get used a lot
 ========================================================================== */
@@ -1640,6 +1652,9 @@ img {
   margin: 0 auto;
   position: relative;
   z-index: 1; }
+
+.mid-wrap {
+  max-width: 588px; }
 
 /* ==========================================================================
     3. App Components - Styles specific to this app
@@ -1694,12 +1709,12 @@ img {
   .the-gig {
     display: block; } }
 
-.adventures {
+.portfolio {
   background-color: #FFFBF2;
   padding: 12rem 0;
   overflow: hidden;
   position: relative; }
-  .adventures h2, .adventures p {
+  .portfolio h2, .portfolio p {
     z-index: 1;
     max-width: 455px; }
 
@@ -1727,6 +1742,68 @@ img {
   .stack-container::-webkit-scrollbar {
     display: none; }
 
+.stack-of-work {
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  list-style: none;
+  margin-top: 6.4rem;
+  padding: 0;
+  margin-left: 6.4rem;
+  min-width: 100%;
+  width: 1200px; }
+
+.case-study-preview {
+  background-color: white;
+  border-radius: 8px;
+  max-width: 360px;
+  margin-right: 3.6rem;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.05);
+  display: inline-block;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.32s cubic-bezier(0.62, 0.28, 0.23, 0.99); }
+  .case-study-preview:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1), 0px 0px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.32s cubic-bezier(0.62, 0.28, 0.23, 0.99); }
+
+.case-study-image {
+  height: 20.5rem;
+  background-color: gray;
+  margin: 0;
+  background-size: cover; }
+  .case-study-image.territory {
+    background-color: #FAF6ED;
+    background-image: url("../images/territory-preview.png"); }
+  .case-study-image.ps-expansion {
+    background-color: #0C8AA5;
+    background-image: url("../images/preview-ps-expansion.png"); }
+  .case-study-image.ps-food {
+    background-color: #0C8AA5;
+    background-image: url("../images/preview-ps-food.png"); }
+  .case-study-image.apk {
+    background-color: #2F80ED;
+    background-image: url("../images/apk-preview.png"); }
+
+.case-study-content {
+  padding: 3rem; }
+  .case-study-content h3 {
+    font-size: 2.4rem; }
+  .case-study-content a {
+    color: #E91F64;
+    font-weight: 500; }
+
+.adventures {
+  background-color: #fafafa;
+  padding: 12rem 0;
+  overflow: hidden;
+  position: relative; }
+  .adventures h2, .adventures p {
+    z-index: 1;
+    max-width: 455px; }
+
 .stack-of-adventures {
   z-index: 1;
   display: flex;
@@ -1736,30 +1813,40 @@ img {
   margin-top: 6.4rem;
   padding: 0;
   margin-left: 6.4rem;
-  width: 2400px; }
+  min-width: 100%;
+  width: 4860px; }
 
-.adventure-preview {
+.adventure-card {
+  display: flex;
+  justify-content: flex-start;
   background-color: white;
-  border-radius: 8px;
-  max-width: 360px;
+  width: 520px;
   margin-right: 3.6rem;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.05);
-  display: inline-block;
   overflow: hidden;
+  cursor: pointer;
   transition: all 0.32s cubic-bezier(0.62, 0.28, 0.23, 0.99); }
-  .adventure-preview:hover {
+  .adventure-card:hover {
     transform: scale(1.03);
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1), 0px 0px 4px rgba(0, 0, 0, 0.1);
     transition: all 0.32s cubic-bezier(0.62, 0.28, 0.23, 0.99); }
+  @media (max-width: 30em) {
+    .adventure-card {
+      max-width: 240px;
+      flex-direction: column; } }
 
 .adventure-image {
-  height: 20.5rem;
-  background-color: gray;
+  height: 100%;
+  width: 100%;
+  max-width: 16rem;
+  background-color: lightGray;
   margin: 0;
-  background-size: cover; }
-  .adventure-image.territory {
-    background-color: #FAF6ED;
-    background-image: url("../images/territory-preview.png"); }
+  background-size: cover;
+  background-position: center center; }
+  @media (max-width: 30em) {
+    .adventure-image {
+      height: 16rem;
+      max-width: 100%; } }
   .adventure-image.ux-book {
     background-color: #FF8964;
     background-image: url("../images/ux-book-preview.png"); }
@@ -1768,21 +1855,41 @@ img {
     background-image: url("../images/meetup-preview.png"); }
   .adventure-image.seishin {
     background-color: #F6C70B;
-    background-image: url("../images/seishin-preview.png"); }
+    background-image: url("../images/adventure-seishin.png"); }
   .adventure-image.kale {
     background-color: #24B47D;
     background-image: url("../images/kale-preview.png"); }
   .adventure-image.apk {
     background-color: #2F80ED;
     background-image: url("../images/apk-preview.png"); }
+  .adventure-image.culture-camp {
+    background-color: #FF9D34;
+    background-image: url("../images/adventure-culture-camp.png"); }
+  .adventure-image.chef-club {
+    background-color: #BD1833;
+    background-image: url("../images/adventure-chef-club.png"); }
+  .adventure-image.cor {
+    background-color: #21A5D5;
+    background-image: url("../images/adventure-cor.png"); }
+  .adventure-image.frc-talent {
+    background-color: #03E7B0;
+    background-image: url("../images/adventure-frc-talent.png"); }
+  .adventure-image.sohelpful {
+    background-color: #F48854;
+    background-image: url("../images/adventure-sohelpful.png"); }
 
 .adventure-content {
-  padding: 3rem; }
+  padding: 2rem; }
   .adventure-content h3 {
-    font-size: 2.4rem; }
+    font-size: 1.8rem; }
+  .adventure-content p {
+    font-size: 1.3rem;
+    margin-bottom: .5em; }
   .adventure-content a {
+    font-size: 1.3rem;
     color: #E91F64;
-    font-weight: 500; }
+    font-weight: 500;
+    margin-bottom: 0; }
 
 .contact {
   background-color: #95C82E;
@@ -1824,34 +1931,187 @@ img {
   .footer-footer-footer a:hover {
     color: rgba(45, 35, 51, 0.8); }
 
-.overlay {
-  visibility: hidden;
-  opacity: 0;
+.fab {
+  width: 56px;
+  height: 56px;
+  border: none;
+  border-radius: 50%;
+  background-color: #E91F64;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+  transition: all 0.32s cubic-bezier(0.62, 0.28, 0.23, 0.99); }
+  .fab:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25), 0 1px 3px rgba(0, 0, 0, 0.15);
+    background-color: #ec3b77;
+    transition: all 0.32s cubic-bezier(0.62, 0.28, 0.23, 0.99); }
+  .fab:active {
+    outline: none;
+    box-shadow: none;
+    background-color: #d91558;
+    transition: all 0.32s cubic-bezier(0.62, 0.28, 0.23, 0.99); }
+
+.button-link {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: #E91F64;
+  text-decoration: underline;
+  transition: all 0.32s cubic-bezier(0.62, 0.28, 0.23, 0.99); }
+  .button-link:hover {
+    color: #2D2333;
+    transition: all 0.32s cubic-bezier(0.62, 0.28, 0.23, 0.99); }
+
+.icon {
+  position: relative;
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-position: center center;
+  background-repeat: no-repeat; }
+  .icon.icon-back {
+    left: 7px;
+    background-size: 15px 24px;
+    background-image: url("../images/icon-back.png"); }
+
+.project-page {
+  background-color: white; }
+
+.project-title {
+  font-size: 2.8em;
+  line-height: 1.2;
+  text-align: center; }
+
+.project-page h4 {
+  font-size: 1em;
+  font-weight: bold;
+  font-family: "Inter UI", "San Francisco", "Roboto", "Droid Sans", sans-serif;
+  line-height: 1.54;
+  margin-top: 2em; }
+
+.image-subtext {
+  font-size: .8em;
+  font-style: italic;
+  color: #637282;
+  text-align: center; }
+
+.project-nav {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
-  z-index: 0;
-  background-color: rgba(0, 0, 0, 0.75);
-  transition: all 0.32s cubic-bezier(0.62, 0.28, 0.23, 0.99); }
+  height: 54px;
+  background-color: rgba(255, 255, 255, 0.92);
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15);
+  z-index: 7; }
+  .project-nav .project-meta {
+    margin-bottom: 0;
+    position: relative;
+    top: 1em;
+    left: 6em; }
 
-.opened .adventures {
-  z-index: 5; }
-.opened .full-screen-adventure {
-  display: block;
+.project-nav .fab {
   position: fixed;
-  top: 2em;
-  left: 4%;
+  top: 25px;
+  left: 2em; }
+
+.project-page-header {
+  position: relative;
+  top: -108px;
   width: 100%;
-  height: 600px;
-  max-width: 92%;
-  margin: 0 auto;
-  z-index: 6; }
-.opened .overlay {
-  visibility: visible;
-  opacity: 1;
-  z-index: 4;
+  height: 360px;
+  margin-bottom: 10em; }
+  @media (max-width: 30em) {
+    .project-page-header {
+      margin-bottom: 0;
+      height: inherit; } }
+  .project-page-header.territory {
+    background-color: #FAF6ED; }
+  .project-page-header.ps-expansion {
+    background-color: #1598B3;
+    background-image: -webkit-linear-gradient(45deg, rgba(65, 220, 220, 0.8) 0%, rgba(30, 135, 169, 0.4) 100%);
+    background-image: linear-gradient(45deg, rgba(65, 220, 220, 0.8) 0%, rgba(30, 135, 169, 0.4) 100%); }
+  .project-page-header.ps-food {
+    background-color: #1598B3;
+    background-image: -webkit-linear-gradient(45deg, rgba(65, 220, 220, 0.8) 0%, rgba(30, 135, 169, 0.4) 100%);
+    background-image: linear-gradient(45deg, rgba(65, 220, 220, 0.8) 0%, rgba(30, 135, 169, 0.4) 100%); }
+  .project-page-header img {
+    position: relative;
+    top: 108px; }
+
+.project-content {
+  padding-top: 108px;
+  min-height: 1000px; }
+  .project-content h3 {
+    margin-top: 3em; }
+
+.mini-study-notice {
+  padding: 1em;
+  border-radius: 4px;
+  background-color: #fffee0;
+  text-align: center;
+  font-size: .8em;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.05); }
+
+.objectives {
+  padding-left: 1em;
+  border-left: 4px solid #E91F64; }
+
+.project-footer {
+  margin-top: 54px;
+  border-top: 2px solid #F0F0F0;
+  padding-top: 54px;
+  padding-bottom: 54px; }
+  .project-footer button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-weight: bold; }
+    .project-footer button:hover {
+      text-decoration: underline; }
+
+.carousel-title {
+  margin-top: 4em;
+  font-family: "Inter UI", "San Francisco", "Roboto", "Droid Sans", sans-serif;
+  font-weight: 900;
+  font-size: 15px;
+  color: #AAAAAA;
+  text-transform: uppercase;
+  padding-left: 4%; }
+
+.carousel-wrap {
+  width: 100%;
+  overflow-x: scroll;
+  padding-left: 4%; }
+
+.carousel-container {
+  width: 1380px;
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  .carousel-container li {
+    display: inline-block; }
+
+.source-shot {
+  position: relative;
+  display: block;
+  top: 0;
+  margin: 0 1.5em 0 0;
+  background-color: #E5E5E5;
+  border: none;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
   transition: all 0.32s cubic-bezier(0.62, 0.28, 0.23, 0.99); }
+  .source-shot:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transition: all 0.32s cubic-bezier(0.62, 0.28, 0.23, 0.99); }
+
+.wip-shots .source-shot {
+  width: 400px;
+  height: 300px; }
+
+.product-shots .source-shot {
+  width: 267px;
+  height: 267px; }
 
 /*# sourceMappingURL=styles.css.map */

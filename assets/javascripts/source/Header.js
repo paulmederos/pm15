@@ -1,0 +1,38 @@
+import React from 'react'
+import PropTypes from 'prop-types'
+
+export default class Header extends React.Component {
+  render() {
+    return (
+      <header className={`wrap title ${this.props.shouldAnimate && "animated fadeIn"}`}>
+        <h2>Paul Mederos</h2>
+        <p>
+          Makes meaningful products &amp; services<br />
+          centered around human experiences.
+        </p>
+        <ol className="brief-resume">
+          <li>
+            <span className="time-space-continuum">Present</span>
+            <span className="the-gig">Leading design at <a href="https://www.territoryfoods.com" target="_blank">Territory Foods</a>.</span>
+          </li>
+          <li>
+            <span className="time-space-continuum">2014 - 2017</span>
+            <span className="the-gig">Led product design and development for <a href="https://technical.ly/dc/2017/05/09/power-supply-now-territory-foods/">Power Supply</a>.</span>
+          </li>
+          <li>
+            <span className="time-space-continuum">2013 ~ 2014</span>
+            <span className="the-gig">Led user experience crew at <a href="http://www.americanparkour.com" target="_blank">American Parkour</a>.</span>
+          </li>
+          <li>
+            <span className="time-space-continuum">2006 ~ 2014</span>
+            <span className="the-gig">Ran <a href="http://enchant.co" taget="_blank">Enchant Design</a> &mdash; a product + design studio.</span>
+          </li>
+        </ol>
+      </header>
+    )
+  }
+}
+
+Header.propTypes = {
+  shouldAnimate: PropTypes.bool
+}

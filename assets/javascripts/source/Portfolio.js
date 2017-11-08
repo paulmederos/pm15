@@ -44,7 +44,7 @@ export default class Portfolio extends React.Component {
               role={"Sr. Product Designer / Eng"}
               key={"ps-food"}
               projectHeaderClass={"ps-food"}
-              projectTitle={"Finding foods that fit for serious retention"}
+              projectTitle={"Helping folks find meals they love"}
               description={"If we gave folks more control over their meals, would we keep them around longer? Or would decision fatigue prove too frustrating?"}
               onCardPressed={() => this.props.onCardPressed("ps-food")}
             />

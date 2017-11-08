@@ -21,7 +21,7 @@ export default class PSFood extends React.Component {
 
         <div className="wrap mid-wrap">
           <h2 className="project-title">
-            Finding foods that fit for serious retention
+            Helping folks find meals they love for serious retention
           </h2>
 
           <p className="mini-study-notice">
@@ -49,20 +49,43 @@ export default class PSFood extends React.Component {
             infinitely easier on the culinary production and logistics side. But we heard over and over again that customers wanted more control.
           </p>
 
+          <p>
+            I joined Power Supply in January of 2014, about 2 years into the life of the company.
+            They were starting to blossom in Washington DC.
+            They had a bunch of assumptions around how they could better serve their customers,
+            and <b>top of the list was a better customer experience</b> around
+            getting food they'll love. I was brought on to find that better CX ⛵️ 🔭 
+          </p>
+
+          <CaseStudyFigure
+            imageUrl={"assets/images/studies/psf-early-whiteboard.jpg"}
+            altText={``}
+            subText={`One of our early whiteboard sketches, where we mapped out the various users of our system, including the pushes + pulls between ops product and customer experiences.`}
+          />
+
           <h3>The Challenge</h3>
 
           <p>
-            We couldn't afford to roll out a bunch of stuff that didn't work. We didn't have the money, the people, or the time to do that.
-            We needed to learn what customers <i>really</i> wanted, as quickly as possible. One of our biggest fears
-            was that introducing more choice would add too much complexity, too much thinking, too much stress for our customers.
+            We couldn't afford to roll out a bunch of stuff that didn't work: we didn't have the money, the people, or the time to do that.
+            We needed to learn what customers <i>really</i> wanted, as quickly as possible.
           </p>
-          <p>Our goal was to introduce tiny, incremental amounts of choice, over time, to learn what really resonated with customers (growth!), and to help our logistics team stay as lean as possible.</p>
+          <p>
+            Our goal was to introduce tiny, incremental amounts of choice,
+            over time, to learn what really resonated with customers (growth!),
+            and to help our logistics team stay as lean as possible.
+          </p>
 
           <h3>The Team</h3>
 
           <p>
             We were in tiny startup mode. The company was less than 8 folks. It was me and an engineer on the product side. I was responsible for the customer UX and full-stack engineering.
           </p>
+
+          <CaseStudyFigure
+            imageUrl={"assets/images/studies/psf-team.jpg"}
+            altText={``}
+            subText={`Our tiny company, at ~8 folks large, planning the future in DC.`}
+          />
 
           <h3>The Process</h3>
           <h4>I started with listening.</h4>
@@ -75,20 +98,41 @@ export default class PSFood extends React.Component {
             spent quality time with our software engineer to learn about technical constraints.
           </p>
 
+          <p>
+            I heard that one of their biggest fears was that introducing
+            more choice would add too much complexity, too much thinking,
+            too much stress for our customers.
+          </p>
+
           <h4>I synthesized and structured the challenges.</h4>
           <p>
             I echoed back what I was hearing.
             I tried to understand the different pushes and pulls. I drew quick sketches,
             quick charts, quick summaries to make sure the concepts in my mind
-            were the same concepts in others' minds. Keep it simple; fear of choice overload;
-            enough customization but not too much; keep ops changes minimal;
+            were the same concepts in others' minds.
+          </p>
+
+          <p>
+            Keep it simple; fear of choice overload; enough customization
+            but not too much; keep ops changes minimal. I heard a lot about
+            the challenges of customer vs chef pushes and pulls, e.g. If we
+            wanted to give a customer more variety, that meant chefs needed to produce more types of
+            meals, and more types of meals could easily lead to lower quality production.
           </p>
 
           <h4>I communicated my plan with stakeholders.</h4>
           <p>
-            I worked with teammates
-            to put together the approach (quick tests, minimal changes, listen and react),
+            I worked with teammates to put together the approach,
             the starting point, and what the next steps could be.
+          </p>
+          <p>
+            We broke the project into two phases: the first would be
+            an ops-facing project, where we'd build the system for
+            managing meals, recipes, menus, and necessary logistics.
+            The second phase would be customer-facing, surfacing
+            things that would help customers find meals they'd love, e.g.
+            being fully transparent about ingredients, or identify
+            which meals were spicy or not.
           </p>
 
           <h4>I brought the team along with me.</h4>
@@ -115,17 +159,23 @@ export default class PSFood extends React.Component {
             we could keep pushing forward.
           </p>
 
+          <p>
+            On the ops side, one of the most important things we learned early on (thanks to rapid prototyping)
+            was that chefs didn't want to input <i>anything</i>. That let our ops team
+            shift very quickly to a "curator" model, where we'd have a culinary manager
+            act as the go-between from chef to system.
+          </p>
+
           <h3>Key Results</h3>
           <p>
-            Surprise: 📈 retention went up. We learned that folks who enjoyed their meals,
-            were more likely to stick around, and that by making it easier
-            to find meals they loved (e.g. customizing their menu), we
+            Surprise: 📈 conversion and retention went up.
+            We learned that by making it easier
+            for folks to find meals they loved (e.g. customizing their menu), we
             could increase the odds they'd stick around longer.
-          </p>
-          <p>
-            Conversion increased. We were able to successfuly navigate the fine-line between too little and too much choice.
+            We were able to successfuly navigate the fine-line between too little and too much choice.
             Folks who wanted an "easy button" could set and forget.
             Folks who wanted more control could easily tweak their orders.
+
           </p>
           <p>
             Product experience changes led to dramatic, foundational

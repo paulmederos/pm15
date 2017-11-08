@@ -21610,7 +21610,7 @@ class Portfolio extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component 
             role: "Sr. Product Designer / Eng",
             key: "ps-food",
             projectHeaderClass: "ps-food",
-            projectTitle: "Finding foods that fit for serious retention",
+            projectTitle: "Helping folks find meals they love",
             description: "If we gave folks more control over their meals, would we keep them around longer? Or would decision fatigue prove too frustrating?",
             onCardPressed: () => this.props.onCardPressed("ps-food")
           })
@@ -23072,7 +23072,7 @@ class PSFood extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'h2',
           { className: 'project-title' },
-          'Finding foods that fit for serious retention'
+          'Helping folks find meals they love for serious retention'
         ),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'p',
@@ -23111,6 +23111,22 @@ class PSFood extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
           'Part of this was intentional: no choice = less stress, less thinking, more getting. It was also infinitely easier on the culinary production and logistics side. But we heard over and over again that customers wanted more control.'
         ),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'p',
+          null,
+          'I joined Power Supply in January of 2014, about 2 years into the life of the company. They were starting to blossom in Washington DC. They had a bunch of assumptions around how they could better serve their customers, and ',
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'b',
+            null,
+            'top of the list was a better customer experience'
+          ),
+          ' around getting food they\'ll love. I was brought on to find that better CX \u26F5\uFE0F \uD83D\uDD2D'
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__CaseStudyFigure__["a" /* default */], {
+          imageUrl: "assets/images/studies/psf-early-whiteboard.jpg",
+          altText: ``,
+          subText: `One of our early whiteboard sketches, where we mapped out the various users of our system, including the pushes + pulls between ops product and customer experiences.`
+        }),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'h3',
           null,
           'The Challenge'
@@ -23118,13 +23134,13 @@ class PSFood extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'p',
           null,
-          'We couldn\'t afford to roll out a bunch of stuff that didn\'t work. We didn\'t have the money, the people, or the time to do that. We needed to learn what customers ',
+          'We couldn\'t afford to roll out a bunch of stuff that didn\'t work: we didn\'t have the money, the people, or the time to do that. We needed to learn what customers ',
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'i',
             null,
             'really'
           ),
-          ' wanted, as quickly as possible. One of our biggest fears was that introducing more choice would add too much complexity, too much thinking, too much stress for our customers.'
+          ' wanted, as quickly as possible.'
         ),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'p',
@@ -23141,6 +23157,11 @@ class PSFood extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
           null,
           'We were in tiny startup mode. The company was less than 8 folks. It was me and an engineer on the product side. I was responsible for the customer UX and full-stack engineering.'
         ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__CaseStudyFigure__["a" /* default */], {
+          imageUrl: "assets/images/studies/psf-team.jpg",
+          altText: ``,
+          subText: `Our tiny company, at ~8 folks large, planning the future in DC.`
+        }),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'h3',
           null,
@@ -23157,6 +23178,11 @@ class PSFood extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
           'I worked closely with the co-founders to learn what they thought the most vital pain points were for customers, and the constraints we had around food ops. I parsed hundreds of messages from customers to get a sense for their needs. I interviewed a few via email and phone to learn about their situations, motiations, and desired outcomes. I spent quality time with our software engineer to learn about technical constraints.'
         ),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'p',
+          null,
+          'I heard that one of their biggest fears was that introducing more choice would add too much complexity, too much thinking, too much stress for our customers.'
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'h4',
           null,
           'I synthesized and structured the challenges.'
@@ -23164,7 +23190,12 @@ class PSFood extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'p',
           null,
-          'I echoed back what I was hearing. I tried to understand the different pushes and pulls. I drew quick sketches, quick charts, quick summaries to make sure the concepts in my mind were the same concepts in others\' minds. Keep it simple; fear of choice overload; enough customization but not too much; keep ops changes minimal;'
+          'I echoed back what I was hearing. I tried to understand the different pushes and pulls. I drew quick sketches, quick charts, quick summaries to make sure the concepts in my mind were the same concepts in others\' minds.'
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'p',
+          null,
+          'Keep it simple; fear of choice overload; enough customization but not too much; keep ops changes minimal. I heard a lot about the challenges of customer vs chef pushes and pulls, e.g. If we wanted to give a customer more variety, that meant chefs needed to produce more types of meals, and more types of meals could easily lead to lower quality production.'
         ),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'h4',
@@ -23174,7 +23205,12 @@ class PSFood extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'p',
           null,
-          'I worked with teammates to put together the approach (quick tests, minimal changes, listen and react), the starting point, and what the next steps could be.'
+          'I worked with teammates to put together the approach, the starting point, and what the next steps could be.'
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'p',
+          null,
+          'We broke the project into two phases: the first would be an ops-facing project, where we\'d build the system for managing meals, recipes, menus, and necessary logistics. The second phase would be customer-facing, surfacing things that would help customers find meals they\'d love, e.g. being fully transparent about ingredients, or identify which meals were spicy or not.'
         ),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'h4',
@@ -23207,6 +23243,17 @@ class PSFood extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
           'As soon as designs were shipped, I\'d pay attention to feedback and analytics. Whatever I learned, I\'d share with the team. It helped us understand what was working and what wasn\'t, so we could keep pushing forward.'
         ),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'p',
+          null,
+          'On the ops side, one of the most important things we learned early on (thanks to rapid prototyping) was that chefs didn\'t want to input ',
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'i',
+            null,
+            'anything'
+          ),
+          '. That let our ops team shift very quickly to a "curator" model, where we\'d have a culinary manager act as the go-between from chef to system.'
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'h3',
           null,
           'Key Results'
@@ -23214,12 +23261,7 @@ class PSFood extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'p',
           null,
-          'Surprise: \uD83D\uDCC8 retention went up. We learned that folks who enjoyed their meals, were more likely to stick around, and that by making it easier to find meals they loved (e.g. customizing their menu), we could increase the odds they\'d stick around longer.'
-        ),
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          'p',
-          null,
-          'Conversion increased. We were able to successfuly navigate the fine-line between too little and too much choice. Folks who wanted an "easy button" could set and forget. Folks who wanted more control could easily tweak their orders.'
+          'Surprise: \uD83D\uDCC8 conversion and retention went up. We learned that by making it easier for folks to find meals they loved (e.g. customizing their menu), we could increase the odds they\'d stick around longer. We were able to successfuly navigate the fine-line between too little and too much choice. Folks who wanted an "easy button" could set and forget. Folks who wanted more control could easily tweak their orders.'
         ),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'p',

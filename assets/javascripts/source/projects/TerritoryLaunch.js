@@ -228,6 +228,10 @@ export default class TerritoryLaunch extends React.Component {
           />
 
           <p>
+            Oh, and did I mention <b>we're a fully remote company</b>? Yup. 🔮
+          </p>
+
+          <p>
             As <b>Head of Product Design</b>, I worked closely with
             our exec team, brand partners, and our product teams to
             help define the brand strategy, and then bring the

@@ -1752,7 +1752,7 @@ figure {
   padding: 0;
   margin-left: 6.4rem;
   min-width: 100%;
-  width: 800px; }
+  width: 1200px; }
 
 .case-study-preview {
   background-color: white;
@@ -1780,6 +1780,9 @@ figure {
   .case-study-image.ps-expansion {
     background-color: #0C8AA5;
     background-image: url("../images/preview-ps-expansion.png"); }
+  .case-study-image.ps-food {
+    background-color: #0C8AA5;
+    background-image: url("../images/preview-ps-food.png"); }
   .case-study-image.apk {
     background-color: #2F80ED;
     background-image: url("../images/apk-preview.png"); }
@@ -2021,19 +2024,15 @@ figure {
       margin-bottom: 0;
       height: inherit; } }
   .project-page-header.territory {
-    background-color: #FAF6ED;
-    margin-bottom: 10em; }
-    @media (max-width: 30em) {
-      .project-page-header.territory {
-        margin-bottom: 0; } }
+    background-color: #FAF6ED; }
   .project-page-header.ps-expansion {
     background-color: #1598B3;
     background-image: -webkit-linear-gradient(45deg, rgba(65, 220, 220, 0.8) 0%, rgba(30, 135, 169, 0.4) 100%);
-    background-image: linear-gradient(45deg, rgba(65, 220, 220, 0.8) 0%, rgba(30, 135, 169, 0.4) 100%);
-    margin-bottom: 10em; }
-    @media (max-width: 30em) {
-      .project-page-header.ps-expansion {
-        margin-bottom: 0; } }
+    background-image: linear-gradient(45deg, rgba(65, 220, 220, 0.8) 0%, rgba(30, 135, 169, 0.4) 100%); }
+  .project-page-header.ps-food {
+    background-color: #1598B3;
+    background-image: -webkit-linear-gradient(45deg, rgba(65, 220, 220, 0.8) 0%, rgba(30, 135, 169, 0.4) 100%);
+    background-image: linear-gradient(45deg, rgba(65, 220, 220, 0.8) 0%, rgba(30, 135, 169, 0.4) 100%); }
   .project-page-header img {
     position: relative;
     top: 108px; }
@@ -2043,6 +2042,14 @@ figure {
   min-height: 1000px; }
   .project-content h3 {
     margin-top: 3em; }
+
+.mini-study-notice {
+  padding: 1em;
+  border-radius: 4px;
+  background-color: #fffee0;
+  text-align: center;
+  font-size: .8em;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.05); }
 
 .objectives {
   padding-left: 1em;

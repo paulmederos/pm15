@@ -448,7 +448,7 @@ figure {
   }
 }
 
-$number_of_case_study_cards: 2;
+$number_of_case_study_cards: 3;
 
 .stack-of-work {
   z-index: 1;
@@ -496,6 +496,11 @@ $number_of_case_study_cards: 2;
   &.ps-expansion {
     background-color: #0C8AA5;
     background-image: url('../images/preview-ps-expansion.png');
+  }
+
+  &.ps-food {
+    background-color: #0C8AA5;
+    background-image: url('../images/preview-ps-food.png');
   }
 
   &.apk {
@@ -824,22 +829,18 @@ $number_of_adventure_cards: 9;
 
   &.territory {
     background-color: #FAF6ED;
-    margin-bottom: 10em;
-
-    @include mq-personal {
-      margin-bottom: 0;
-    }
   }
 
   &.ps-expansion {
     background-color: #1598B3;
     background-image: -webkit-linear-gradient(45deg, rgba(65, 220, 220, 0.8) 0%, rgba(30, 135, 169, 0.4) 100%);
     background-image: linear-gradient(45deg, rgba(65, 220, 220, 0.8) 0%, rgba(30, 135, 169, 0.4) 100%);
-    margin-bottom: 10em;
+  }
 
-    @include mq-personal {
-      margin-bottom: 0;
-    }
+  &.ps-food {
+    background-color: #1598B3;
+    background-image: -webkit-linear-gradient(45deg, rgba(65, 220, 220, 0.8) 0%, rgba(30, 135, 169, 0.4) 100%);
+    background-image: linear-gradient(45deg, rgba(65, 220, 220, 0.8) 0%, rgba(30, 135, 169, 0.4) 100%);
   }
 
   img {
@@ -855,6 +856,15 @@ $number_of_adventure_cards: 9;
   h3 {
     margin-top: 3em;
   }
+}
+
+.mini-study-notice {
+  padding: 1em;
+  border-radius: 4px;
+  background-color: #fffee0;
+  text-align: center;
+  font-size: .8em;
+  box-shadow: 0 1px 3px rgba(0,0,0,.15), 0 2px 8px rgba(0,0,0,.05);
 }
 
 .objectives {

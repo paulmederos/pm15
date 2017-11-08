@@ -38,6 +38,16 @@ export default class Portfolio extends React.Component {
               description={"Would the business model and product experience we developed in one market work in other markets across the country?"}
               onCardPressed={() => this.props.onCardPressed("ps-expansion")}
             />
+
+            <CaseStudyCard
+              date={"2014"}
+              role={"Sr. Product Designer / Eng"}
+              key={"ps-food"}
+              projectHeaderClass={"ps-food"}
+              projectTitle={"Finding foods that fit for serious retention"}
+              description={"If we gave folks more control over their meals, would we keep them around longer? Or would decision fatigue prove too frustrating?"}
+              onCardPressed={() => this.props.onCardPressed("ps-food")}
+            />
           </ul>
         </div>
         <figure className="cool-blobs"></figure>

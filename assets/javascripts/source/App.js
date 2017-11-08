@@ -7,6 +7,7 @@ import Contact from './Contact'
 
 import TerritoryLaunch from './projects/TerritoryLaunch'
 import PSExpansion from './projects/PSExpansion'
+import PSFood from './projects/PSFood'
 
 export default class App extends React.Component {
   constructor(props) {
@@ -53,6 +54,9 @@ export default class App extends React.Component {
         break;
       case 'ps-expansion':
         return <PSExpansion onClosePressed={this.handleWorkPageClosed}/>
+        break;
+      case 'ps-food':
+        return <PSFood onClosePressed={this.handleWorkPageClosed}/>
         break;
     }
   }

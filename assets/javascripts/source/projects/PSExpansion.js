@@ -89,7 +89,7 @@ export default class PSExpansion extends React.Component {
           <p>
             After considering various factors, and running a
             few experiments, the first city we decided to
-            target for expansion was Los Angeles.
+            target for expansion was Los Angeles. 🏖
           </p>
 
           <hr />
@@ -98,52 +98,55 @@ export default class PSExpansion extends React.Component {
 
           <p>We kicked-off the project with a few goals:</p>
 
-          <p>
-            <b>#1 The core product would stay the same, but we needed flexibility to scale our offerings.</b><br />
-            Our market in DC handled a pretty large volume of meals, with multiple menus, portion sizes, plans, and delivery methods (pickup + direct.) We wouldn’t be able to offer it all on day one in LA, and we didn’t want to—it was important that we learned which offerings would work best in different cities.
-          </p>
+          <section className="objectives">
 
-          <p>
-            That meant we had to re-think every piece of the experience to
-            account for flexibility in product offerings. We had to look at
-            everything from how we talked about the plans and pricing, to how
-            we showcased our network of independent chefs in each city. Oh,
-            and the customer experience was just the tip of the iceberg: our
-            culinary and logistics experiences also had to handle multiple
-            cities with different offerings so they could share processes
-            as we scaled.
-          </p>
+            <p>
+              <b>#1 The core product would stay the same, but we needed flexibility to scale our offerings.</b><br />
+              Our market in DC handled a pretty large volume of meals, with multiple menus, portion sizes, plans, and delivery methods (pickup + direct.) We wouldn’t be able to offer it all on day one in LA, and we didn’t want to—it was important that we learned which offerings would work best in different cities.
+            </p>
 
-          <CaseStudyFigure
-            imageUrl={"assets/images/studies/pse-ordering.gif"}
-            altText={`Multiple product offerings across different cities - size, lines, delivery, types`}
-            subText={`We had many variables in our product offerings that we wanted to test across different markets: menus, sizes, delivery options, prices, etc.`}
-          />
+            <p>
+              That meant we had to re-think every piece of the experience to
+              account for flexibility in product offerings. We had to look at
+              everything from how we talked about the plans and pricing, to how
+              we showcased our network of independent chefs in each city. Oh,
+              and the customer experience was just the tip of the iceberg: our
+              culinary and logistics experiences also had to handle multiple
+              cities with different offerings so they could share processes
+              as we scaled.
+            </p>
 
-          <p>
-            <b>#2 We needed brand guidelines to help us work more quickly and consistently as we grew.</b><br />
-            We didn't have brand guidelines, and our style guide was geared towards print. If we were going to grow the team and expand to multiple cities, we needed to have a system in place to support all the folks that would touch every point across our customer's experience.
-          </p>
+            <CaseStudyFigure
+              imageUrl={"assets/images/studies/pse-ordering.gif"}
+              altText={`Multiple product offerings across different cities - size, lines, delivery, types`}
+              subText={`We had many variables in our product offerings that we wanted to test across different markets: menus, sizes, delivery options, prices, etc.`}
+            />
 
-          <p>
-            <b>#3 We wanted our customers to have a consistent, unified user experience across our platforms.</b><br />
-            At the time, Power Supply's systems were spread all over the place. There was a Wordpress site for marketing pages, one app for ordering, another app for managing your order, yet another app to keep track of meals, another one to ask for reviews of meals, and a bunch of manual pieces on the logistics end that used different systems. All this created a pretty rough break in experiences for a bunch of users (customers, internal ops), and it’d only get worse as we started operating in multiple cities.
-          </p>
+            <p>
+              <b>#2 We needed brand guidelines to help us work more quickly and consistently as we grew.</b><br />
+              We didn't have brand guidelines, and our style guide was geared towards print. If we were going to grow the team and expand to multiple cities, we needed to have a system in place to support all the folks that would touch every point across our customer's experience.
+            </p>
 
-          <p>
-            We saw a path to integrating our systems so we could offer a much smoother user experience.
-          </p>
+            <p>
+              <b>#3 We wanted our customers to have a consistent, unified user experience across our platforms.</b><br />
+              At the time, Power Supply's systems were spread all over the place. There was a Wordpress site for marketing pages, one app for ordering, another app for managing your order, yet another app to keep track of meals, another one to ask for reviews of meals, and a bunch of manual pieces on the logistics end that used different systems. All this created a pretty rough break in experiences for a bunch of users (customers, internal ops), and it’d only get worse as we started operating in multiple cities.
+            </p>
 
-          <p>
-            <b>#4 We needed to launch by end of Q1 2015.</b><br />
-            We needed to prove city expansion as a growth model to prep us for our next round of funding. We started investigating city expansion at the end of 2014, and started moving in Q4 2014. We had roughly 8-weeks to execute, so that our crew on the ground in LA could start prepping menus, logistics partners, and distribution partners. Customer launch was in 12-weeks. Talk about tight schedules!
-          </p>
+            <p>
+              We saw a path to integrating our systems so we could offer a much smoother user experience.
+            </p>
+
+            <p>
+              <b>#4 We needed to launch by end of Q1 2015.</b><br />
+              We needed to prove city expansion as a growth model to prep us for our next round of funding. We started investigating city expansion at the end of 2014, and started moving in Q4 2014. We had roughly 8-weeks to execute, so that our crew on the ground in LA could start prepping menus, logistics partners, and distribution partners. Customer launch was in 12-weeks. Talk about tight schedules!
+            </p>
+          </section>
 
           <hr />
 
           <h3>Team & my role</h3>
           <p>
-            Our company was small at the time, only ~10 folks rowing the boat.
+            Our company was small at the time, only ~10 folks rowing the boat. 🛶
           </p>
 
           <p>
@@ -177,7 +180,7 @@ export default class PSExpansion extends React.Component {
           <p>We did all of that here, but I want to highlight some of the more exciting parts of the initiative, unique to this business.</p>
 
           <p>
-            <b>Working hand-in-hand with ops to coordinate launch timing.</b><br />
+            <b>Working hand-in-hand with ops ⚙️ to coordinate launch timing.</b><br />
             We had to get the "back of the house" ready so that our ops teams could do what they needed to do: recruit chefs; test & iterate meals; prepare menus ahead of time to test assumptions about product demand in new market; and test runs through production cycles (checklists, labels, quantities, locations, etc) to train up new ops teammates.
           </p>
 
@@ -191,7 +194,7 @@ export default class PSExpansion extends React.Component {
 
           <p>
             <b>Coordinate branding & marketing across physical and digital mediums.</b><br />
-            Until this point, we didn't mind that our physical/digital stuff was out of sync. But as we planned to scale, having consistent design across our experience became more important for a few reasons: the usual brand consistency stuff, but more important was the ability for us to pump out experiments more quickly across multiple cities to learn as much as we could about what worked and what didn't.
+            Until this point, we didn't mind that our physical/digital stuff was out of sync. But as we planned to scale, ✨ having consistent design across our experience became more important ✨ for the usual brand consistency stuff, but more important was the ability for us to pump out experiments more quickly across multiple cities to learn as much as we could about what worked and what didn't. 🔬
           </p>
 
           <CaseStudyFigure

@@ -21585,7 +21585,7 @@ class Portfolio extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component 
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'p',
           null,
-          'I\u2019ve applied my design, CS/HCI, and entrepreneurship backgrounds to solving legit problems for people and businesses. Take a look at recent case studies:'
+          'I\u2019ve applied my design, software, and entrepreneurship backgrounds to solving legit problems for people and businesses. Take a look at recent case studies:'
         )
       ),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(

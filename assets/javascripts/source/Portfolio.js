@@ -11,7 +11,7 @@ export default class Portfolio extends React.Component {
         <div className="wrap">
           <h2>Work Portfolio</h2>
           <p>
-            I’ve applied my design, CS/HCI, and entrepreneurship backgrounds
+            I’ve applied my design, software, and entrepreneurship backgrounds
             to solving legit problems for people and businesses.
             Take a look at recent case studies:
           </p>

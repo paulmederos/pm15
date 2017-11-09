@@ -24,7 +24,7 @@ export default class Header extends React.Component {
           </li>
           <li>
             <span className="time-space-continuum">2014 - 2017</span>
-            <span className="the-gig">Led product design at <a href="https://www.territoryfoods.com" target="_blank">Territory</a> (formerly <a href="https://technical.ly/dc/2017/05/09/power-supply-now-territory-foods/">Power Supply</a>)</span>
+            <span className="the-gig">Led product design at <a href="https://www.territoryfoods.com" target="_blank">Territory</a> (formerly <a href="https://technical.ly/dc/2017/05/09/power-supply-now-territory-foods/" target="_blank">Power Supply</a>)</span>
           </li>
           <li>
             <span className="time-space-continuum">2013 ~ 2014</span>

@@ -21482,7 +21482,7 @@ class Header extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'span',
             { className: 'time-space-continuum' },
-            '2017'
+            '2014 - 2017'
           ),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'span',
@@ -21491,29 +21491,15 @@ class Header extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
               'a',
               { href: 'https://www.territoryfoods.com', target: '_blank' },
-              'Territory Foods'
+              'Territory'
             ),
-            '.'
-          )
-        ),
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          'li',
-          null,
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            'span',
-            { className: 'time-space-continuum' },
-            '2014 - 2017'
-          ),
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            'span',
-            { className: 'the-gig' },
-            'Led product design and development for ',
+            ' (formerly ',
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
               'a',
               { href: 'https://technical.ly/dc/2017/05/09/power-supply-now-territory-foods/' },
               'Power Supply'
             ),
-            '.'
+            ')'
           )
         ),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(

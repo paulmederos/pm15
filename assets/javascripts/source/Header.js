@@ -5,11 +5,18 @@ export default class Header extends React.Component {
   render() {
     return (
       <header className={`wrap title ${this.props.shouldAnimate && "animated fadeIn"}`}>
+        <div className="headshots-container">
+          <img src="assets/images/headshot-01.jpg" className="headshot first" />
+          <img src="assets/images/headshot-02.jpg" className="headshot second" />
+          <img src="assets/images/headshot-03.jpg" className="headshot third" />
+        </div>
+        
         <h2>Paul Mederos</h2>
         <p>
           Makes meaningful products &amp; services<br />
           centered around human experiences.
         </p>
+
         <ol className="brief-resume">
           <li>
             <span className="time-space-continuum">Present</span>

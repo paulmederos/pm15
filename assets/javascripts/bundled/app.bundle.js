@@ -21441,6 +21441,13 @@ class Header extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
       'header',
       { className: `wrap title ${this.props.shouldAnimate && "animated fadeIn"}` },
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        'div',
+        { className: 'headshots-container' },
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: 'assets/images/headshot-01.jpg', className: 'headshot first' }),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: 'assets/images/headshot-02.jpg', className: 'headshot second' }),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: 'assets/images/headshot-03.jpg', className: 'headshot third' })
+      ),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         'h2',
         null,
         'Paul Mederos'

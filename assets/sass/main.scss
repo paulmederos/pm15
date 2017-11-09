@@ -357,6 +357,7 @@ figure {
 .title {
   padding-top: 12rem;
   margin-bottom: 12rem;
+  position: relative;
 
   h2 { position: relative; }
 
@@ -370,6 +371,64 @@ figure {
     height: 12rem;
     background-color: $color_enchant;
     border-radius: 2px;
+  }
+}
+
+.headshots-container {
+  @include mq-personal {
+    position: relative;
+    top: -6em;
+    left: -4em;
+    height: 10em;
+  }
+}
+
+.headshot {
+  width: 165px;
+  border: 4px solid white;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), 0 2px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+  transform: rotate(4deg);
+  position: absolute;
+  top: 0;
+  right: 0;
+  @include transition;
+
+  &.first {
+    z-index: 3;
+    top: 4em;
+    right: 2em;
+    transform: rotate(3deg);
+
+    &:hover {
+      transform: rotate(1deg) scale(1.06);
+    }
+  }
+
+  &.second {
+    z-index: 2;
+    top: 1em;
+    right: -4em;
+    transform: rotate(18deg);
+
+    &:hover {
+      transform: rotate(12deg) scale(1.1);
+    }
+  }
+
+  &.third {
+    right: 7em;
+    top: 1em;
+    transform: rotate(-5deg);
+
+    &:hover {
+      transform: rotate(-7deg) scale(1.06);
+    }
+  }
+
+  &:hover {
+    z-index:4;
+    @include transition;
   }
 }
 
@@ -461,6 +520,11 @@ $number_of_case_study_cards: 3;
   margin-left: 6.4rem;
   min-width: 100%;
   width: (400px * $number_of_case_study_cards);
+
+  @include mq-personal {
+    margin-left: 1.4rem;
+    width: (310px * $number_of_case_study_cards);
+  }
 }
 
 .case-study-preview {
@@ -480,6 +544,11 @@ $number_of_case_study_cards: 3;
                 0px 0px 4px rgba(0, 0, 0, 0.1);
     @include transition;
   }
+
+  @include mq-personal {
+    max-width: 280px;
+    margin-right: 2.1rem;
+  }
 }
 
 .case-study-image {
@@ -487,6 +556,10 @@ $number_of_case_study_cards: 3;
   background-color: gray;
   margin: 0;
   background-size: cover;
+
+  @include mq-personal {
+    height: 16rem;
+  }
 
   &.territory {
     background-color: #FAF6ED;
@@ -512,13 +585,28 @@ $number_of_case_study_cards: 3;
 .case-study-content {
   padding: 3rem;
 
+  @include mq-personal { padding: 2rem; }
+
   h3 {
     font-size: 2.4rem;
+    @include mq-personal { font-size: 1.8rem; }
   }
 
   a {
     color: $color_enchant;
     font-weight: 500;
+  }
+
+  h5 {
+    @include mq-personal { font-size: 1rem; }
+  }
+
+  p {
+    font-size: 1.3rem;
+  }
+
+  button {
+    font-size: 1.3rem;
   }
 }
 
@@ -548,7 +636,8 @@ $number_of_adventure_cards: 9;
   width: (540px * $number_of_adventure_cards); // should change based on # of cards
 
   @include mq-personal {
-
+    margin-left: 2.4rem;
+    width: (280px * $number_of_adventure_cards); // should change based on # of cards
   }
 }
 

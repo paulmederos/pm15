@@ -1731,12 +1731,14 @@ figure {
       .brief-resume li {
         margin-bottom: 2.5em; } }
   .brief-resume li:nth-child(1) {
-    color: rgba(45, 35, 51, 0.8); }
+    color: rgba(45, 35, 51, 0.9); }
   .brief-resume li:nth-child(2) {
-    color: rgba(45, 35, 51, 0.65); }
+    color: rgba(45, 35, 51, 0.8); }
   .brief-resume li:nth-child(3) {
-    color: rgba(45, 35, 51, 0.55); }
+    color: rgba(45, 35, 51, 0.65); }
   .brief-resume li:nth-child(4) {
+    color: rgba(45, 35, 51, 0.55); }
+  .brief-resume li:nth-child(5) {
     color: rgba(45, 35, 51, 0.4); }
   .brief-resume li a {
     color: inherit; }
@@ -1856,10 +1858,12 @@ figure {
   @media (max-width: 30em) {
     .case-study-content h5 {
       font-size: 1rem; } }
-  .case-study-content p {
-    font-size: 1.3rem; }
-  .case-study-content button {
-    font-size: 1.3rem; }
+  @media (max-width: 30em) {
+    .case-study-content p {
+      font-size: 1.3rem; } }
+  @media (max-width: 30em) {
+    .case-study-content button {
+      font-size: 1.3rem; } }
 
 .adventures {
   background-color: #fafafa;

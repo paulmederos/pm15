@@ -10,7 +10,7 @@ export default class Header extends React.Component {
           <img src="assets/images/headshot-02.jpg" className="headshot second" />
           <img src="assets/images/headshot-03.jpg" className="headshot third" />
         </div>
-        
+
         <h2>Paul Mederos</h2>
         <p>
           Makes meaningful products &amp; services<br />
@@ -20,7 +20,11 @@ export default class Header extends React.Component {
         <ol className="brief-resume">
           <li>
             <span className="time-space-continuum">Present</span>
-            <span className="the-gig">Leading design at <a href="https://www.territoryfoods.com" target="_blank">Territory Foods</a>.</span>
+            <span className="the-gig">Bardo ✨</span>
+          </li>
+          <li>
+            <span className="time-space-continuum">2017</span>
+            <span className="the-gig">Led product design at <a href="https://www.territoryfoods.com" target="_blank">Territory Foods</a>.</span>
           </li>
           <li>
             <span className="time-space-continuum">2014 - 2017</span>

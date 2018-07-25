@@ -21517,7 +21517,7 @@ class Header extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
               { href: 'https://www.wearekoso.com', target: '_blank' },
               'Koso'
             ),
-            '.'
+            ' \uD83C\uDF3F'
           )
         ),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -21543,7 +21543,7 @@ class Header extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
               { href: 'https://technical.ly/dc/2017/05/09/power-supply-now-territory-foods/', target: '_blank' },
               'Power Supply'
             ),
-            ')'
+            ') \uD83E\uDD57'
           )
         ),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -21563,7 +21563,7 @@ class Header extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
               { href: 'http://www.americanparkour.com', target: '_blank' },
               'American Parkour'
             ),
-            '.'
+            ' \uD83E\uDD38\u200D\u2640\uFE0F'
           )
         ),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -21583,7 +21583,7 @@ class Header extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
               { href: 'http://enchant.co', taget: '_blank' },
               'Enchant Design'
             ),
-            ' \u2014 a product + design studio.'
+            ' \u2014 a product + design studio \uD83C\uDFA8'
           )
         )
       )

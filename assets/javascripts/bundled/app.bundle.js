@@ -21511,11 +21511,11 @@ class Header extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'span',
             { className: 'the-gig' },
-            'Cofounder at ',
+            'Founder at ',
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
               'a',
-              { href: 'https://www.wearekoso.com', target: '_blank' },
-              'Koso'
+              { href: 'https://www.circleofmana.com', target: '_blank' },
+              'Circle of Mana'
             ),
             ' \uD83C\uDF3F'
           )

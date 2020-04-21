@@ -5,6 +5,30 @@ import CaseStudyCard from './CaseStudyCard'
 
 const listOfAdventures = [
   {
+    class: "florens",
+    title: "Florens",
+    description: "I'm working on bringing an onsen-inspired soak spa to life, where people can unwind + recover in private sauna / soak rooms.",
+    linkText: "Join the waitlist",
+    linkURL: "https://www.instagram.com/weareflorens"
+  },{
+    class: "apothekary",
+    title: "Apothékary",
+    description: "I helped this team level up their personalization to offer skeptics and witches alike their best bet at finding herbal blends that work best for them.",
+    linkText: "Find your fix",
+    linkURL: "https://apothekary.co"
+  },{
+    class: "weo",
+    title: "We Elevate Others",
+    description: "I helped built a job board for purpose driven orgs and job seekers (specifically in the health + wellness industry). Find a mission, not a company.",
+    linkText: "Find your people",
+    linkURL: "https://www.weelevateothers.co"
+  },{
+    class: "mana",
+    title: "Circle of Mana",
+    description: "I started a plant-based, adaptogenic chocolate company focused on bringing you delightful moments to catch your breath with a treat.",
+    linkText: "Get good chocolates",
+    linkURL: "https://www.circleofmana.com"
+  },{
     class: "designers-hearth",
     title: "Designer’s Hearth",
     description: "I kicked-off and co-organize a local meetup in Silicon Valley for designers to get together to share stories, make frindships, and grow professionally.",
@@ -17,11 +41,11 @@ const listOfAdventures = [
     linkText: "Start reading online for free",
     linkURL: "http://portfolio.enchant.co"
   },{
-    class: "kale",
-    title: "Kale: Celebrate Your Food",
+    class: "koso",
+    title: "Koso Journal",
     description: "I designed and built a food journal focused on discovering foods that work (and don't work) for your body, then helping you get pro help.",
-    linkText: "Start tracking your food",
-    linkURL: "http://app.getkale.com"
+    linkText: "Start tracking",
+    linkURL: "https://www.wearekoso.com"
   },{
     class: "seishin",
     title: "Seishin for iOS",

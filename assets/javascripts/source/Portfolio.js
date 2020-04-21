@@ -24,7 +24,7 @@ export default class Portfolio extends React.Component {
               role={"Head of Product Design"}
               key={"territory-brand-launch"}
               projectHeaderClass={"territory"}
-              projectTitle={"Launching the Territory brand to multiply growth"}
+              projectTitle={"Launching the Territory brand to accelerate growth"}
               description={"Could we re-position our brand closer to our north star of personalized nutrition to reach more customers in a deeper, more valuable way?"}
               onCardPressed={() => this.props.onCardPressed("territory-brand")}
             />

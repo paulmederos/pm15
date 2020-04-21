@@ -439,7 +439,10 @@ figure {
   padding: 0;
 
   li {
-    margin-bottom: 1.2rem;
+    margin-bottom: .25em;
+    border-radius: 4px;
+    padding: .25em;
+    @include transition;
 
     @include mq-personal {
       margin-bottom: 2.5em;
@@ -447,10 +450,17 @@ figure {
   }
 
 
-  li:nth-child(2) { color: transparentize($primary_font_color, .35) }
-  li:nth-child(3) { color: transparentize($primary_font_color, .45) }
-  li:nth-child(4) { color: transparentize($primary_font_color, .6) }
+  li:nth-child(2) { color: transparentize($primary_font_color, .1) }
+  li:nth-child(3) { color: transparentize($primary_font_color, .3) }
+  li:nth-child(4) { color: transparentize($primary_font_color, .5) }
+  li:nth-child(5) { color: transparentize($primary_font_color, .6) }
+  li:nth-child(6) { color: transparentize($primary_font_color, .7) }
 
+  li:hover {
+    color: $primary_font_color;
+    background-color: #fafafa;
+    @include transition;
+  }
   li a { color: inherit; }
   li a:hover { color: $color_enchant; }
 }
@@ -622,7 +632,7 @@ $number_of_case_study_cards: 3;
   }
 }
 
-$number_of_adventure_cards: 9;
+$number_of_adventure_cards: 12;
 .stack-of-adventures {
   z-index: 1;
   display: flex;
@@ -668,7 +678,7 @@ $number_of_adventure_cards: 9;
 .adventure-image {
   height: 100%;
   width: 100%;
-  max-width: 16rem;
+  max-width: 20rem;
   background-color: lightGray;
   margin: 0;
   background-size: cover;
@@ -699,6 +709,11 @@ $number_of_adventure_cards: 9;
     background-image: url('../images/kale-preview.png');
   }
 
+  &.koso {
+    background-color: #FF3F84;
+    background-image: url('../images/adventure-koso.png');
+  }
+
   &.apk {
     background-color: #2F80ED;
     background-image: url('../images/apk-preview.png');
@@ -727,6 +742,25 @@ $number_of_adventure_cards: 9;
   &.sohelpful {
     background-color: #F48854;
     background-image: url('../images/adventure-sohelpful.png');
+  }
+
+  &.weo {
+    background-color: #000;
+    background-image: url('../images/adventure-weo.png');
+  }
+
+  &.florens {
+    background-color: #FFF4F2;
+    background-image: url('../images/adventure-florens.png');
+  }
+
+  &.apothekary {
+    background-color: #FFF9F4;
+    background-image: url('../images/adventure-apothekary.png');
+  }
+  &.mana {
+    background-color: #FFF9F4;
+    background-image: url('../images/adventure-mana.png');
   }
 }
 

@@ -21493,9 +21493,9 @@ class Header extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         'p',
         null,
-        'Makes meaningful products & services',
+        'Builds teams that make meaningful products',
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
-        'centered around human experiences.'
+        '& services centered around human experiences.'
       ),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         'ol',
@@ -21506,18 +21506,18 @@ class Header extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'span',
             { className: 'time-space-continuum' },
-            '2018 - Present'
+            '2019 - Present'
           ),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'span',
             { className: 'the-gig' },
-            'Founder at ',
+            '\uD83C\uDF0A Building ',
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
               'a',
-              { href: 'https://www.circleofmana.com', target: '_blank' },
-              'Circle of Mana'
+              { href: 'https://www.weareflorens.com', target: '_blank' },
+              'Florens'
             ),
-            ' \uD83C\uDF3F'
+            ' \u2014 a place to unwind + recover'
           )
         ),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -21526,24 +21526,37 @@ class Header extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'span',
             { className: 'time-space-continuum' },
-            '2014 - 2017'
+            '2016 - Present'
           ),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'span',
             { className: 'the-gig' },
-            'Led product design at ',
+            '\uD83D\uDE80 Running ',
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              'a',
+              { href: 'https://www.enchant.co', target: '_blank' },
+              'Enchant'
+            ),
+            ' \u2014 a product studio for purpose-driven orgs'
+          )
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'li',
+          null,
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'span',
+            { className: 'time-space-continuum' },
+            '2014 - 2018'
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'span',
+            { className: 'the-gig' },
+            '\uD83E\uDD57 Product + engineering at ',
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
               'a',
               { href: 'https://www.territoryfoods.com', target: '_blank' },
-              'Territory'
-            ),
-            ' (formerly ',
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              'a',
-              { href: 'https://technical.ly/dc/2017/05/09/power-supply-now-territory-foods/', target: '_blank' },
-              'Power Supply'
-            ),
-            ') \uD83E\uDD57'
+              'Territory Foods'
+            )
           )
         ),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -21552,38 +21565,57 @@ class Header extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'span',
             { className: 'time-space-continuum' },
-            '2013 ~ 2014'
+            '2012 ~ 2013'
           ),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'span',
             { className: 'the-gig' },
-            'Led user experience crew at ',
+            '\uD83C\uDFC3\u200D\u2640\uFE0F Designer + developer at ',
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              'a',
+              { href: 'https://www.linkedin.com/company/cor/about/', target: '_blank' },
+              'Cor'
+            )
+          )
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'li',
+          null,
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'span',
+            { className: 'time-space-continuum' },
+            '2006 ~ 2012'
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'span',
+            { className: 'the-gig' },
+            '\uD83D\uDCBB Operated ',
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              'a',
+              { href: 'https://www.linkedin.com/company/prime-enterprise-consulting/', target: '_blank' },
+              'Prime'
+            ),
+            ' \u2014 an IT/software shop for SMBs'
+          )
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'li',
+          null,
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'span',
+            { className: 'time-space-continuum' },
+            '2005 ~ 2010'
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'span',
+            { className: 'the-gig' },
+            ' \uD83E\uDD38\u200D\u2640\uFE0F Cofounder at ',
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
               'a',
               { href: 'http://www.americanparkour.com', target: '_blank' },
               'American Parkour'
             ),
-            ' \uD83E\uDD38\u200D\u2640\uFE0F'
-          )
-        ),
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          'li',
-          null,
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            'span',
-            { className: 'time-space-continuum' },
-            '2006 ~ 2014'
-          ),
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            'span',
-            { className: 'the-gig' },
-            'Ran ',
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              'a',
-              { href: 'http://enchant.co', taget: '_blank' },
-              'Enchant Design'
-            ),
-            ' \u2014 a product + design studio \uD83C\uDFA8'
+            ' - led UX + Tech'
           )
         )
       )
@@ -21643,7 +21675,7 @@ class Portfolio extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component 
             role: "Head of Product Design",
             key: "territory-brand-launch",
             projectHeaderClass: "territory",
-            projectTitle: "Launching the Territory brand to multiply growth",
+            projectTitle: "Launching the Territory brand to accelerate growth",
             description: "Could we re-position our brand closer to our north star of personalized nutrition to reach more customers in a deeper, more valuable way?",
             onCardPressed: () => this.props.onCardPressed("territory-brand")
           }),
@@ -21694,6 +21726,30 @@ Portfolio.propTypes = {
 
 
 const listOfAdventures = [{
+  class: "florens",
+  title: "Florens",
+  description: "I'm working on bringing an onsen-inspired soak spa to life, where people can unwind + recover in private sauna / soak rooms.",
+  linkText: "Join the waitlist",
+  linkURL: "https://www.instagram.com/weareflorens"
+}, {
+  class: "apothekary",
+  title: "Apothékary",
+  description: "I helped this team level up their personalization to offer skeptics and witches alike their best bet at finding herbal blends that work best for them.",
+  linkText: "Find your fix",
+  linkURL: "https://apothekary.co"
+}, {
+  class: "weo",
+  title: "We Elevate Others",
+  description: "I helped built a job board for purpose driven orgs and job seekers (specifically in the health + wellness industry). Find a mission, not a company.",
+  linkText: "Find your people",
+  linkURL: "https://www.weelevateothers.co"
+}, {
+  class: "mana",
+  title: "Circle of Mana",
+  description: "I started a plant-based, adaptogenic chocolate company focused on bringing you delightful moments to catch your breath with a treat.",
+  linkText: "Get good chocolates",
+  linkURL: "https://www.circleofmana.com"
+}, {
   class: "designers-hearth",
   title: "Designer’s Hearth",
   description: "I kicked-off and co-organize a local meetup in Silicon Valley for designers to get together to share stories, make frindships, and grow professionally.",
@@ -21706,11 +21762,11 @@ const listOfAdventures = [{
   linkText: "Start reading online for free",
   linkURL: "http://portfolio.enchant.co"
 }, {
-  class: "kale",
-  title: "Kale: Celebrate Your Food",
+  class: "koso",
+  title: "Koso Journal",
   description: "I designed and built a food journal focused on discovering foods that work (and don't work) for your body, then helping you get pro help.",
-  linkText: "Start tracking your food",
-  linkURL: "http://app.getkale.com"
+  linkText: "Start tracking",
+  linkURL: "https://www.wearekoso.com"
 }, {
   class: "seishin",
   title: "Seishin for iOS",
